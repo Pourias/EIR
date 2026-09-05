@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI School Security Research</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #ffffff;
+      --panel: #ffffff;
+      --text: #111111;
+      --muted: #5f6368;
+      --line: #d9dce1;
+      --soft: #f5f7fa;
+      --accent: #0b57d0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    }
+    .page {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 40px 28px 64px;
+      background: var(--panel);
+    }
+    header {
+      margin-bottom: 28px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--line);
+    }
+    h1, h2, h3 {
+      line-height: 1.2;
+      margin: 0 0 14px;
+      color: var(--text);
+    }
+    h1 { font-size: 2.1rem; }
+    h2 { font-size: 1.45rem; margin-top: 34px; padding-top: 8px; border-top: 1px solid var(--line); }
+    h3 { font-size: 1.1rem; margin-top: 24px; }
+    p { margin: 0 0 14px; }
+    ul, ol { margin: 0 0 16px 22px; padding: 0; }
+    li { margin: 0 0 8px; }
+    a { color: var(--accent); text-decoration: none; word-break: break-word; }
+    a:hover { text-decoration: underline; }
+    code {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 0.08rem 0.35rem;
+      font: 0.92em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .meta { color: var(--muted); margin-top: 8px; }
+    .doc-section + .doc-section { margin-top: 42px; }
+    .table-wrap { overflow-x: auto; margin: 16px 0 22px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.95rem; background: #fff; }
+    th, td { border: 1px solid var(--line); padding: 12px 10px; vertical-align: top; text-align: left; }
+    th { background: var(--soft); font-weight: 700; }
+    .toc { margin-top: 18px; padding: 16px 18px; background: var(--soft); border: 1px solid var(--line); border-radius: 12px; }
+    .toc h2 { border: 0; margin-top: 0; padding-top: 0; font-size: 1rem; }
+    .toc ul { margin-bottom: 0; }
+    @media print {
+      .page { max-width: none; padding: 0; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>AI School Security Research</h1>
+      <p class="meta">Combined HTML export of the 1-pager and competitor analysis. White background, single-file output.</p>
+      <div class="toc">
+        <h2>Included Documents</h2>
+        <ul>
+          <li><a href="#ai-school-security-startup-1-pager">1-Pager</a></li>
+          <li><a href="#ai-school-security-competitor-analysis">Competitor Analysis</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="doc-section" data-source="2026-04-06-ai-school-security-1-pager.md"><h1 id="ai-school-security-startup-1-pager">AI School Security Startup: 1-Pager</h1>
+<p>Date: April 6, 2026</p>
+<h2 id="snapshot">Snapshot</h2>
+<p>The startup concept is software that layers onto existing school security cameras, or ships with new systems where needed, to detect visible weapons and potentially suspicious behavior in real time so schools and law enforcement can respond faster during a violent incident.</p>
+<p>This is a real market, but not an empty one. The strongest wedge is not broad &quot;behavioral prediction.&quot; It is a narrower, more defensible product: visible-weapon detection plus fast response orchestration on top of existing camera, access-control, notification, and 911 workflows.</p>
+<h2 id="why-this-market-exists">Why This Market Exists</h2>
+<p>Most U.S. public schools already have cameras. NCES reported that 92.6 percent of public schools had security cameras in 2021-22, which makes retrofit deployment realistic rather than hypothetical. Funding also exists through school safety budgets and grant pathways such as DOJ&#x27;s School Violence Prevention Program, and some states are directly funding firearm-detection technology for schools.</p>
+<h2 id="what-is-already-in-market">What Is Already In Market</h2>
+<p>The market already has credible incumbents and fast-moving adjacent players:</p>
+<ul>
+<li>ZeroEyes: K-12-focused visual gun detection layered onto existing digital cameras, with human verification and public pricing. <a href="https://zeroeyes.com/zeroeyes-k-12-gun-detection-solution/">https://zeroeyes.com/zeroeyes-k-12-gun-detection-solution/</a> <a href="https://zeroeyes.com/pricing/">https://zeroeyes.com/pricing/</a></li>
+<li>Omnilert: gun detection plus emergency notification and response workflows, with major school deployments such as Baltimore County Public Schools. <a href="https://www.omnilert.com/solutions/gun-detection-system">https://www.omnilert.com/solutions/gun-detection-system</a> <a href="https://www.omnilert.com/blog/ai-gun-detection-baltimore-schools">https://www.omnilert.com/blog/ai-gun-detection-baltimore-schools</a></li>
+<li>Ambient.ai: broader AI physical-security platform for education, combining threat detection, forensics, investigations, and response across cameras and access control. <a href="https://www.ambient.ai/solutions/education">https://www.ambient.ai/solutions/education</a> <a href="https://www.ambient.ai/solutions/gun-detection">https://www.ambient.ai/solutions/gun-detection</a></li>
+<li>icetana AI: anomaly and unusual-event detection on top of existing CCTV and VMS systems, including education positioning. <a href="https://www.icetana.ai/industries/education">https://www.icetana.ai/industries/education</a></li>
+<li>Eagle Eye Networks: cloud VMS with gun detection, human verification, and 911 camera-sharing positioned for schools. <a href="https://www.een.com/solutions/education/">https://www.een.com/solutions/education/</a> <a href="https://www.een.com/product/eagle-eye-gun-detection/">https://www.een.com/product/eagle-eye-gun-detection/</a></li>
+<li>Motorola Solutions / Avigilon: incumbent end-to-end campus security stack with education-specific positioning across video, analytics, appliances, and access control. <a href="https://www.avigilon.com/industry/education">https://www.avigilon.com/industry/education</a> <a href="https://www.avigilon.com/nvr-systems/ai-appliance">https://www.avigilon.com/nvr-systems/ai-appliance</a></li>
+</ul>
+<h2 id="technical-reality">Technical Reality</h2>
+<p>The technology is strongest for visible, brandished firearms. It is much weaker if the promise expands to concealed weapons, ambiguous intent, or generic &quot;abnormal student behavior.&quot; The model problem is hard because school environments are noisy, context changes constantly, and false alarms have serious consequences. A camera system may detect a visible gun in some conditions, but detection quality degrades with low light, partial occlusion, poor camera placement, crowding, and low-resolution feeds.</p>
+<p>That matters because the operational standard is not &quot;sometimes works.&quot; It is &quot;trusted enough that a school will trigger emergency actions without causing panic, legal risk, or repeated false alarms.&quot;</p>
+<h2 id="main-risks">Main Risks</h2>
+<ul>
+<li>False positives can trigger harmful police and school responses.</li>
+<li>False negatives remain likely when weapons are concealed or poorly visible.</li>
+<li>Privacy and civil-rights risk rises quickly if the product expands into facial recognition or persistent behavior scoring.</li>
+<li>School procurement is slow, fragmented, and politically sensitive.</li>
+<li>Platform incumbents can bundle detection into broader security stacks.</li>
+</ul>
+<h2 id="eir-view">EIR View</h2>
+<p>This is a <code>watch</code>, not an <code>invest</code>, in its current broad form.</p>
+<p>The reason is not lack of demand. Demand is real. The issue is that the market is already active, the broad behavioral-analysis thesis is weaker than it sounds, and the winning edge likely comes from trust, workflow integration, and privacy-safe response orchestration rather than from a generic &quot;AI on cameras&quot; claim.</p>
+<h2 id="best-startup-wedge">Best Startup Wedge</h2>
+<p>The most promising version of this company would be one of:</p>
+<ol>
+<li>A privacy-first orchestration layer on top of existing cameras, access control, notifications, and 911.</li>
+<li>A trust layer that materially reduces harmful false alarms and improves auditability and compliance.</li>
+<li>A K-12 implementation and operating layer that wins on integrations, grant capture, drills, training, and school-specific deployment.</li>
+</ol>
+<h2 id="best-next-step">Best Next Step</h2>
+<p>Before building core detection from scratch, validate whether a new entrant can beat incumbents on one of three things: false-alert rate, ease of integration into existing school safety workflows, or procurement/distribution into districts.</p></section><section class="doc-section" data-source="2026-04-06-ai-school-security-competitor-analysis.md"><h1 id="ai-school-security-competitor-analysis">AI School Security Competitor Analysis</h1>
+<p>Date: April 6, 2026</p>
+<h2 id="scope">Scope</h2>
+<p>This memo analyzes the most relevant competitors for an AI school-security startup built around existing or new camera systems for visible-weapon detection, behavioral anomaly detection, and faster emergency response.</p>
+<p>This analysis used a CX research deep run for discovery:</p>
+<ul>
+<li>Task ID: <code>research-9a6d601bc7</code></li>
+<li>Research provenance: historical CX run; raw provider output is intentionally omitted from the public repository.</li>
+</ul>
+<p>Important note: the automated CX deep run completed, but under-hit its quality floor and surfaced some off-topic AI-security sources. I used that run as discovery input, then manually tightened the final competitor analysis around primary company pages, school deployment announcements, and direct product material.</p>
+<h2 id="bottom-line">Bottom Line</h2>
+<p>This is a crowded but still evolving market. The category leaders already cover most of the obvious startup pitch:</p>
+<ul>
+<li>detect visible guns on existing cameras</li>
+<li>verify alerts quickly</li>
+<li>trigger notification and response workflows</li>
+<li>sell into K-12 using safety budgets and grants</li>
+</ul>
+<p>That means a new entrant probably does not win by being &quot;AI for school cameras.&quot; It wins, if at all, by being materially better in one of four ways:</p>
+<ol>
+<li>Lower harmful false-alert rate.</li>
+<li>Better response orchestration across cameras, access control, dispatch, and 911.</li>
+<li>Cleaner privacy and civil-rights posture.</li>
+<li>Better school-specific distribution, implementation, and grant capture.</li>
+</ol>
+<h2 id="competitor-map">Competitor Map</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Competitor</th><th>What it sells</th><th>Deployment model</th><th>School proof points</th><th>Likely strengths</th><th>Likely weaknesses</th><th>Key links</th></tr></thead>
+<tbody>
+<tr><td>ZeroEyes</td><td>AI visual gun detection with human verification and alerts</td><td>Layers onto existing digital cameras; sold per camera stream</td><td>Multiple K-12 deployments and a dedicated K-12 pitch</td><td>Narrow, clear wedge; school-first messaging; DHS SAFETY Act position; public pricing</td><td>Narrow product scope; depends on visible brandished guns; easier to replicate in theory than full platforms</td><td><a href="https://zeroeyes.com/zeroeyes-k-12-gun-detection-solution/">https://zeroeyes.com/zeroeyes-k-12-gun-detection-solution/</a> ; <a href="https://zeroeyes.com/pricing/">https://zeroeyes.com/pricing/</a> ; <a href="https://zeroeyes.com/angleton-isd-uses-zeroeyes-ai-technology-to-spot-guns-and-alert-police-in-seconds/">https://zeroeyes.com/angleton-isd-uses-zeroeyes-ai-technology-to-spot-guns-and-alert-police-in-seconds/</a></td></tr>
+<tr><td>Omnilert</td><td>Gun detection plus emergency notification, workflow activation, and optional monitoring</td><td>Works with existing IP cameras and connects into school safety workflows</td><td>Baltimore County Public Schools announced 7,000-camera deployment; Sarasota County Schools deployment</td><td>Strong response orchestration story; installed base from emergency notification; school credibility</td><td>Public false-positive scrutiny hurts trust; no public pricing; still mostly visible-gun problem</td><td><a href="https://www.omnilert.com/solutions/gun-detection-system">https://www.omnilert.com/solutions/gun-detection-system</a> ; <a href="https://www.omnilert.com/blog/ai-gun-detection-baltimore-schools">https://www.omnilert.com/blog/ai-gun-detection-baltimore-schools</a> ; <a href="https://www.omnilert.com/blog/sarasota-schools-selects-omnilert-gun-detect">https://www.omnilert.com/blog/sarasota-schools-selects-omnilert-gun-detect</a></td></tr>
+<tr><td>Ambient.ai</td><td>AI physical-security platform across cameras, forensics, investigations, and response; also gun detection</td><td>Layers onto existing camera infrastructure and access-control systems</td><td>Education vertical page and Harker School case study</td><td>Broader product surface; platform story; stronger enterprise moat if model and workflow quality are real</td><td>Less school-specific than ZeroEyes and Omnilert; likely heavier deployment and enterprise sales motion; no public pricing</td><td><a href="https://www.ambient.ai/solutions/education">https://www.ambient.ai/solutions/education</a> ; <a href="https://www.ambient.ai/solutions/gun-detection">https://www.ambient.ai/solutions/gun-detection</a> ; <a href="https://info.ambient.ai/hubfs/The%20Harker%20School%20Case%20Study.pdf">https://info.ambient.ai/hubfs/The%20Harker%20School%20Case%20Study.pdf</a></td></tr>
+<tr><td>icetana AI</td><td>Unusual-event and anomaly detection on CCTV; event surfacing for operators</td><td>Integrates with most existing CCTV and VMS systems</td><td>Education-specific positioning page</td><td>Retrofit-friendly; strong anomaly positioning; privacy-aware messaging</td><td>Weaker named U.S. K-12 proof; less direct weapon-detection wedge; anomaly detection is harder to trust operationally</td><td><a href="https://www.icetana.ai/industries/education">https://www.icetana.ai/industries/education</a> ; <a href="https://www.icetana.ai/products/event-finder">https://www.icetana.ai/products/event-finder</a></td></tr>
+<tr><td>Eagle Eye Networks</td><td>Cloud VMS with gun detection, human verification, and 911 camera sharing</td><td>Native inside Eagle Eye Cloud VMS or add-on to existing surveillance system</td><td>Education solution page and school-oriented marketing</td><td>Platform distribution; 911 sharing; cloud VMS leverage; explicit human verification</td><td>Less school-specialized brand than pure-play entrants; gun detection appears newer than ZeroEyes or Omnilert</td><td><a href="https://www.een.com/solutions/education/">https://www.een.com/solutions/education/</a> ; <a href="https://www.een.com/product/eagle-eye-gun-detection/">https://www.een.com/product/eagle-eye-gun-detection/</a></td></tr>
+<tr><td>Motorola Solutions / Avigilon</td><td>Full-stack campus security: cameras, video analytics, AI appliances, access control, broader school security systems</td><td>Existing-system-friendly but strongest when sold as part of a larger integrated stack</td><td>Education solution page and school case studies</td><td>Huge distribution, integrator network, procurement familiarity, broad end-to-end platform</td><td>May not feel like a focused proactive-gun-detection specialist; broader platform complexity</td><td><a href="https://www.avigilon.com/industry/education">https://www.avigilon.com/industry/education</a> ; <a href="https://www.avigilon.com/nvr-systems/ai-appliance">https://www.avigilon.com/nvr-systems/ai-appliance</a> ; <a href="https://www.avigilon.com/fs/documents/Royse-City-Case-Study.pdf">https://www.avigilon.com/fs/documents/Royse-City-Case-Study.pdf</a></td></tr>
+</tbody></table></div>
+<h2 id="competitive-read">Competitive Read</h2>
+<h3 id="zeroeyes">ZeroEyes</h3>
+<p>ZeroEyes is the clearest direct competitor if the startup thesis is camera-based gun detection for schools. It has a narrow message, public pricing, repeated school deployment announcements, and an explicit privacy-first posture built around detecting only brandished firearms rather than faces or identities. That clarity is an advantage in a politically sensitive market.</p>
+<p>Its limitation is the same as its strength: it is highly focused on visible guns. If a district wants broader situational awareness, workflow automation, or platform consolidation, broader players can outflank it.</p>
+<h3 id="omnilert">Omnilert</h3>
+<p>Omnilert is the strongest direct competitor if the product thesis is not just detection but response. Its big strategic advantage is that it already lives in the emergency-notification and active-shooter workflow world, so it can sell a tighter story around detect, verify, notify, and activate.</p>
+<p>The core weakness is trust under real-world conditions. If districts worry that false positives can trigger traumatic police or lockdown responses, Omnilert bears that reputational risk more directly because it sells the full response chain.</p>
+<h3 id="ambient-ai">Ambient.ai</h3>
+<p>Ambient.ai is structurally the most dangerous long-term competitor if the category shifts from &quot;gun detection point solution&quot; to &quot;AI operating system for physical security.&quot; Its positioning suggests a larger data moat, broader workflow surface, and a more defensible enterprise platform if customers want one vendor across multiple incident types.</p>
+<p>For a startup, this means a broad &quot;analyze school behavior and detect threats&quot; pitch runs straight into Ambient.ai&#x27;s lane.</p>
+<h3 id="icetana-ai">icetana AI</h3>
+<p>icetana is most relevant if the startup leans into anomaly detection rather than weapon detection. The company explicitly says it can run on existing CCTV and surface unusual behavior without replacing cameras. That makes it conceptually close to the original idea.</p>
+<p>But anomaly detection is also the least convincing part of the startup thesis. The product category is harder to benchmark, easier to oversell, and more exposed to school-context false positives.</p>
+<h3 id="eagle-eye-networks">Eagle Eye Networks</h3>
+<p>Eagle Eye is a reminder that cloud VMS vendors can absorb this category. It offers gun detection, human verification, and 911 camera sharing while also controlling the broader surveillance platform. That creates bundling power and easier procurement when a district wants one integrated environment.</p>
+<p>This is bad news for any startup that only offers a thin analytics layer with no workflow or system advantage.</p>
+<h3 id="motorola-solutions-avigilon">Motorola Solutions / Avigilon</h3>
+<p>Avigilon is the incumbent threat. It has the broadest distribution muscle and the widest campus-security stack, even if its public posture is less narrowly centered on proactive visible-gun detection than ZeroEyes or Omnilert. In school procurement, incumbency matters because districts often prefer familiar vendors, established integrators, and solutions that fit existing purchasing and support channels.</p>
+<h2 id="where-a-new-entrant-could-still-win">Where a New Entrant Could Still Win</h2>
+<p>The startup is most plausible if it does not attack the market head-on as &quot;another gun-detection model.&quot; Better options:</p>
+<ol>
+<li>Build the best trust layer. Measure false alerts rigorously, create auditable alert records, add explainability, and give schools defensible operating procedures.</li>
+</ol>
+<ol>
+<li>Build the best orchestration layer. Connect cameras, access control, alerts, dispatch, maps, and 911 better than the point-solution vendors.</li>
+</ol>
+<ol>
+<li>Own the school-specific implementation layer. Help districts navigate grants, approvals, privacy objections, training, drills, and cross-agency response.</li>
+</ol>
+<ol>
+<li>Stay privacy-narrow. Avoid facial recognition and broad student-behavior scoring. The product becomes easier to buy, defend, and regulate.</li>
+</ol>
+<h2 id="eir-conclusion">EIR Conclusion</h2>
+<p>This market is investable only with a sharper wedge than the original idea.</p>
+<p>If the product is &quot;behavioral analysis for school shootings,&quot; I would lean <code>pass</code>.</p>
+<p>If the product is &quot;visible-weapon detection plus superior response orchestration and privacy-safe school workflows,&quot; I would lean <code>watch</code>.</p>
+<p>If the founder can prove dramatically lower harmful false alerts, better integration into district operations, or a strong school-specific distribution advantage, then the case could move toward <code>invest</code>. Without that, the startup is entering a category where the obvious features are already claimed by credible players.</p></section>
+  </main>
+</body>
+</html>

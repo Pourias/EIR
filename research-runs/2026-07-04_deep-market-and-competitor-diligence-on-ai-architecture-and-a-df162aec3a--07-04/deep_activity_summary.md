@@ -1,0 +1,207 @@
+# Deep Research Activity Summary
+
+- Events logged: `41`
+
+## Timeline
+
+- 2026-07-04T09:31:55-07:00 — `plan` — Created deep plan with 10 planned query passes and 6 deep objectives.
+  - target_passes: 6
+  - target_sources: 20
+  - preferred_domains: ['reddit.com']
+- 2026-07-04T09:32:00-07:00 — `search_pass` — Executed entity-official-site and merged 15 ranked sources.
+  - pass_number: 1
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 10
+  - primary_like_source_count: 4
+  - met_depth_standard: False
+- 2026-07-04T09:32:03-07:00 — `search_pass` — Executed entity-product-signals and merged 25 ranked sources.
+  - pass_number: 2
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 17
+  - primary_like_source_count: 7
+  - met_depth_standard: False
+- 2026-07-04T09:32:05-07:00 — `search_pass` — Executed entity-commercial-signals and merged 36 ranked sources.
+  - pass_number: 3
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 22
+  - primary_like_source_count: 8
+  - met_depth_standard: False
+- 2026-07-04T09:32:10-07:00 — `search_pass` — Executed discovery-primary and merged 40 ranked sources.
+  - pass_number: 4
+  - include_domains: ['reddit.com']
+  - result_count: 15
+  - meaningful_source_count: 22
+  - primary_like_source_count: 8
+  - met_depth_standard: False
+- 2026-07-04T09:32:14-07:00 — `search_pass` — Executed expansion-related and merged 40 ranked sources.
+  - pass_number: 5
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 25
+  - primary_like_source_count: 10
+  - met_depth_standard: False
+- 2026-07-04T09:32:19-07:00 — `search_pass` — Executed gap-closing and merged 40 ranked sources.
+  - pass_number: 6
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 26
+  - primary_like_source_count: 11
+  - met_depth_standard: True
+- 2026-07-04T09:32:23-07:00 — `structured_pass` — Added brave-web-1 with 6 structured-provider results.
+  - pass_number: 7
+  - include_domains: []
+  - provider: brave-search
+- 2026-07-04T09:32:23-07:00 — `structured_pass` — Added exa-web-1 with 6 structured-provider results.
+  - pass_number: 8
+  - include_domains: []
+  - provider: exa
+- 2026-07-04T09:32:23-07:00 — `structured_pass` — Added brave-web-2 with 6 structured-provider results.
+  - pass_number: 9
+  - include_domains: []
+  - provider: brave-search
+- 2026-07-04T09:32:23-07:00 — `structured_pass` — Added exa-web-2 with 6 structured-provider results.
+  - pass_number: 10
+  - include_domains: []
+  - provider: exa
+- 2026-07-04T09:32:23-07:00 — `social_pass` — Added reddit-data-api-public with 0 social-platform results.
+  - pass_number: 11
+  - include_domains: ['reddit.com']
+  - platforms: ['reddit']
+- 2026-07-04T09:32:23-07:00 — `capture_started` — Starting bounded capture for up to 25 top-ranked sources.
+  - capture_limit: 25
+- 2026-07-04T09:32:23-07:00 — `capture_item` — Capture 1 finished with status=error engine=capture-worker.
+  - url: https://graitec.com/us/blog/acc-forma-move-unified-design-construction-workflows
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:23-07:00 — `capture_item` — Capture 2 finished with status=error engine=capture-worker.
+  - url: https://adsknews.autodesk.com/en/views/forma-now-and-the-future
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:23-07:00 — `capture_item` — Capture 3 finished with status=error engine=capture-worker.
+  - url: https://aecmag.com/features/autodesk-forma-a-deep-dive-into-the-data-lake
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:23-07:00 — `capture_item` — Capture 4 finished with status=error engine=capture-worker.
+  - url: https://adsknews.autodesk.com/en/news/autodesk-construction-cloud-to-join-forma
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:23-07:00 — `capture_item` — Capture 5 finished with status=error engine=capture-worker.
+  - url: https://adsknews.autodesk.com/en/news/autodesk-construction-cloud-is-now-autodesk-forma
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:23-07:00 — `capture_item` — Capture 6 finished with status=error engine=capture-worker.
+  - url: https://arxiv.org/html/2506.20551v1
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:23-07:00 — `capture_item` — Capture 7 finished with status=error engine=capture-worker.
+  - url: https://adsknews.autodesk.com/en/news/autodesk-design-and-make-intelligence
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:24-07:00 — `capture_item` — Capture 8 finished with status=error engine=capture-worker.
+  - url: https://paacademy.com/blog/top-ai-tools-architectural-planning
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:24-07:00 — `capture_item` — Capture 9 finished with status=error engine=capture-worker.
+  - url: https://dancumberlandlabs.com/blog/architecture
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:24-07:00 — `capture_item` — Capture 10 finished with status=error engine=capture-worker.
+  - url: https://coursiv.io/blog/best-ai-tools-for-architects-2026
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:24-07:00 — `capture_item` — Capture 11 finished with status=error engine=capture-worker.
+  - url: https://www.prnewswire.com/news-releases/autodesk-introduces-forma-for-next-generation-building-design-in-the-cloud-301817449.html
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:24-07:00 — `capture_item` — Capture 12 finished with status=error engine=capture-worker.
+  - url: https://adsknews.autodesk.com/en/news/forma-new-connections
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:24-07:00 — `capture_item` — Capture 13 finished with status=error engine=capture-worker.
+  - url: https://construction.autodesk.eu/
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:24-07:00 — `capture_item` — Capture 14 finished with status=error engine=capture-worker.
+  - url: https://aecmag.com/bim/autodesk-targets-bim-with-forma-building-design
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:24-07:00 — `capture_item` — Capture 15 finished with status=error engine=capture-worker.
+  - url: https://www.hagerman.com/software/forma
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:24-07:00 — `capture_item` — Capture 16 finished with status=error engine=capture-worker.
+  - url: https://www.esri.com/about/newsroom/announcements/esri-launches-arcgis-for-autodesk-forma-continuing-its-partnership-to-bring-spatial-data-to-aeco-industry
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:24-07:00 — `capture_item` — Capture 17 finished with status=error engine=capture-worker.
+  - url: https://construction.autodesk.com/resources/source-acc-webinars/ignite-drives-future-ready-digital-transformation-with-tech-consolidation-2
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:24-07:00 — `capture_item` — Capture 18 finished with status=error engine=capture-worker.
+  - url: https://blogs.autodesk.com/forma/2025/01/31/whats-new-in-autodesk-forma-q4-webinar
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:25-07:00 — `capture_item` — Capture 19 finished with status=error engine=capture-worker.
+  - url: https://construction.autodesk.com/resources/acc-product-videos/autodesk-forma-build-product-overview-2
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:25-07:00 — `capture_item` — Capture 20 finished with status=error engine=capture-worker.
+  - url: https://www.autodesk.com/company/autodesk-platform/aec
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:25-07:00 — `capture_item` — Capture 21 finished with status=error engine=capture-worker.
+  - url: https://construction.autodesk.com/
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:25-07:00 — `capture_item` — Capture 22 finished with status=error engine=capture-worker.
+  - url: https://www.autodesk.com/uk
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:25-07:00 — `capture_item` — Capture 23 finished with status=error engine=capture-worker.
+  - url: https://blog.hagerman.com/autodesk-construction-cloud-becomes-forma-what-it-means-for-end-users
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:25-07:00 — `capture_item` — Capture 24 finished with status=error engine=capture-worker.
+  - url: https://www.autodesk.com/uk/products/forma/overview
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:25-07:00 — `capture_item` — Capture 25 finished with status=error engine=capture-worker.
+  - url: https://construction.autodesk.com/resources/acc-videos/autodesk-forma-build-product-overview-5
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:25-07:00 — `capture` — Captured 0 of 25 top-ranked sources for full-page evidence.
+  - capture_count: 25
+  - capture_ok: 0
+- 2026-07-04T09:32:25-07:00 — `contradiction_matrix` — Built contradiction matrix across 6 themes.
+  - themes: ['governance', 'commercialization', 'security', 'general', 'adoption', 'tooling']
+- 2026-07-04T09:32:25-07:00 — `synthesis` — Completed deep synthesis with 6 confirmed claims and 1 inferred claims.
+  - open_questions: 2
+  - surfaced_sources: 33

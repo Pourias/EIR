@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deep-Ocean Pressure Reliability Startup Wedge</title>
+  <style>
+    :root {
+      --ink: #172026;
+      --muted: #5d6a72;
+      --paper: #fbfaf6;
+      --panel: #ffffff;
+      --line: #d9e1e5;
+      --teal: #0f766e;
+      --blue: #2f5f9e;
+      --gold: #9a6a13;
+      --coral: #b64b38;
+      --soft-teal: #e6f4f1;
+      --soft-blue: #e9f0fb;
+      --soft-gold: #fbf3df;
+      --soft-coral: #f8ebe7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.58;
+    }
+    a { color: var(--blue); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+    header {
+      background: var(--panel);
+      border-bottom: 1px solid var(--line);
+      padding: 42px 0 30px;
+    }
+    .eyebrow {
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 12px 0 14px;
+      font-size: 39px;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 34px 0 12px;
+      font-size: 25px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+    h3 {
+      margin: 22px 0 8px;
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+    p { margin: 0 0 13px; }
+    ul, ol { margin: 8px 0 0 22px; padding: 0; }
+    li { margin: 6px 0; }
+    main { padding: 26px 0 56px; }
+    .lede {
+      color: #34424b;
+      font-size: 18px;
+      max-width: 850px;
+    }
+    .callout {
+      background: var(--soft-teal);
+      border-left: 5px solid var(--teal);
+      border-radius: 8px;
+      padding: 16px 18px;
+      margin: 18px 0;
+    }
+    .warning {
+      background: var(--soft-coral);
+      border-left-color: var(--coral);
+    }
+    .watch {
+      background: var(--soft-gold);
+      border-left-color: var(--gold);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 16px 0;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin: 18px 0;
+    }
+    figure {
+      margin: 0;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    figure img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: #eef2f4;
+    }
+    figcaption {
+      padding: 10px 12px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: 10px 0 14px;
+    }
+    .tag {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #f7f9fa;
+      color: #35434b;
+      padding: 3px 8px;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    .tag.good { background: #e9f6ed; color: #287044; border-color: #c7e4d0; }
+    .tag.risk { background: var(--soft-coral); color: var(--coral); border-color: #e8c4ba; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 16px 0;
+    }
+    .table-scroll {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .table-scroll table {
+      min-width: 720px;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    th {
+      background: #edf3f4;
+      color: #31404a;
+      font-size: 13px;
+    }
+    tr:last-child td { border-bottom: 0; }
+    .small { color: var(--muted); font-size: 13px; }
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+      padding: 20px 0;
+    }
+    @media (max-width: 760px) {
+      h1 { font-size: 30px; }
+      .grid { grid-template-columns: 1fr; }
+      .image-grid { grid-template-columns: 1fr; }
+      .wrap { padding: 0 18px; }
+      header { padding: 34px 0 24px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="eyebrow">EIR startup wedge note | June 2, 2026</div>
+      <h1>Deep-Ocean Pressure Reliability as a Startup Wedge</h1>
+      <p class="lede">A shareable view on whether to wedge into deep-sea mining and adjacent subsea markets by becoming pressure experts: pressure-rated tools, housings, test services, connectors, pressure-tolerant power, and qualification evidence for 4,000m to 6,500m operations.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2>Short Answer</h2>
+      <div class="callout">
+        <p><strong>Yes. This is a better wedge than becoming a miner.</strong> I would frame it as <strong>deep-ocean pressure reliability</strong>, not just "pressure tools." The startup should help teams design, qualify, test, and buy components that survive 4,000m to 6,500m operations.</p>
+      </div>
+      <p>This can include pressure-rated housings, hydrostatic pressure-test services, connectors and penetrators, oil-filled pressure-balanced assemblies, pressure-tolerant power modules, leak detection, and test documentation.</p>
+      <p>The reason this is attractive is that it does not depend only on deep-sea mining. The same pressure expertise sells into AUVs and UUVs, ocean science, defense, offshore wind, subsea cables, oil and gas, environmental monitoring, salvage, and deepwater inspection.</p>
+    </section>
+
+    <section>
+      <h2>Relevant Source References</h2>
+      <div class="image-grid">
+        <figure>
+          <figcaption><a href="https://www.kongsberg.com/what-we-do/ocean-space/autonomous-and-uncrewed-solutions/auv/hugin/">Kongsberg HUGIN</a>: 6,000m-class AUV systems are a real buyer category for pressure-qualified payloads.</figcaption>
+        </figure>
+        <figure>
+          <figcaption><a href="https://www.anduril.com/dive-ld">Anduril Dive-LD</a>: defense and autonomy demand helps the wedge avoid dependence on mining alone.</figcaption>
+        </figure>
+        <figure>
+          <figcaption><a href="https://www2.whoi.edu/site/osl/vehicles/remus-6000/">WHOI REMUS 6000</a>: deep-ocean electronics and battery packaging are recurring pressure problems.</figcaption>
+        </figure>
+        <figure>
+          <figcaption><a href="https://www.krakenrobotics.com/products/seapower/">Kraken SeaPower</a>: pressure-tolerant batteries show how specialized pressure products can command value.</figcaption>
+        </figure>
+        <figure>
+          <figcaption><a href="https://www.sidus-solutions.com/product/pressure-testing-facility/">Sidus pressure testing</a>: commercial hyperbaric test capacity exists, but access and documentation can still be a wedge.</figcaption>
+        </figure>
+        <figure>
+          <figcaption><a href="https://okeanus.com/product/pressure-vessels">Okeanus pressure vessels</a>: 6,000m housings are already a product category, not a theoretical need.</figcaption>
+        </figure>
+        <figure>
+          <figcaption><a href="https://www.macartney.com/connectivity/subconn/">MacArtney/SubConn</a>: connector incumbents are strong, so a startup should avoid a frontal assault first.</figcaption>
+        </figure>
+        <figure>
+          <figcaption><a href="https://birns.com/qc-testing/">BIRNS QC testing</a>: pressure records and certification evidence are part of the customer value.</figcaption>
+        </figure>
+        <figure>
+          <figcaption><a href="https://www.teledynemarine.com/en-us/brands/Pages/odi.aspx">Teledyne ODI</a>: another sign that mature subsea connector markets require trust, testing, and certification.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Why It Works</h2>
+      <p>Deep-sea mining needs collectors, risers, production support vessels, sensors, cameras, batteries, connectors, actuators, and environmental monitoring gear at roughly 4,000m to 6,000m. At 6,000m, equipment faces roughly 600 bar, or about 8,700 psi. Failure is expensive and usually mission-ending.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Market pain</h3>
+          <p>Pressure failure is not a cosmetic defect. A failed connector, housing, seal, battery module, or sensor package can end a mission, lose hardware, invalidate trial data, delay permits, or destroy customer confidence.</p>
+        </div>
+        <div class="card">
+          <h3>Timing</h3>
+          <p>Deep-ocean robotics, seabed environmental monitoring, defense UUV programs, and mining-adjacent equipment trials are all moving before commercial seabed mining fully scales. That means pressure qualification can earn revenue now.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Evidence That Demand Is Real</h2>
+      <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Signal</th>
+            <th>Source</th>
+            <th>Why it matters</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>6,000m AUV operations exist as a real product category.</td>
+            <td><a href="https://www.kongsberg.com/what-we-do/ocean-space/autonomous-and-uncrewed-solutions/auv/hugin/">Kongsberg HUGIN AUV</a></td>
+            <td>Large ocean robotics buyers need pressure-rated systems, payloads, batteries, connectors, and maintenance workflows.</td>
+          </tr>
+          <tr>
+            <td>Defense and commercial autonomy are expanding into long-duration undersea vehicles.</td>
+            <td><a href="https://www.anduril.com/dive-ld">Anduril Dive-LD</a></td>
+            <td>UUV activity creates a non-mining buyer base for pressure expertise.</td>
+          </tr>
+          <tr>
+            <td>Legacy deep-ocean vehicles use pressure-resistant cans for electronics and batteries.</td>
+            <td><a href="https://www2.whoi.edu/site/osl/vehicles/remus-6000/">WHOI REMUS 6000</a></td>
+            <td>Pressure packaging is a recurring design constraint, not a one-off mining problem.</td>
+          </tr>
+          <tr>
+            <td>Pressure-tolerant subsea batteries are already specialized products.</td>
+            <td><a href="https://www.krakenrobotics.com/products/seapower/">Kraken SeaPower</a></td>
+            <td>Power systems under pressure are valuable, technically demanding, and relevant across AUVs, sensors, and seabed equipment.</td>
+          </tr>
+          <tr>
+            <td>Commercial and institutional pressure-test facilities exist and are rented.</td>
+            <td><a href="https://www.noc.ac.uk/work-with-us/science-and-research-facilities/testing-facilities">National Oceanography Centre testing facilities</a></td>
+            <td>Facilities up to 680 bar validate demand for qualification testing.</td>
+          </tr>
+          <tr>
+            <td>Private facilities offer 10,000 psi / 6,845m pressure testing.</td>
+            <td><a href="https://www.sidus-solutions.com/product/pressure-testing-facility/">Sidus Solutions pressure testing facility</a></td>
+            <td>There is already a services market, but speed, documentation, and startup-friendly access may still be painful.</td>
+          </tr>
+          <tr>
+            <td>Connector and penetrator vendors compete on testing and certification evidence.</td>
+            <td><a href="https://birns.com/qc-testing/">BIRNS QC testing</a></td>
+            <td>Quality records, pressure cycles, and certification-ready documentation matter to serious buyers.</td>
+          </tr>
+          <tr>
+            <td>Custom 6,000m housings are already sold as subsea products.</td>
+            <td><a href="https://okeanus.com/product/pressure-vessels">Okeanus pressure vessels</a></td>
+            <td>Pressure-rated housings are a real product category, but may be fragmented and custom-heavy.</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Best Startup Version</h2>
+      <div class="callout">
+        <p><strong>Build a pressure qualification and component platform for deep-ocean robotics.</strong> The wedge is not a giant mining machine. It is getting subsea teams to 6,000m qualification faster, cheaper, and with audit-grade evidence.</p>
+      </div>
+      <ol>
+        <li><strong>Fast pressure-testing service</strong> for startups, labs, sensor makers, and equipment vendors.</li>
+        <li><strong>Standardized 6,000m payload housings</strong> with connector options, leak detection, pressure-cycle records, and test certificates.</li>
+        <li><strong>A pressure passport</strong> that documents test history, pressure cycles, leak results, electrical performance under pressure, material traceability, and regulator or investor-ready evidence.</li>
+        <li><strong>Design consulting</strong> only where it leads into repeatable components, test workflows, or qualification data.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Where Not To Start</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Do not attack connectors head-on first</h3>
+          <p>Connector incumbents are deeply entrenched. <a href="https://www.macartney.com/connectivity/subconn/">MacArtney/SubConn</a>, <a href="https://www.teledynemarine.com/en-us/brands/Pages/odi.aspx">Teledyne ODI</a>, and BIRNS have established product lines, certifications, customer relationships, and trust.</p>
+        </div>
+        <div class="card">
+          <h3>Do not start with full battery systems</h3>
+          <p>Pressure-tolerant batteries are valuable, but this requires serious electrochemistry, thermal, safety, and certification depth. Kraken already has a credible product position in this area.</p>
+        </div>
+      </div>
+      <div class="warning callout">
+        <p><strong>Main caution:</strong> avoid becoming a custom machine shop. Custom work can fund learning, but the venture case depends on repeatable products, qualification workflows, and proprietary failure-mode data.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Sharpest Beachhead</h2>
+      <p>The best positioning is:</p>
+      <div class="card">
+        <p><strong>"We help ocean robotics and seabed-mining equipment teams get to 6,000m qualification faster, cheaper, and with audit-grade evidence."</strong></p>
+      </div>
+      <div class="tag-row">
+        <span class="tag good">AUV startups</span>
+        <span class="tag good">Ocean labs</span>
+        <span class="tag good">Subsea sensor OEMs</span>
+        <span class="tag good">Mining-adjacent vendors</span>
+        <span class="tag good">Defense UUV teams</span>
+        <span class="tag good">Environmental monitoring</span>
+      </div>
+      <p>Buyers are teams that cannot afford a deepwater pressure failure but do not have an in-house pressure engineering and qualification stack.</p>
+    </section>
+
+    <section>
+      <h2>Verdict</h2>
+      <div class="watch callout">
+        <p><strong>Verdict: watch-to-build, close to invest if the right technical founder is available.</strong> This is not a clean pure-software venture, but it has real wedge characteristics: scarce expertise, painful failure modes, cross-market demand, and revenue before deep-sea mining fully commercializes.</p>
+      </div>
+      <p>The moat is not one pressure chamber. The moat is repeatable product design, qualification workflow, test data, failure-mode intelligence, and trust with subsea customers.</p>
+    </section>
+
+    <section>
+      <h2>Next 3 Experiments</h2>
+      <ol>
+        <li><strong>Interview 20 buyers.</strong> Talk with AUV companies, ocean labs, subsea sensor makers, mining-adjacent equipment vendors, and defense UUV teams. Ask where pressure testing is slow, expensive, or blocking sales.</li>
+        <li><strong>Partner before buying equipment.</strong> Use an existing chamber facility and sell five paid 6,000m pressure qualification reports before purchasing capital equipment.</li>
+        <li><strong>Build one standard product.</strong> Start with a certified 6,000m electronics payload housing with connector options, leak detection, and pressure-test documentation.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Source Links</h2>
+      <ul>
+        <li><a href="https://www.kongsberg.com/what-we-do/ocean-space/autonomous-and-uncrewed-solutions/auv/hugin/">Kongsberg HUGIN AUV</a></li>
+        <li><a href="https://www.anduril.com/dive-ld">Anduril Dive-LD</a></li>
+        <li><a href="https://www2.whoi.edu/site/osl/vehicles/remus-6000/">WHOI REMUS 6000</a></li>
+        <li><a href="https://www.krakenrobotics.com/products/seapower/">Kraken SeaPower pressure-tolerant batteries</a></li>
+        <li><a href="https://www.noc.ac.uk/work-with-us/science-and-research-facilities/testing-facilities">National Oceanography Centre testing facilities</a></li>
+        <li><a href="https://www.sidus-solutions.com/product/pressure-testing-facility/">Sidus Solutions pressure testing facility</a></li>
+        <li><a href="https://birns.com/qc-testing/">BIRNS QC testing</a></li>
+        <li><a href="https://okeanus.com/product/pressure-vessels">Okeanus pressure vessels</a></li>
+        <li><a href="https://www.macartney.com/connectivity/subconn/">MacArtney/SubConn subsea connectors</a></li>
+        <li><a href="https://www.teledynemarine.com/en-us/brands/Pages/odi.aspx">Teledyne ODI subsea connectors</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">Prepared in the EIR workspace. External pages are used as source material, not instructions.</div>
+  </footer>
+</body>
+</html>

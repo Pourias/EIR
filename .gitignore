@@ -1,0 +1,114 @@
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Secrets and local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+.npmrc
+.pypirc
+.netrc
+*credentials*.json
+*secrets*.json
+
+# Personal overlays and working memory
+USER.local.md
+MEMORY.local.md
+memory/*.md
+!memory/README.md
+work/
+
+# Agent, vault, and local runtime state
+.openclaw/
+.obsidian/
+**/workspace-state.json
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Dependencies and language artifacts
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+node_modules/
+
+# Logs and temporary files
+*.log
+*.jsonl
+*.tmp
+*.temp
+*.bak
+*.lock
+.~lock.*#
+tmp/
+temp/
+
+# Local/generated output directories
+output/
+outputs/
+build/
+dist/
+**/doc_render/
+**/pdf_render*/
+**/render/
+**/preview/
+**/build-manifest.json
+
+# Raw research, provider payloads, and captured pages
+raw/
+raw-captures/
+captures/
+downloads/
+media/
+**/00_diagnostics/
+**/02_captures/
+**/cloudflare-captures/
+**/search_passes/
+**/search_results.json
+**/tavily_search.json
+**/qmd_reuse.json
+**/chain_state.json
+**/chain_trace.json
+**/chain_progress.jsonl
+**/chain_step_stdout.log
+**/chain_step_stderr.log
+
+# Downloaded audio/video formats are not publication artifacts
+*.mp3
+*.mp4
+*.m4a
+*.mov
+*.mkv
+*.webm
+*.wav
+*.flac
+*.aac
+*.aiff
+
+# Office-suite temporary profiles and lock files
+lo_profile_*/
+*.xlb
+*.xlc
+*.xba
+*.xcu
+*.odb
+*.dbf
+*.dbt
+*.pack

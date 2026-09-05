@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "task_id": "research-fd023273c9",
+  "question": "Deep research current news, regulatory blockers, and validated valorization pathways for an Austin, Texas aquatic vegetation removal plus biomass recovery startup. Focus on Lake Austin hydrilla removal permits, City of Austin/TPWD/LCRA constraints, any 2025-2026 news on hydrilla, grass carp, drawdown, harmful algae, or public contracting, and evidence/examples for compost or fertilizer, anaerobic digestion, biochar or hydrochar, animal feed, and high-value extraction from freshwater aquatic weeds such as hydrilla, Eurasian watermilfoil, water hyacinth, green algae, and cyanobacteria. Prioritize primary sources, official local sources, peer-reviewed papers/reviews, and practical cost/logistics implications for an HTML partner brief.",
+  "category": "general-research",
+  "evidence_type": "current_intel",
+  "depth": "deep",
+  "deliverable": "deep_report",
+  "requested_output_format": "brief",
+  "route": {
+    "skills": [
+      "cx-research-context-loader",
+      "cx-research-request-router",
+      "cx-research-workspace-router",
+      "current-intel-scout",
+      "source-compression",
+      "cx-research-source-card-pipeline",
+      "company-market-map",
+      "deep-research-report"
+    ],
+    "tools": [
+      "tavily",
+      "primary-source-verification",
+      "regulator-sites",
+      "official-company-sites",
+      "press-rooms",
+      "summarize",
+      "official-docs"
+    ],
+    "optional_tools": [
+      "brave-search",
+      "exa"
+    ],
+    "tool_controls": {
+      "required": [],
+      "preferred": [],
+      "forbidden": []
+    },
+    "depth_profile": {
+      "min_passes": 6,
+      "min_sources": 20,
+      "max_sources": 40,
+      "required_checks": [
+        "discovery",
+        "expansion",
+        "gap_closing",
+        "contradiction_check",
+        "commercial_analysis",
+        "challenge_pass"
+      ],
+      "default_subagents": [
+        "scout",
+        "analyst",
+        "skeptic"
+      ]
+    },
+    "subagents": [
+      "scout",
+      "analyst",
+      "skeptic"
+    ],
+    "social_platforms": [],
+    "social_mode": "none",
+    "explanation": "depth=deep; evidence_type=current_intel; deliverable=deep_report; requested_output_format=brief; source_shape=pdf"
+  },
+  "coverage": {
+    "target_min_passes": 6,
+    "target_min_sources": 20,
+    "target_max_sources": 40,
+    "executed_passes": 10,
+    "source_count": 40,
+    "quality_profile": {
+      "min_meaningful_sources": 14,
+      "min_high_quality_sources": 8,
+      "min_primary_like_sources": 8
+    },
+    "meaningful_source_count": 40,
+    "high_quality_source_count": 40,
+    "primary_like_source_count": 40,
+    "source_class_counts": {
+      "official": 2,
+      "primary": 38
+    },
+    "met_source_floor": true,
+    "met_quality_floor": true,
+    "met_depth_standard": true,
+    "shortfall_sources": 0,
+    "shortfall_passes": 0,
+    "shortfall_meaningful_sources": 0,
+    "shortfall_high_quality_sources": 0,
+    "shortfall_primary_like_sources": 0
+  },
+  "reuse_lookup": {
+    "status": "error",
+    "collections": [
+      "cx_research__pointers",
+      "cx_research__canon",
+      "cx_research__dossiers",
+      "cx_research__important",
+      "cx_research__latest",
+      "cx_research__library"
+    ],
+    "result_count": 0,
+    "authoritative_hit_count": 0,
+    "served_without_search": false
+  },
+  "promotion": {
+    "status": "promoted",
+    "reason": "met_depth_standard",
+    "cards_promoted": 40,
+    "captures_promoted": 0,
+    "decision": {
+      "status": "promote",
+      "reason": "met_depth_standard",
+      "shared_promotion_allowed": true,
+      "quarantined_in_run_dir": false,
+      "coverage_snapshot": {
+        "executed_passes": 10,
+        "source_count": 40,
+        "meaningful_source_count": 40,
+        "high_quality_source_count": 40,
+        "primary_like_source_count": 40,
+        "met_depth_standard": true
+      }
+    }
+  },
+  "live_run": {
+    "provider": "tavily+brave-search+exa",
+    "pass_count": 10,
+    "result_count": 40,
+    "capture_count": 2,
+    "query_variants": [
+      {
+        "pass_number": 1,
+        "label": "entity-official-site",
+        "query": "\"TPWD\" official company website",
+        "include_domains": [],
+        "result_count": 10
+      },
+      {
+        "pass_number": 2,
+        "label": "entity-product-signals",
+        "query": "\"TPWD\" official product platform robot system",
+        "include_domains": [
+          "tpwd.texas.gov"
+        ],
+        "result_count": 10
+      },
+      {
+        "pass_number": 3,
+        "label": "entity-commercial-signals",
+        "query": "\"TPWD\" commercialization deployment customer partnership press release",
+        "include_domains": [
+          "tpwd.texas.gov"
+        ],
+        "result_count": 10
+      },
+      {
+        "pass_number": 4,
+        "label": "discovery-primary",
+        "query": "Deep research current news, regulatory blockers, and validated valorization pathways for an Austin, Texas aquatic vegetation removal plus biomass recovery startup. Focus on Lake Austin hydrilla removal permits, City of Austin/\"TPWD\"/LCRA constraints, any ... local sources, peer-reviewed papers/reviews, and practical cost/logistics implications for an HTML partner brief.",
+        "include_domains": [
+          "tpwd.texas.gov"
+        ],
+        "result_count": 10
+      },
+      {
+        "pass_number": 5,
+        "label": "expansion-related",
+        "query": "Deep research current news, regulatory blockers, and validated valorization pathways for an Austin, Texas aquatic vegetation removal plus biomass recovery startup. Focus on Lake Austin hydrilla removal permits, City of Austin/TPWD/LCRA constraints, any ... HTML partner brief. guidance draft guidance final rule reimbursement coverage payment policy official announcement 2026",
+        "include_domains": [
+          "tpwd.texas.gov"
+        ],
+        "result_count": 10
+      },
+      {
+        "pass_number": 6,
+        "label": "gap-closing",
+        "query": "Deep research current news, regulatory blockers, and validated valorization pathways for an Austin, Texas aquatic vegetation removal plus biomass recovery startup. Focus on Lake Austin hydrilla removal permits, City of Austin/TPWD/LCRA constraints, any ... and practical cost/logistics implications for an HTML partner brief. what changed recently latest update open questions",
+        "include_domains": [
+          "tpwd.texas.gov"
+        ],
+        "result_count": 10
+      },
+      {
+        "pass_number": 7,
+        "label": "brave-web-1",
+        "query": "\"TPWD\" official company website",
+        "include_domains": [],
+        "result_count": 6
+      },
+      {
+        "pass_number": 8,
+        "label": "exa-web-1",
+        "query": "\"TPWD\" official company website",
+        "include_domains": [],
+        "result_count": 6
+      },
+      {
+        "pass_number": 9,
+        "label": "brave-web-2",
+        "query": "\"TPWD\" official product platform robot system",
+        "include_domains": [
+          "tpwd.texas.gov"
+        ],
+        "result_count": 6
+      },
+      {
+        "pass_number": 10,
+        "label": "exa-web-2",
+        "query": "\"TPWD\" official product platform robot system",
+        "include_domains": [
+          "tpwd.texas.gov"
+        ],
+        "result_count": 6
+      }
+    ]
+  },
+  "api_health": {
+    "status": "ok",
+    "summary": {
+      "ok": 4,
+      "warn": 0,
+      "fail": 0,
+      "skipped": 0,
+      "service_count": 4
+    },
+    "blocking_failures": []
+  },
+  "deep_research": {
+    "theme_count": 6
+  }
+}

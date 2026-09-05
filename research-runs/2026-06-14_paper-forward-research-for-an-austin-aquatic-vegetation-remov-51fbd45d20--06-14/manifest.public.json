@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "task_id": "aquatic-vegetation-austin-rpaper-science-2026-06-14",
+  "question": "Paper-forward research for an Austin aquatic vegetation removal startup: hydrilla biology and fragmentation, Eurasian watermilfoil, native aquatic vegetation habitat value, mechanical harvesting ecological impacts, diver-assisted suction harvesting, cyanobacteria/benthic mat health risks for dogs in Lady Bird Lake Austin, lanthanum-modified bentonite/clay phosphorus control, seasonality under warm low-flow Texas conditions, best practices for disposal and minimizing spread.",
+  "category": "general-research",
+  "evidence_type": "market",
+  "depth": "deep",
+  "deliverable": "deep_report",
+  "requested_output_format": "brief",
+  "route": {
+    "skills": [
+      "cx-research-context-loader",
+      "cx-research-request-router",
+      "cx-research-workspace-router",
+      "company-market-map",
+      "source-compression",
+      "cx-research-source-card-pipeline",
+      "deep-research-report"
+    ],
+    "tools": [
+      "tavily",
+      "official-company-sites",
+      "regulator-sites",
+      "press-rooms",
+      "summarize",
+      "openalex",
+      "crossref"
+    ],
+    "optional_tools": [
+      "brave-search",
+      "exa",
+      "sec-edgar",
+      "patentsview",
+      "ncbi-eutils",
+      "semantic-scholar"
+    ],
+    "tool_controls": {
+      "required": [
+        "openalex",
+        "crossref"
+      ],
+      "preferred": [
+        "ncbi-eutils",
+        "semantic-scholar",
+        "tavily",
+        "brave-search",
+        "exa"
+      ],
+      "forbidden": []
+    },
+    "depth_profile": {
+      "min_passes": 6,
+      "min_sources": 20,
+      "max_sources": 40,
+      "required_checks": [
+        "discovery",
+        "expansion",
+        "gap_closing",
+        "contradiction_check",
+        "commercial_analysis",
+        "challenge_pass"
+      ],
+      "default_subagents": [
+        "scout",
+        "analyst",
+        "skeptic"
+      ]
+    },
+    "subagents": [
+      "scout",
+      "analyst",
+      "skeptic"
+    ],
+    "social_platforms": [],
+    "social_mode": "none",
+    "explanation": "depth=deep; evidence_type=market; deliverable=deep_report; requested_output_format=brief; source_shape=pdf; required_tools=openalex,crossref; preferred_tools=ncbi-eutils,semantic-scholar,tavily,brave-search,exa"
+  },
+  "coverage": {
+    "target_min_passes": 6,
+    "target_min_sources": 20,
+    "target_max_sources": 40,
+    "executed_passes": 19,
+    "source_count": 40,
+    "quality_profile": {
+      "min_meaningful_sources": 14,
+      "min_high_quality_sources": 8,
+      "min_primary_like_sources": 8
+    },
+    "meaningful_source_count": 8,
+    "high_quality_source_count": 8,
+    "primary_like_source_count": 6,
+    "source_class_counts": {
+      "official": 7,
+      "scholarly": 8,
+      "strong_secondary": 23,
+      "low_signal": 2
+    },
+    "met_source_floor": true,
+    "met_quality_floor": false,
+    "met_depth_standard": false,
+    "shortfall_sources": 0,
+    "shortfall_passes": 0,
+    "shortfall_meaningful_sources": 6,
+    "shortfall_high_quality_sources": 0,
+    "shortfall_primary_like_sources": 2
+  },
+  "reuse_lookup": {
+    "status": "ok",
+    "collections": [
+      "cx_research__pointers",
+      "cx_research__canon",
+      "cx_research__dossiers",
+      "cx_research__important",
+      "cx_research__latest",
+      "cx_research__library"
+    ],
+    "result_count": 0,
+    "authoritative_hit_count": 0,
+    "served_without_search": false
+  },
+  "promotion": {
+    "status": "skipped",
+    "reason": "below_target",
+    "cards_promoted": 0,
+    "captures_promoted": 0,
+    "decision": {
+      "status": "skipped",
+      "reason": "below_target",
+      "shared_promotion_allowed": false,
+      "quarantined_in_run_dir": true,
+      "coverage_snapshot": {
+        "executed_passes": 19,
+        "source_count": 40,
+        "meaningful_source_count": 8,
+        "high_quality_source_count": 8,
+        "primary_like_source_count": 6,
+        "met_depth_standard": false
+      }
+    }
+  },
+  "live_run": {
+    "provider": "tavily+brave-search+exa+openalex+crossref+semantic-scholar+ncbi-eutils+sec-edgar+patentsview",
+    "pass_count": 19,
+    "result_count": 40,
+    "capture_count": 10,
+    "query_variants": [
+      {
+        "pass_number": 1,
+        "label": "entity-official-site",
+        "query": "\"Lady Bird Lake Austin\" official company website",
+        "include_domains": [],
+        "result_count": 15
+      },
+      {
+        "pass_number": 2,
+        "label": "entity-product-signals",
+        "query": "\"Lady Bird Lake Austin\" official product platform robot system",
+        "include_domains": [],
+        "result_count": 15
+      },
+      {
+        "pass_number": 3,
+        "label": "entity-commercial-signals",
+        "query": "\"Lady Bird Lake Austin\" commercialization deployment customer partnership press release",
+        "include_domains": [],
+        "result_count": 15
+      },
+      {
+        "pass_number": 4,
+        "label": "discovery-primary",
+        "query": "Paper-forward research for an Austin aquatic vegetation removal startup: hydrilla biology and fragmentation, Eurasian watermilfoil, native aquatic vegetation habitat value, mechanical harvesting ecological impacts, diver-assisted suction harvesting ... reviews, technical reports, extension/regulator guidance, then company sources. Label preprints and vendor claims",
+        "include_domains": [],
+        "result_count": 15
+      },
+      {
+        "pass_number": 5,
+        "label": "expansion-related",
+        "query": "Paper-forward research for an Austin aquatic vegetation removal startup: hydrilla biology and fragmentation, Eurasian watermilfoil, native aquatic vegetation habitat value, mechanical harvesting ecological impacts, diver-assisted suction harvesting ... minimizing spread. guidance draft guidance final rule reimbursement coverage payment policy official announcement 2026",
+        "include_domains": [],
+        "result_count": 15
+      },
+      {
+        "pass_number": 6,
+        "label": "gap-closing",
+        "query": "Paper-forward research for an Austin aquatic vegetation removal startup: hydrilla biology and fragmentation, Eurasian watermilfoil, native aquatic vegetation habitat value, mechanical harvesting ecological impacts, diver-assisted suction harvesting ... Texas conditions, best practices for disposal and minimizing spread. what changed recently latest update open questions",
+        "include_domains": [],
+        "result_count": 15
+      },
+      {
+        "pass_number": 7,
+        "label": "contradiction-check",
+        "query": "Paper-forward research for an Austin aquatic vegetation removal startup: hydrilla biology and fragmentation, Eurasian watermilfoil, native aquatic vegetation habitat value, mechanical harvesting ecological impacts, diver-assisted suction harvesting ... best practices for disposal and minimizing spread. limitations bottlenecks disagreements criticism skepticism",
+        "include_domains": [],
+        "result_count": 15
+      },
+      {
+        "pass_number": 8,
+        "label": "commercial-analysis",
+        "query": "Paper-forward research for an Austin aquatic vegetation removal startup: hydrilla biology and fragmentation, Eurasian watermilfoil, native aquatic vegetation habitat value, mechanical harvesting ecological impacts, diver-assisted suction harvesting ... practices for disposal and minimizing spread. commercialization adoption funding partnership reimbursement deployment",
+        "include_domains": [],
+        "result_count": 15
+      },
+      {
+        "pass_number": 9,
+        "label": "challenge-pass",
+        "query": "Paper-forward research for an Austin aquatic vegetation removal startup: hydrilla biology and fragmentation, Eurasian watermilfoil, native aquatic vegetation habitat value, mechanical harvesting ecological impacts, diver-assisted suction harvesting ... Texas conditions, best practices for disposal and minimizing spread. risks barriers unresolved questions challenge",
+        "include_domains": [],
+        "result_count": 15
+      },
+      {
+        "pass_number": 10,
+        "label": "brave-web-1",
+        "query": "\"Lady Bird Lake Austin\" official company website",
+        "include_domains": [],
+        "result_count": 1
+      },
+      {
+        "pass_number": 11,
+        "label": "exa-web-1",
+        "query": "\"Lady Bird Lake Austin\" official company website",
+        "include_domains": [],
+        "result_count": 6
+      },
+      {
+        "pass_number": 12,
+        "label": "brave-web-2",
+        "query": "\"Lady Bird Lake Austin\" official product platform robot system",
+        "include_domains": [],
+        "result_count": 0
+      },
+      {
+        "pass_number": 13,
+        "label": "exa-web-2",
+        "query": "\"Lady Bird Lake Austin\" official product platform robot system",
+        "include_domains": [],
+        "result_count": 6
+      },
+      {
+        "pass_number": 14,
+        "label": "openalex-primary",
+        "query": "Paper-forward research for an Austin aquatic vegetation removal startup: hydrilla biology and fragmentation, Eurasian watermilfoil, native aquatic vegetation habitat value, mechanical harvesting ecological impacts, diver-assisted suction harvesting, cyanobacteria/benthic mat health risks for dogs in Lady Bird Lake Austin, lanthanum-modified bentonite/clay phosphorus control, seasonality under warm low-flow Texas conditions, best practices for disposal and minimizing spread.",
+        "include_domains": [
+          "openalex.org"
+        ],
+        "result_count": 0
+      },
+      {
+        "pass_number": 15,
+        "label": "crossref-primary",
+        "query": "Paper-forward research for an Austin aquatic vegetation removal startup: hydrilla biology and fragmentation, Eurasian watermilfoil, native aquatic vegetation habitat value, mechanical harvesting ecological impacts, diver-assisted suction harvesting, cyanobacteria/benthic mat health risks for dogs in Lady Bird Lake Austin, lanthanum-modified bentonite/clay phosphorus control, seasonality under warm low-flow Texas conditions, best practices for disposal and minimizing spread.",
+        "include_domains": [
+          "crossref.org"
+        ],
+        "result_count": 5
+      },
+      {
+        "pass_number": 16,
+        "label": "semantic-scholar-primary",
+        "query": "Paper-forward research for an Austin aquatic vegetation removal startup: hydrilla biology and fragmentation, Eurasian watermilfoil, native aquatic vegetation habitat value, mechanical harvesting ecological impacts, diver-assisted suction harvesting, cyanobacteria/benthic mat health risks for dogs in Lady Bird Lake Austin, lanthanum-modified bentonite/clay phosphorus control, seasonality under warm low-flow Texas conditions, best practices for disposal and minimizing spread.",
+        "include_domains": [
+          "semanticscholar.org"
+        ],
+        "result_count": 0
+      },
+      {
+        "pass_number": 17,
+        "label": "pubmed-primary",
+        "query": "Paper-forward research for an Austin aquatic vegetation removal startup: hydrilla biology and fragmentation, Eurasian watermilfoil, native aquatic vegetation habitat value, mechanical harvesting ecological impacts, diver-assisted suction harvesting, cyanobacteria/benthic mat health risks for dogs in Lady Bird Lake Austin, lanthanum-modified bentonite/clay phosphorus control, seasonality under warm low-flow Texas conditions, best practices for disposal and minimizing spread.",
+        "include_domains": [
+          "pubmed.ncbi.nlm.nih.gov"
+        ],
+        "result_count": 0
+      },
+      {
+        "pass_number": 18,
+        "label": "sec-filings",
+        "query": "Paper-forward research for an Austin aquatic vegetation removal startup: hydrilla biology and fragmentation, Eurasian watermilfoil, native aquatic vegetation habitat value, mechanical harvesting ecological impacts, diver-assisted suction harvesting, cyanobacteria/benthic mat health risks for dogs in Lady Bird Lake Austin, lanthanum-modified bentonite/clay phosphorus control, seasonality under warm low-flow Texas conditions, best practices for disposal and minimizing spread.",
+        "include_domains": [
+          "sec.gov",
+          "data.sec.gov"
+        ],
+        "result_count": 5
+      },
+      {
+        "pass_number": 19,
+        "label": "patents-primary",
+        "query": "Paper-forward research for an Austin aquatic vegetation removal startup: hydrilla biology and fragmentation, Eurasian watermilfoil, native aquatic vegetation habitat value, mechanical harvesting ecological impacts, diver-assisted suction harvesting, cyanobacteria/benthic mat health risks for dogs in Lady Bird Lake Austin, lanthanum-modified bentonite/clay phosphorus control, seasonality under warm low-flow Texas conditions, best practices for disposal and minimizing spread.",
+        "include_domains": [
+          "search.patentsview.org"
+        ],
+        "result_count": 0
+      }
+    ]
+  },
+  "api_health": {
+    "status": "warn",
+    "summary": {
+      "ok": 8,
+      "warn": 2,
+      "fail": 0,
+      "skipped": 0,
+      "service_count": 10
+    },
+    "blocking_failures": []
+  },
+  "deep_research": {
+    "theme_count": 3
+  }
+}

@@ -1,0 +1,149 @@
+# Deep Research Activity Summary
+
+- Events logged: `28`
+
+## Timeline
+
+- 2026-06-14T10:40:59-07:00 — `plan` — Created deep plan with 9 planned query passes and 6 deep objectives.
+  - target_passes: 6
+  - target_sources: 20
+  - preferred_domains: []
+- 2026-06-14T10:41:03-07:00 — `search_pass` — Executed entity-official-site and merged 15 ranked sources.
+  - pass_number: 1
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 1
+  - primary_like_source_count: 0
+  - met_depth_standard: False
+- 2026-06-14T10:41:08-07:00 — `search_pass` — Executed entity-product-signals and merged 30 ranked sources.
+  - pass_number: 2
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 1
+  - primary_like_source_count: 0
+  - met_depth_standard: False
+- 2026-06-14T10:41:13-07:00 — `search_pass` — Executed entity-commercial-signals and merged 40 ranked sources.
+  - pass_number: 3
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 1
+  - primary_like_source_count: 0
+  - met_depth_standard: False
+- 2026-06-14T10:41:18-07:00 — `search_pass` — Executed discovery-primary and merged 40 ranked sources.
+  - pass_number: 4
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 3
+  - primary_like_source_count: 2
+  - met_depth_standard: False
+- 2026-06-14T10:41:22-07:00 — `search_pass` — Executed expansion-related and merged 40 ranked sources.
+  - pass_number: 5
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 6
+  - primary_like_source_count: 5
+  - met_depth_standard: False
+- 2026-06-14T10:41:28-07:00 — `search_pass` — Executed gap-closing and merged 40 ranked sources.
+  - pass_number: 6
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 9
+  - primary_like_source_count: 8
+  - met_depth_standard: False
+- 2026-06-14T10:41:33-07:00 — `search_pass` — Executed contradiction-check and merged 40 ranked sources.
+  - pass_number: 7
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 10
+  - primary_like_source_count: 9
+  - met_depth_standard: False
+- 2026-06-14T10:41:37-07:00 — `search_pass` — Executed commercial-analysis and merged 40 ranked sources.
+  - pass_number: 8
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 12
+  - primary_like_source_count: 11
+  - met_depth_standard: False
+- 2026-06-14T10:41:42-07:00 — `search_pass` — Executed challenge-pass and merged 40 ranked sources.
+  - pass_number: 9
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 12
+  - primary_like_source_count: 11
+  - met_depth_standard: False
+- 2026-06-14T10:41:43-07:00 — `structured_pass` — Added brave-web-1 with 3 structured-provider results.
+  - pass_number: 10
+  - include_domains: []
+  - provider: brave-search
+- 2026-06-14T10:41:43-07:00 — `structured_pass` — Added exa-web-1 with 6 structured-provider results.
+  - pass_number: 11
+  - include_domains: []
+  - provider: exa
+- 2026-06-14T10:41:43-07:00 — `structured_pass` — Added brave-web-2 with 0 structured-provider results.
+  - pass_number: 12
+  - include_domains: []
+  - provider: brave-search
+- 2026-06-14T10:41:43-07:00 — `structured_pass` — Added exa-web-2 with 6 structured-provider results.
+  - pass_number: 13
+  - include_domains: []
+  - provider: exa
+- 2026-06-14T10:41:43-07:00 — `capture_started` — Starting bounded capture for up to 10 top-ranked sources.
+  - capture_limit: 10
+- 2026-06-14T10:41:43-07:00 — `capture_item` — Capture 1 finished with status=error engine=capture-worker.
+  - url: https://services.austintexas.gov/edims/document.cfm?id=460715
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-14T10:41:43-07:00 — `capture_item` — Capture 2 finished with status=error engine=capture-worker.
+  - url: https://tpwd.texas.gov/newsmedia/releases?req=20050808c
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-14T10:41:43-07:00 — `capture_item` — Capture 3 finished with status=error engine=capture-worker.
+  - url: https://www.austintexas.gov/watershed-protection/programs/plant-life-austins-lakes
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-14T10:41:43-07:00 — `capture_item` — Capture 4 finished with status=error engine=capture-worker.
+  - url: https://tpwd.texas.gov/publications/pwdforms/media/pwd_1029_t3200_exotic%20species%20app%20aquatic%20vegetation%20removal%20+%20proposal%202021F.pdf
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-14T10:41:43-07:00 — `capture_item` — Capture 5 finished with status=error engine=capture-worker.
+  - url: http://tpwd.texas.gov/landwater/water/environconcerns/nuisance_plants
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-14T10:41:43-07:00 — `capture_item` — Capture 6 finished with status=error engine=capture-worker.
+  - url: https://www.tpwd.state.tx.us/landwater/water/environconcerns/nuisance_plants
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-14T10:41:43-07:00 — `capture_item` — Capture 7 finished with status=error engine=capture-worker.
+  - url: https://www.kmae-journal.org/articles/kmae/full_html/2024/01/kmae230088/kmae230088.html
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-14T10:41:43-07:00 — `capture_item` — Capture 8 finished with status=error engine=capture-worker.
+  - url: https://services.austintexas.gov/edims/document.cfm?id=455222
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-14T10:41:44-07:00 — `capture_item` — Capture 9 finished with status=error engine=capture-worker.
+  - url: https://www.austintexas.gov/watershed-protection/news/austin-watershed-protection-stocks-more-grass-carp-lake-austin-help
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-14T10:41:44-07:00 — `capture_item` — Capture 10 finished with status=error engine=capture-worker.
+  - url: https://cbsaustin.com/news/local/austin-officials-warn-invasive-hydrilla-spreading-across-nearly-600-acres-of-lake-austin
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-14T10:41:44-07:00 — `capture` — Captured 0 of 10 top-ranked sources for full-page evidence.
+  - capture_count: 10
+  - capture_ok: 0
+- 2026-06-14T10:41:44-07:00 — `contradiction_matrix` — Built contradiction matrix across 4 themes.
+  - themes: ['security', 'governance', 'commercialization', 'research_frontier']
+- 2026-06-14T10:41:44-07:00 — `synthesis` — Completed deep synthesis with 6 confirmed claims and 2 inferred claims.
+  - open_questions: 3
+  - surfaced_sources: 40

@@ -1,0 +1,66 @@
+{
+  "task_id": "aquatic-vegetation-austin-2026-06-14",
+  "requester": "eir",
+  "question": "Deep diligence on a startup idea: an aquatic vegetation and algae-related cleanup service in Austin, Texas, starting with Lake Austin, Lady Bird Lake, nearby Highland Lakes, private ponds, HOAs, marinas, restaurants, and lakefront homeowners. Cover every requested diligence step: market size and demand; regulatory and permitting; environmental considerations; technology and equipment; seasonality and frequency; unit economics; competitive landscape; go-to-market; and expansion opportunity. Use CX research plus r-paper style evidence: current primary web sources for Austin/Texas market and regulation, plus papers/reviews/technical reports for hydrilla, invasive aquatic vegetation, cyanobacteria, mechanical harvesting, removal impacts, and water-quality management.",
+  "goal": "Produce an investor-grade EIR diligence memo with cited findings, clear separation of user-provided facts, researched findings, informed inference, open questions, and an explicit investment recommendation of invest, watch, or pass. Include a Go/No-Go scorecard, low/base/high pilot economics, regulatory gating path, customer discovery targets, next 3 experiments, and a media/source appendix with useful images/video links for equipment, plants, algae examples, maps, and comparable service providers.",
+  "freshness": "Current as of 2026-06-14. Verify recent Austin, LCRA, TPWD, City of Austin, algae, hydrilla, permitting, vendor pricing/lead-time, and competitor claims with up-to-date sources.",
+  "must_cite": true,
+  "max_depth": "deep",
+  "deadline": "same day",
+  "output_format": "Comprehensive report with source-backed claims, contradiction checks, market map, regulatory checklist, technical/paper evidence section, media appendix, and investment verdict.",
+  "constraints": "Treat founder input as unverified user-provided facts. Prefer primary sources: City of Austin, Austin Watershed Protection, TPWD, LCRA, TCEQ, Army Corps where relevant, equipment manufacturer pages, official contractor pages, official procurement/permit pages, papers/reviews/extension guidance. Do not treat unsupported TAM claims or vendor marketing as proof. Use exact dates for current algae/hydrilla status. Include chain search across subtopics and competitor/vendor discovery. If images/videos are found, record source URL, license/ownership caveat, and what the media shows; do not imply license rights. PatentsView credentials may be unavailable, so use USPTO/EPO/web fallback only if needed.",
+  "context": {
+    "user_provided_facts": [
+      "The idea is to launch a company providing aquatic vegetation and algae-related cleanup services for lakefront homeowners, restaurants, marinas, HOAs, and potentially municipalities in Austin.",
+      "Initial geographic focus: Lake Austin, Lady Bird Lake, nearby waterways, Lake Travis, Barton Creek, Colorado River segments, private ponds, golf-course ponds, and HOA lakes.",
+      "Core services under consideration: residential shoreline cleanup; commercial waterfront service; HOA/POA/neighborhood contracts; municipal and public-sector contracts; monitoring and prevention add-ons using drone/sonar/GIS, seasonal forecasting, nutrient-runoff recommendations, and disposal/composting partnerships.",
+      "The thesis is that this may be viable if positioned as recurring premium waterfront maintenance rather than one-time cleanup, but depends on permitting, environmental rules, liability, equipment utilization, disposal logistics, and willingness to pay privately."
+    ],
+    "diligence_sections_to_cover": [
+      "Market size and customer demand",
+      "Regulatory and permitting",
+      "Environmental considerations",
+      "Technology and equipment",
+      "Seasonality and frequency",
+      "Unit economics",
+      "Competitive landscape",
+      "Go-to-market strategy",
+      "Expansion opportunity"
+    ],
+    "startup_decision_lenses": [
+      "Problem and leap-of-faith hypotheses",
+      "Solution and MVP sharpness",
+      "Differentiation, moat, and barriers to entry",
+      "Customer personas, complaints, and purchase process",
+      "Competitive landscape and startup comparables",
+      "Go-to-market and channel logic",
+      "Market size, readiness, and Porter 5 Forces",
+      "Monetization, pricing, and unit-economics logic",
+      "Traction quality, growth engine, funnel, and testing opportunities",
+      "Team quality, gaps, and funding sufficiency"
+    ]
+  },
+  "tool_controls": {
+    "required_tools": [
+      "tavily",
+      "openalex",
+      "crossref"
+    ],
+    "preferred_tools": [
+      "brave-search",
+      "exa",
+      "cloudflare-browser-rendering",
+      "firecrawl",
+      "semantic-scholar",
+      "ncbi-eutils"
+    ],
+    "forbid_tools": []
+  },
+  "chain_enabled": true,
+  "chain_max_steps": 9,
+  "chain_control_mode": "autonomous",
+  "chain_objective": "Research each diligence section deeply enough to support a sourced Notion report and investment verdict.",
+  "chain_human_branch": "continue",
+  "chain_pause_policy": "do_not_pause_unless_blocked",
+  "chain_trace_visibility": "summary"
+}

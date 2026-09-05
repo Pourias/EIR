@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "case_id": "{{CASE_ID}}",
+  "idea_name": "{{IDEA_NAME}}",
+  "reviewed_on": "{{DATE}}",
+  "verdict": "watch",
+  "confidence": "low",
+  "categories": {
+    "problem": {"score": null, "confidence": "low", "evidence": "", "unknowns": []},
+    "customer": {"score": null, "confidence": "low", "evidence": "", "unknowns": []},
+    "market": {"score": null, "confidence": "low", "evidence": "", "unknowns": []},
+    "competition": {"score": null, "confidence": "low", "evidence": "", "unknowns": []},
+    "product": {"score": null, "confidence": "low", "evidence": "", "unknowns": []},
+    "technology": {"score": null, "confidence": "low", "evidence": "", "unknowns": []},
+    "pricing": {"score": null, "confidence": "low", "evidence": "", "unknowns": []},
+    "go_to_market": {"score": null, "confidence": "low", "evidence": "", "unknowns": []},
+    "team": {"score": null, "confidence": "low", "evidence": "", "unknowns": []},
+    "finance": {"score": null, "confidence": "low", "evidence": "", "unknowns": []},
+    "operations": {"score": null, "confidence": "low", "evidence": "", "unknowns": []}
+  },
+  "kill_questions": [
+    {
+      "id": "first-buyer",
+      "question": "Is the first buyer, user, and budget owner specific and reachable?",
+      "status": "unresolved",
+      "evidence": ""
+    },
+    {
+      "id": "first-wedge",
+      "question": "Is the first task narrow enough to test and valuable enough to buy?",
+      "status": "unresolved",
+      "evidence": ""
+    },
+    {
+      "id": "proof-of-value",
+      "question": "Can a bounded test prove the promised outcome?",
+      "status": "unresolved",
+      "evidence": ""
+    },
+    {
+      "id": "legal-and-operational",
+      "question": "Can it be delivered legally, safely, and repeatedly?",
+      "status": "unresolved",
+      "evidence": ""
+    },
+    {
+      "id": "scale-path",
+      "question": "Does the wedge lead to repeatable distribution or compounding advantage?",
+      "status": "unresolved",
+      "evidence": ""
+    }
+  ]
+}

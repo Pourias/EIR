@@ -1,0 +1,1731 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Austin Aquatic Vegetation Removal + Valorization Review Draft</title>
+  <style>
+    :root {
+      --ink: #15201b;
+      --muted: #5d6b65;
+      --line: #d6ded8;
+      --paper: #fbfcfa;
+      --band: #edf4ef;
+      --panel: #ffffff;
+      --green: #1f7a4d;
+      --teal: #247b83;
+      --gold: #a56820;
+      --red: #9b3f37;
+      --blue: #245b93;
+      --shadow: 0 16px 44px rgba(22, 38, 30, 0.11);
+      --radius: 8px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --serif: Georgia, "Times New Roman", serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    img,
+    video {
+      display: block;
+      max-width: 100%;
+    }
+
+    button,
+    select,
+    textarea,
+    input {
+      font: inherit;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 28px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(251, 252, 250, 0.96);
+      backdrop-filter: blur(12px);
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      min-width: 220px;
+    }
+
+    .brand strong {
+      font-size: 14px;
+      letter-spacing: 0;
+    }
+
+    .brand span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .button,
+    .import-label {
+      min-height: 36px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      color: var(--ink);
+      cursor: pointer;
+      padding: 7px 12px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .button.primary {
+      border-color: #17633d;
+      background: #17633d;
+      color: #fff;
+    }
+
+    .button:hover,
+    .import-label:hover {
+      border-color: #789084;
+    }
+
+    .import-label input {
+      display: none;
+    }
+
+    .page {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 34px 24px 80px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.8fr);
+      gap: 28px;
+      align-items: end;
+      padding: 36px 0 28px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .kicker {
+      margin: 0 0 8px;
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      max-width: 880px;
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(36px, 7vw, 66px);
+      font-weight: 700;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 25px;
+    }
+
+    h3 {
+      margin: 20px 0 8px;
+      font-size: 17px;
+    }
+
+    .lead {
+      max-width: 820px;
+      margin: 18px 0 0;
+      color: #35423d;
+      font-size: 20px;
+      line-height: 1.45;
+    }
+
+    .verdict-box {
+      border: 1px solid #c8d7cd;
+      border-radius: var(--radius);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+
+    .verdict-label {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .verdict-main {
+      margin: 6px 0 12px;
+      color: var(--green);
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 1.05;
+    }
+
+    .verdict-box p {
+      margin: 0;
+      color: #36423d;
+      font-size: 14px;
+    }
+
+    .source-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin: 28px 0 16px;
+    }
+
+    .source-strip figure {
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+    }
+
+    .source-strip img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background: #e4ebe6;
+    }
+
+    .source-strip figcaption {
+      min-height: 46px;
+      padding: 8px 10px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.25;
+    }
+
+    .review-note {
+      margin: 20px 0 28px;
+      border-left: 4px solid var(--teal);
+      background: #eef7f7;
+      padding: 14px 16px;
+      color: #2c4b4e;
+    }
+
+    .review-note strong {
+      color: #143e42;
+    }
+
+    .toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 32px;
+    }
+
+    .toc a {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      padding: 7px 10px;
+      color: #314640;
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    .toc a:hover {
+      border-color: #91a99b;
+    }
+
+    .memo-section {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 310px;
+      gap: 22px;
+      align-items: start;
+      margin: 0 0 26px;
+      padding: 28px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-body {
+      min-width: 0;
+    }
+
+    .section-body p {
+      margin: 0 0 12px;
+    }
+
+    .section-body ul,
+    .section-body ol {
+      margin: 8px 0 14px;
+      padding-left: 22px;
+    }
+
+    .section-body li {
+      margin: 6px 0;
+    }
+
+    .section-body .section-kicker {
+      margin: 0 0 8px;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .callout {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--band);
+      padding: 14px;
+    }
+
+    .callout strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .metric-row {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin: 16px 0;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      padding: 13px;
+    }
+
+    .metric b {
+      display: block;
+      color: var(--green);
+      font-size: 22px;
+      line-height: 1.1;
+    }
+
+    .metric span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.25;
+    }
+
+    table {
+      width: 100%;
+      margin: 14px 0 16px;
+      border-collapse: collapse;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      font-size: 14px;
+    }
+
+    th,
+    td {
+      padding: 10px 11px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #e8f0eb;
+      color: #22332c;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0;
+    }
+
+    .tag {
+      border: 1px solid #c8d7cd;
+      border-radius: 999px;
+      background: #f6faf7;
+      padding: 5px 9px;
+      color: #385046;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .tag.warn {
+      border-color: #e2c5bd;
+      background: #fff5f1;
+      color: var(--red);
+    }
+
+    .value-chain {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+      margin: 16px 0;
+    }
+
+    .chain-step {
+      min-height: 150px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      padding: 12px;
+    }
+
+    .chain-step b {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--green);
+      font-size: 14px;
+      line-height: 1.25;
+    }
+
+    .chain-step span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .option-grid,
+    .cost-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 14px 0;
+    }
+
+    .option-card,
+    .cost-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      padding: 14px;
+    }
+
+    .option-card h3,
+    .cost-card h3 {
+      margin-top: 0;
+    }
+
+    .option-card.best {
+      border-color: #94bba3;
+      background: #f3faf5;
+    }
+
+    .option-card.hold {
+      border-color: #d8c8a8;
+      background: #fff9ec;
+    }
+
+    .option-card.no-go {
+      border-color: #e0b8b0;
+      background: #fff6f4;
+    }
+
+    .route-rank {
+      border-left: 4px solid var(--green);
+      background: #f4faf6;
+      padding: 12px 14px;
+      margin: 14px 0;
+    }
+
+    .route-rank.warn {
+      border-left-color: var(--gold);
+      background: #fff8eb;
+    }
+
+    .feedback-panel {
+      position: sticky;
+      top: 86px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      box-shadow: 0 10px 28px rgba(18, 33, 26, 0.08);
+      padding: 14px;
+    }
+
+    .feedback-panel label {
+      display: block;
+      margin: 0 0 6px;
+      color: #3d4c46;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .feedback-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .feedback-panel select,
+    .feedback-panel textarea {
+      width: 100%;
+      border: 1px solid #c9d6ce;
+      border-radius: var(--radius);
+      background: #fbfdfb;
+      color: var(--ink);
+    }
+
+    .feedback-panel select {
+      min-height: 36px;
+      padding: 6px 8px;
+    }
+
+    .feedback-panel textarea {
+      min-height: 132px;
+      resize: vertical;
+      padding: 10px;
+      line-height: 1.45;
+    }
+
+    .feedback-panel textarea:focus,
+    .feedback-panel select:focus,
+    .button:focus,
+    .import-label:focus-within {
+      outline: 2px solid rgba(36, 123, 131, 0.28);
+      outline-offset: 2px;
+    }
+
+    .feedback-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #b8c6be;
+    }
+
+    .status-dot.has-feedback {
+      background: var(--green);
+    }
+
+    .inline-code {
+      border: 1px solid #d5ddd7;
+      border-radius: 5px;
+      background: #f5f8f6;
+      padding: 1px 5px;
+      font-family: var(--mono);
+      font-size: 12px;
+    }
+
+    .formula {
+      border: 1px solid #d9e1dc;
+      border-radius: var(--radius);
+      background: #f8faf8;
+      padding: 12px;
+      color: #273a33;
+      font-family: var(--mono);
+      font-size: 13px;
+      white-space: normal;
+    }
+
+    .footer {
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .toast {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 40;
+      transform: translateY(20px);
+      opacity: 0;
+      pointer-events: none;
+      border-radius: var(--radius);
+      background: #15201b;
+      color: #fff;
+      padding: 10px 14px;
+      box-shadow: var(--shadow);
+      transition: opacity 180ms ease, transform 180ms ease;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    @media (max-width: 960px) {
+      .topbar {
+        position: static;
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .actions {
+        justify-content: flex-start;
+      }
+
+      .hero,
+      .memo-section {
+        grid-template-columns: 1fr;
+      }
+
+      .feedback-panel {
+        position: static;
+      }
+
+      .source-strip,
+      .metric-row,
+      .two-col,
+      .value-chain,
+      .option-grid,
+      .cost-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding: 24px 14px 56px;
+      }
+
+      .topbar {
+        padding: 12px 14px;
+      }
+
+      .actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .button,
+      .import-label {
+        width: 100%;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+
+      .lead {
+        font-size: 18px;
+      }
+
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+    }
+
+    @media print {
+      .topbar,
+      .feedback-panel,
+      .toc,
+      .toast,
+      .review-note {
+        display: none !important;
+      }
+
+      body {
+        background: #fff;
+      }
+
+      .page {
+        max-width: none;
+        padding: 0;
+      }
+
+      .memo-section,
+      .hero {
+        display: block;
+        page-break-inside: avoid;
+      }
+
+      .memo-section {
+        margin-bottom: 14px;
+        padding: 18px 0;
+      }
+
+      .source-strip {
+        gap: 8px;
+      }
+
+      .section-body p,
+      .section-body ul,
+      .section-body ol {
+        margin-bottom: 8px;
+      }
+
+      h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+
+      h3 {
+        margin: 14px 0 6px;
+        font-size: 15px;
+      }
+
+      table {
+        font-size: 12px;
+      }
+
+      th,
+      td {
+        padding: 7px 8px;
+      }
+
+      .value-chain {
+        gap: 7px;
+      }
+
+      .chain-step {
+        min-height: 104px;
+        padding: 9px;
+      }
+
+      .chain-step span {
+        font-size: 11px;
+      }
+
+      .option-card,
+      .cost-card,
+      .callout {
+        font-size: 13px;
+        padding: 10px;
+      }
+
+      .route-rank,
+      .route-rank.warn {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        font-size: 13px;
+        margin: 8px 0;
+        padding: 9px 11px;
+      }
+
+      .formula,
+      .note {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <strong>Austin Aquatic Vegetation Business Brief</strong>
+      <span>Review draft v1 | removal plus valorization | June 17, 2026</span>
+    </div>
+    <div class="actions" aria-label="Feedback actions">
+      <button class="button primary" id="exportJson" type="button">Export JSON</button>
+      <button class="button" id="copyJson" type="button">Copy JSON</button>
+      <label class="import-label" for="importJson">Import JSON<input id="importJson" type="file" accept="application/json"></label>
+      <button class="button" id="clearFeedback" type="button">Clear Feedback</button>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="kicker">Partner-facing executive summary</p>
+        <h1 id="page-title">Austin Aquatic Vegetation Removal + Valorization</h1>
+        <p class="lead">The business should be framed as a permitted Lake Austin removal and maintenance service first, with biomass valorization as an attached recovery layer. Removal creates the customer-paid revenue base. Valorization can improve margin and partner appeal, but it should not carry the company on its own.</p>
+      </div>
+      <aside class="verdict-box" aria-label="Investment verdict">
+        <div class="verdict-label">Current recommendation</div>
+        <div class="verdict-main">Watch / validate contracts</div>
+        <p>Secure a compliance-first seasonal contract before buying heavy equipment or promising product revenue from harvested biomass.</p>
+      </aside>
+    </section>
+
+    <div class="review-note">
+      <strong>Public-edition media note:</strong> three locally downloaded web images were removed because redistribution rights were not documented. The underlying claims remain linked to original sources below.
+    </div>
+
+    <div class="review-note">
+      <strong>How to review:</strong> each section has its own feedback panel. Choose a decision, set priority, add comments, then use Export JSON. Feedback autosaves in this browser and can be imported later for the next draft.
+    </div>
+
+    <nav class="toc" aria-label="Sections">
+      <a href="#executive-thesis">Executive Thesis</a>
+      <a href="#business-model">Business Model</a>
+      <a href="#market-gtm">Market + GTM</a>
+      <a href="#operations-permitting">Operations + Permitting</a>
+      <a href="#economics-roi">Economics + ROI</a>
+      <a href="#valorization">Valorization</a>
+      <a href="#risks">Risks</a>
+      <a href="#valorization-chain">Value Chain</a>
+      <a href="#transport-cost">Transport + Cost</a>
+      <a href="#valorization-options">Option Ranking</a>
+      <a href="#fertilizer-route">Fertilizer Route</a>
+      <a href="#advanced-routes">Advanced Routes</a>
+      <a href="#sources">Sources</a>
+    </nav>
+
+    <section class="memo-section" id="executive-thesis" data-section-id="executive-thesis" data-section-title="Executive Thesis">
+      <article class="section-body">
+        <p class="section-kicker">Section 1</p>
+        <h2>Executive Thesis</h2>
+        <p><strong>This is a credible local service opportunity with a path to a larger regional niche.</strong> The strongest path is to sell permitted, localized vegetation removal and recurring maintenance around docks, boat lifts, pump intakes, coves, canals, marinas, HOA shorelines, and public access areas on Lake Austin. Valorization should be presented as a disciplined second layer: collect clean macrophyte biomass, document chain of custody, test it, and route acceptable material into compost, digestion, or soil-amendment pathways.</p>
+        <p>The combined model is stronger than either piece alone. Removal has urgent customer pain and near-term willingness-to-pay potential. Valorization gives the operation a better environmental story and may reduce disposal cost, create resource-recovery fees, or add partner revenue. But harvested vegetation is wet, seasonal, regulated, and variable. The company should charge for solving the access problem first.</p>
+        <div class="metric-row">
+          <div class="metric"><b>37%</b><span>Approximate Lake Austin hydrilla coverage reported by City materials for February 2026.</span></div>
+          <div class="metric"><b>592</b><span>Hydrilla acres identified by TPWD in February 2026 survey materials.</span></div>
+          <div class="metric"><b>$1.2M-$2.0M</b><span>Potential strong Lake Austin opportunity if private, HOA, commercial, and public work are bundled into seasonal contracts.</span></div>
+          <div class="metric"><b>35%-55%</b><span>Target gross margin range for dense, low-capex routes with efficient disposal.</span></div>
+        </div>
+        <p class="note">Figures are planning assumptions synthesized from the two Notion diligence pages, not quoted customer contracts.</p>
+      </article>
+      <aside class="feedback-panel" aria-label="Feedback for Executive Thesis">
+        <label for="decision-executive-thesis">Decision</label>
+        <div class="feedback-grid">
+          <select id="decision-executive-thesis" data-field="decision">
+            <option value="unreviewed">Unreviewed</option>
+            <option value="keep">Keep</option>
+            <option value="revise">Revise</option>
+            <option value="expand">Expand</option>
+            <option value="cut">Cut</option>
+            <option value="question">Question</option>
+          </select>
+          <select aria-label="Priority" data-field="priority">
+            <option value="normal">Normal</option>
+            <option value="high">High</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <label for="feedback-executive-thesis">Feedback</label>
+        <textarea id="feedback-executive-thesis" data-field="feedback" placeholder="What should change in this section?"></textarea>
+        <div class="feedback-foot"><span class="status-dot"></span><span class="save-state">No feedback yet</span></div>
+      </aside>
+    </section>
+
+    <section class="memo-section" id="business-model" data-section-id="business-model" data-section-title="Integrated Business Model">
+      <article class="section-body">
+        <p class="section-kicker">Section 2</p>
+        <h2>Integrated Business Model</h2>
+        <p>The business starts as a compliance-heavy field service. The customer buys restored access, cleaner dock use, pump-intake relief, and fewer surprises during peak growth. The company adds documentation that a normal contractor may not package well: permit path, plant ID, pre/post photos, fragment containment, tonnage, disposal or processing route, and maintenance calendar.</p>
+        <div class="two-col">
+          <div class="callout">
+            <strong>Revenue stream 1: removal and maintenance</strong>
+            <p>Initial clearing, maintenance visits every 45-60 days during peak growth, HOA or marina seasonal scopes, and monitoring add-ons after customers trust the field work.</p>
+          </div>
+          <div class="callout">
+            <strong>Revenue stream 2: biomass recovery</strong>
+            <p>Resource-recovery fee, avoided landfill/disposal cost, possible composter or digester credits, and environmental reporting around nutrient removal and landfill diversion.</p>
+          </div>
+        </div>
+        <h3>Core offer</h3>
+        <p><span class="inline-code">Permitted localized vegetation removal for waterfront access, with optional documented resource recovery.</span></p>
+      </article>
+      <aside class="feedback-panel" aria-label="Feedback for Integrated Business Model">
+        <label for="decision-business-model">Decision</label>
+        <div class="feedback-grid">
+          <select id="decision-business-model" data-field="decision">
+            <option value="unreviewed">Unreviewed</option>
+            <option value="keep">Keep</option>
+            <option value="revise">Revise</option>
+            <option value="expand">Expand</option>
+            <option value="cut">Cut</option>
+            <option value="question">Question</option>
+          </select>
+          <select aria-label="Priority" data-field="priority">
+            <option value="normal">Normal</option>
+            <option value="high">High</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <label for="feedback-business-model">Feedback</label>
+        <textarea id="feedback-business-model" data-field="feedback" placeholder="What should change in this section?"></textarea>
+        <div class="feedback-foot"><span class="status-dot"></span><span class="save-state">No feedback yet</span></div>
+      </aside>
+    </section>
+
+    <section class="memo-section" id="market-gtm" data-section-id="market-gtm" data-section-title="Market and Go-To-Market">
+      <article class="section-body">
+        <p class="section-kicker">Section 3</p>
+        <h2>Market And Go-To-Market</h2>
+        <p>The first customer can be either a public buyer or a private waterfront buyer. The City path matters because Austin is already organizing Lake Austin stakeholder work, grass carp stocking, drawdown analysis, and public communication. The private path matters because waterfront owners, HOAs, marinas, restaurants, and property managers have immediate access problems that may not wait for a lake-wide program.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Customer</th>
+              <th>Pain</th>
+              <th>Initial offer</th>
+              <th>Why this can close</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>City / public program</td>
+              <td>Public access, complaints, safety, hydrilla management optics, and disposal accountability</td>
+              <td>Seasonal service contract or demonstration district with reporting on acres cleared, wet tons removed, disposal route, and nutrient diversion</td>
+              <td>Creates value back to the City by adding permitted contractor capacity, transparent metrics, and a recovery route for clean biomass</td>
+            </tr>
+            <tr>
+              <td>Waterfront homeowners</td>
+              <td>Dock, boat-lift, swim, pump, and visual nuisance</td>
+              <td>$1,500-$4,000 initial clearing plus maintenance quote</td>
+              <td>High property value and personal use pain can justify a seasonal expense</td>
+            </tr>
+            <tr>
+              <td>HOAs and POAs</td>
+              <td>Coves, canals, shared docks, resident complaints</td>
+              <td>$5,000-$25,000 scoped seasonal contract</td>
+              <td>Board can spread cost across members and value documentation</td>
+            </tr>
+            <tr>
+              <td>Marinas and waterfront venues</td>
+              <td>Guest access, dock usability, brand experience</td>
+              <td>Site assessment, clearing, and recurring access plan</td>
+              <td>Revenue depends on usable waterfront space</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Best channels are City of Austin Watershed Protection, the Lake Austin stakeholder ecosystem, waterfront realtors, dock builders, boat-lift companies, pump-service providers, marinas, waterfront restaurants, property managers, and HOA boards. The sales motion should start with legal feasibility: identify the plant, confirm the permit and local-control path, photograph the problem, explain the disposal or recovery route, quote the work, and show how the job creates measurable value for the customer and the lake manager.</p>
+      </article>
+      <aside class="feedback-panel" aria-label="Feedback for Market and Go-To-Market">
+        <label for="decision-market-gtm">Decision</label>
+        <div class="feedback-grid">
+          <select id="decision-market-gtm" data-field="decision">
+            <option value="unreviewed">Unreviewed</option>
+            <option value="keep">Keep</option>
+            <option value="revise">Revise</option>
+            <option value="expand">Expand</option>
+            <option value="cut">Cut</option>
+            <option value="question">Question</option>
+          </select>
+          <select aria-label="Priority" data-field="priority">
+            <option value="normal">Normal</option>
+            <option value="high">High</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <label for="feedback-market-gtm">Feedback</label>
+        <textarea id="feedback-market-gtm" data-field="feedback" placeholder="What should change in this section?"></textarea>
+        <div class="feedback-foot"><span class="status-dot"></span><span class="save-state">No feedback yet</span></div>
+      </aside>
+    </section>
+
+    <section class="memo-section" id="operations-permitting" data-section-id="operations-permitting" data-section-title="Operations and Permitting">
+      <article class="section-body">
+        <p class="section-kicker">Section 4</p>
+        <h2>Operations And Permitting</h2>
+        <p>Regulatory repeatability is the make-or-break operating issue. The CX research pass confirmed that TPWD requires treatment proposals for public-water vegetation management and that local controlling entities must be part of the review. TPWD also states that for-hire physical removal, mechanical harvesters, or transport of prohibited exotic vegetation without secure bagging, full drying, or composting requires an Exotic Species Aquatic Vegetation Removal Permit. City materials add a Lake Austin-specific constraint: herbicides are not allowed because Lake Austin is a drinking-water reservoir.</p>
+        <p>Current news increases the urgency but also raises the compliance bar. Austin Watershed Protection stocked 2,790 additional sterile grass carp on May 1, 2026; City materials describe a Lake Austin stakeholder process and drawdown review; and on June 9, 2026 the City reported potentially toxic blue-green algae at Red Bud Isle and Walsh Boat Landing. LCRA's 2026 rebate and treatment-zone programs for other Highland Lakes show that public agencies are willing to support vegetation management, but only through approved plans.</p>
+        <h3>Operating and regulatory gates</h3>
+        <ol>
+          <li>Site intake: customer authorization, map, photos, access constraints, plant ID, and suspected algae screen.</li>
+          <li>Permit workflow: TPWD treatment proposal, City or other local-control contact log, removal method, containment plan, and disposal/reuse destination.</li>
+          <li>Field execution: low-capex manual or diver-assisted removal with basic workboat, rakes/cutters, PPE, containment bags, and before/after evidence.</li>
+          <li>Biomass handling: segregate clean hydrilla/milfoil from mixed algae or suspected cyanobacteria, dewater where allowed, contain fragments, and document weight or volume.</li>
+          <li>Follow-up: customer report, regrowth check at 30 and 60 days, maintenance recommendation, and processor/disposal receipt.</li>
+        </ol>
+        <p>Heavy harvesters, amphibious machines, and bigger trailers should follow signed seasonal contracts or a proven backlog. A $250k equipment package can make sense later, but the first proof point is regulatory speed: can the company get approval, remove vegetation without spreading fragments, keep suspected HAB material out of recovery loads, and document value back to the City or property owner?</p>
+      </article>
+      <aside class="feedback-panel" aria-label="Feedback for Operations and Permitting">
+        <label for="decision-operations-permitting">Decision</label>
+        <div class="feedback-grid">
+          <select id="decision-operations-permitting" data-field="decision">
+            <option value="unreviewed">Unreviewed</option>
+            <option value="keep">Keep</option>
+            <option value="revise">Revise</option>
+            <option value="expand">Expand</option>
+            <option value="cut">Cut</option>
+            <option value="question">Question</option>
+          </select>
+          <select aria-label="Priority" data-field="priority">
+            <option value="normal">Normal</option>
+            <option value="high">High</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <label for="feedback-operations-permitting">Feedback</label>
+        <textarea id="feedback-operations-permitting" data-field="feedback" placeholder="What should change in this section?"></textarea>
+        <div class="feedback-foot"><span class="status-dot"></span><span class="save-state">No feedback yet</span></div>
+      </aside>
+    </section>
+
+    <section class="memo-section" id="economics-roi" data-section-id="economics-roi" data-section-title="Economics and ROI">
+      <article class="section-body">
+        <p class="section-kicker">Section 5</p>
+        <h2>Economics And ROI</h2>
+        <p>The strong-case economics should be framed around a full Lake Austin seasonal opportunity, not a small initial test. Removal still carries the model. Valorization becomes meaningful only when the company already has enough permitted tons moving through the system to justify testing, transport, and processor relationships.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Scenario</th>
+              <th>Removal revenue</th>
+              <th>Removal gross profit</th>
+              <th>Valorization contribution</th>
+              <th>Total contribution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Strong Lake Austin niche</td>
+              <td>$1.2M-$2.0M from a mix of private accounts, HOA/commercial contracts, and a public demonstration or seasonal service contract</td>
+              <td>42%-48% = $504k-$960k</td>
+              <td>3,000-4,500 wet tons x $25-$45 net run-rate = $75k-$203k before first-year setup</td>
+              <td>$579k-$1.16M run-rate contribution before overhead</td>
+            </tr>
+            <tr>
+              <td>Regional scaled niche</td>
+              <td>$3.5M-$6.0M if the same playbook expands across Lake Austin, nearby Highland Lakes, HOA/private lakes, marinas, and retention ponds</td>
+              <td>40%-46% = $1.4M-$2.76M</td>
+              <td>9,000-14,000 wet tons x $20-$40 net run-rate = $180k-$560k</td>
+              <td>$1.58M-$3.32M run-rate contribution before overhead</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="formula">Strong local calculation: $1.2M-$2.0M removal revenue x 42%-48% gross margin = $504k-$960k. Add 3,000-4,500 wet tons x $25-$45 net recovery contribution = $75k-$203k. First-year valorization setup may consume $65k-$125k, so year-one upside depends on securing processor acceptance and customer recovery fees.</div>
+        <p class="note">The important sensitivity is still transport. A $15/wet-ton increase in hauling or gate cost reduces annual contribution by $45k-$68k in the strong local case and by $135k-$210k in the regional case.</p>
+      </article>
+      <aside class="feedback-panel" aria-label="Feedback for Economics and ROI">
+        <label for="decision-economics-roi">Decision</label>
+        <div class="feedback-grid">
+          <select id="decision-economics-roi" data-field="decision">
+            <option value="unreviewed">Unreviewed</option>
+            <option value="keep">Keep</option>
+            <option value="revise">Revise</option>
+            <option value="expand">Expand</option>
+            <option value="cut">Cut</option>
+            <option value="question">Question</option>
+          </select>
+          <select aria-label="Priority" data-field="priority">
+            <option value="normal">Normal</option>
+            <option value="high">High</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <label for="feedback-economics-roi">Feedback</label>
+        <textarea id="feedback-economics-roi" data-field="feedback" placeholder="What should change in this section?"></textarea>
+        <div class="feedback-foot"><span class="status-dot"></span><span class="save-state">No feedback yet</span></div>
+      </aside>
+    </section>
+
+    <section class="memo-section" id="valorization" data-section-id="valorization" data-section-title="Valorization Pathways">
+      <article class="section-body">
+        <p class="section-kicker">Section 6</p>
+        <h2>Valorization Pathways</h2>
+        <p>Valorization is worth testing, but only with feedstock discipline. Clean hydrilla and related submerged vegetation are the best first input. Mixed algae and suspected blue-green algae should stay out of normal recovery streams until lab testing and treatment protocols prove safety.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Pathway</th>
+              <th>Readiness</th>
+              <th>Commercial read</th>
+              <th>Evidence and first test</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Compost / soil amendment</td>
+              <td>Highest near-term</td>
+              <td>Best fit for avoided disposal and local environmental reporting; product margin alone is likely modest.</td>
+              <td><a href="https://www.mdpi.com/2813-0391/1/1/17">Aquatic weeds compost review</a>; test composter acceptance, moisture, NPK, C:N, metals, and cyanotoxins where needed.</td>
+            </tr>
+            <tr>
+              <td>Anaerobic digestion</td>
+              <td>Partner-dependent</td>
+              <td>Wet biomass fits digestion better than dry extraction, but energy value per wet ton is limited.</td>
+              <td><a href="https://soils.ifas.ufl.edu/experiential-learning-laboratory/demonstration-areas/biogas/research-publications/">Hydrilla harvest LCA and biogas/compost work</a>; test biomethane potential and local co-digestion economics.</td>
+            </tr>
+            <tr>
+              <td>Biochar / hydrochar</td>
+              <td>Mid-term</td>
+              <td>Could create a higher-value soil or filtration product, but drying and metals concentration can hurt margins.</td>
+              <td><a href="https://www.nature.com/articles/s41598-024-84729-x">Water hyacinth biochar soil study</a> and <a href="https://link.springer.com/article/10.1007/s12155-026-10967-8">activated carbon study</a>; test char yield, ash, metals, PAHs, and buyer use case.</td>
+            </tr>
+            <tr>
+              <td>Feed, supplements, extracts</td>
+              <td>No-go initially</td>
+              <td>Wild lake biomass is too variable and risky for human, animal, or nutraceutical products.</td>
+              <td><a href="https://apms.org/wp-content/uploads/hcj-japm-12-01-082.pdf">Aquatic plant livestock nutrient study</a> shows why it is tempting; do not pursue until controlled source, repeated clean panels, and regulatory review are complete.</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <aside class="feedback-panel" aria-label="Feedback for Valorization Pathways">
+        <label for="decision-valorization">Decision</label>
+        <div class="feedback-grid">
+          <select id="decision-valorization" data-field="decision">
+            <option value="unreviewed">Unreviewed</option>
+            <option value="keep">Keep</option>
+            <option value="revise">Revise</option>
+            <option value="expand">Expand</option>
+            <option value="cut">Cut</option>
+            <option value="question">Question</option>
+          </select>
+          <select aria-label="Priority" data-field="priority">
+            <option value="normal">Normal</option>
+            <option value="high">High</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <label for="feedback-valorization">Feedback</label>
+        <textarea id="feedback-valorization" data-field="feedback" placeholder="What should change in this section?"></textarea>
+        <div class="feedback-foot"><span class="status-dot"></span><span class="save-state">No feedback yet</span></div>
+      </aside>
+    </section>
+
+    <section class="memo-section" id="risks" data-section-id="risks" data-section-title="Risks and Kill Questions">
+      <article class="section-body">
+        <p class="section-kicker">Section 7</p>
+        <h2>Risks And Kill Questions</h2>
+        <p>The main risk is not whether hydrilla exists. It does. The risk is whether a small company can turn a messy, permitted, seasonal, wet-field operation into repeatable customer value and margin.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Risk</th>
+              <th>Why it matters</th>
+              <th>Kill threshold</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Regulatory and operational repeatability</td>
+              <td>Incorrect removal can spread fragments, violate permit conditions, or damage habitat.</td>
+              <td>Permit path is too slow, unclear, or limited for repeatable for-hire work.</td>
+            </tr>
+            <tr>
+              <td>Customer willingness to pay</td>
+              <td>Homeowners may view the problem as public lake management rather than private maintenance.</td>
+              <td>Fewer than 5 paid deposits after 20 high-intent interviews.</td>
+            </tr>
+            <tr>
+              <td>Equipment utilization</td>
+              <td>Large machines need dense contracted work, operators, transport, storage, insurance, and offload sites.</td>
+              <td>Machine payback depends on speculative municipal or one-off work.</td>
+            </tr>
+            <tr>
+              <td>Harmful algae contamination</td>
+              <td>Cyanotoxins can force hazard handling and block reuse pathways.</td>
+              <td>Clean biomass cannot be reliably segregated or tested affordably.</td>
+            </tr>
+            <tr>
+              <td>Valorization margin</td>
+              <td>Wet hauling and processing can consume all recovery value.</td>
+              <td>Net recovery contribution remains below $15/wet ton at initial scale.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>Investment stance:</strong> watch. Advance only if signed work proves paid demand, repeatable permits, safe operations, and credible disposal/recovery economics. Pass on heavy equipment or a standalone valorization venture until those are proven.</p>
+      </article>
+      <aside class="feedback-panel" aria-label="Feedback for Risks and Kill Questions">
+        <label for="decision-risks">Decision</label>
+        <div class="feedback-grid">
+          <select id="decision-risks" data-field="decision">
+            <option value="unreviewed">Unreviewed</option>
+            <option value="keep">Keep</option>
+            <option value="revise">Revise</option>
+            <option value="expand">Expand</option>
+            <option value="cut">Cut</option>
+            <option value="question">Question</option>
+          </select>
+          <select aria-label="Priority" data-field="priority">
+            <option value="normal">Normal</option>
+            <option value="high">High</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <label for="feedback-risks">Feedback</label>
+        <textarea id="feedback-risks" data-field="feedback" placeholder="What should change in this section?"></textarea>
+        <div class="feedback-foot"><span class="status-dot"></span><span class="save-state">No feedback yet</span></div>
+      </aside>
+    </section>
+
+    <section class="memo-section" id="valorization-chain" data-section-id="valorization-chain" data-section-title="Valorization Chain">
+      <article class="section-body">
+        <p class="section-kicker">Appendix slide 1</p>
+        <h2>Valorization Chain: From Lake Weed To Value</h2>
+        <p>The valorization chain starts during removal, not after the truck is loaded. If clean hydrilla is mixed with suspected cyanobacteria, trash, sediment, or unknown shoreline material, the load may lose its best-value pathway and default back to disposal. The operating rule is simple: identify the material, keep the load clean, test it, then route it.</p>
+        <div class="value-chain" aria-label="Valorization process chain">
+          <div class="chain-step"><b>1. Identify</b><span>Confirm plant type at the site and keep hazard-risk algae out of clean macrophyte loads.</span></div>
+          <div class="chain-step"><b>2. Dewater</b><span>Drain at the jobsite or staging point where allowed. Every gallon left in the load becomes hauling cost.</span></div>
+          <div class="chain-step"><b>3. Transport</b><span>Move in covered, leak-controlled containers with fragment control and permit documentation.</span></div>
+          <div class="chain-step"><b>4. Test</b><span>Run moisture, solids, NPK, C:N, metals, and cyanotoxins when algae or mixed mats could be present.</span></div>
+          <div class="chain-step"><b>5. Route</b><span>Send clean loads to compost, AD, or char tests. Send uncertain or contaminated loads to approved disposal.</span></div>
+        </div>
+        <p>The saleable product is not just biomass. It is the documented chain of custody: what was removed, from where, how it was contained, how much was diverted, and whether the material passed the lab and processor gates.</p>
+      </article>
+      <aside class="feedback-panel" aria-label="Feedback for Valorization Chain">
+        <label for="decision-valorization-chain">Decision</label>
+        <div class="feedback-grid">
+          <select id="decision-valorization-chain" data-field="decision">
+            <option value="unreviewed">Unreviewed</option>
+            <option value="keep">Keep</option>
+            <option value="revise">Revise</option>
+            <option value="expand">Expand</option>
+            <option value="cut">Cut</option>
+            <option value="question">Question</option>
+          </select>
+          <select aria-label="Priority" data-field="priority">
+            <option value="normal">Normal</option>
+            <option value="high">High</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <label for="feedback-valorization-chain">Feedback</label>
+        <textarea id="feedback-valorization-chain" data-field="feedback" placeholder="What should change in this section?"></textarea>
+        <div class="feedback-foot"><span class="status-dot"></span><span class="save-state">No feedback yet</span></div>
+      </aside>
+    </section>
+
+    <section class="memo-section" id="transport-cost" data-section-id="transport-cost" data-section-title="Transportation and Cost Stack">
+      <article class="section-body">
+        <p class="section-kicker">Appendix slide 2</p>
+        <h2>Transportation And Cost Stack</h2>
+        <p>Transport is the economic choke point because fresh aquatic vegetation is mostly water. The company should design the route around wet-ton cost: reduce water before hauling, shorten distance, avoid wait time, and keep clean organics out of higher-cost or special-waste pathways.</p>
+        <div class="cost-grid">
+          <div class="cost-card">
+            <h3>Initial fixed setup</h3>
+            <p><strong>$27 permit fee for private-water exotic vegetation removal; no public-water permit cost noted by TPWD.</strong> The real startup cost is admin time: treatment proposal, SOPs, insurance review, customer authorization, and processor approval.</p>
+            <p class="note">Planning allowance: $8k-$18k for permit/SOP/legal/insurance setup.</p>
+          </div>
+          <div class="cost-card">
+            <h3>Dewatering and containment</h3>
+            <p>Use geotextile bags, drainable totes, tarps, covered bins, pumps, and leak-control procedures. The goal is to avoid hauling water and prevent hydrilla/milfoil fragment spread.</p>
+            <p class="note">Planning allowance: $10k-$35k for initial transport and containment setup.</p>
+          </div>
+          <div class="cost-card">
+            <h3>Testing program</h3>
+            <p>Texas A&amp;M lists soil, water, forage, plant, and biosolid/manure submittal paths. Routine nutrient tests are inexpensive, but metals, cyanotoxins, pesticides, and PFAS panels require specialty lab quotes.</p>
+            <p class="note">Planning allowance: $4k-$12k for a multi-load test panel.</p>
+          </div>
+          <div class="cost-card">
+            <h3>Disposal baseline</h3>
+            <p>TDS lists municipal solid waste at $60/ton plus fees with a two-ton minimum, and large clean brush/leaves/untreated lumber at $30/ton with a two-ton minimum. Aquatic weeds may not automatically qualify as clean yard waste.</p>
+            <p class="note">Use $25-$70/wet ton as an all-in hauling/gate planning range until quotes are obtained.</p>
+          </div>
+        </div>
+        <div class="formula">Valorization contribution per wet ton = recovery fee + avoided disposal + processor credit - hauling - dewatering - testing allocation - processor/gate fee.</div>
+        <p class="note">Best operating target: keep the clean-load recovery path above $15-$25/wet ton net contribution after transport and processing. Below that, valorization may still be useful for marketing and environmental reporting, but it should be treated as a cost-neutral recovery feature rather than a profit center.</p>
+      </article>
+      <aside class="feedback-panel" aria-label="Feedback for Transportation and Cost Stack">
+        <label for="decision-transport-cost">Decision</label>
+        <div class="feedback-grid">
+          <select id="decision-transport-cost" data-field="decision">
+            <option value="unreviewed">Unreviewed</option>
+            <option value="keep">Keep</option>
+            <option value="revise">Revise</option>
+            <option value="expand">Expand</option>
+            <option value="cut">Cut</option>
+            <option value="question">Question</option>
+          </select>
+          <select aria-label="Priority" data-field="priority">
+            <option value="normal">Normal</option>
+            <option value="high">High</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <label for="feedback-transport-cost">Feedback</label>
+        <textarea id="feedback-transport-cost" data-field="feedback" placeholder="What should change in this section?"></textarea>
+        <div class="feedback-foot"><span class="status-dot"></span><span class="save-state">No feedback yet</span></div>
+      </aside>
+    </section>
+
+    <section class="memo-section" id="valorization-options" data-section-id="valorization-options" data-section-title="Valorization Option Ranking">
+      <article class="section-body">
+        <p class="section-kicker">Appendix slide 3</p>
+        <h2>Option Ranking: What To Try First</h2>
+        <p>The best first option is not the highest theoretical value per pound. It is the pathway with the highest chance of accepting wet, seasonal, locally harvested biomass without turning the startup into a regulated manufacturing company.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Pathway</th>
+              <th>Why</th>
+              <th>Setup cost / services to use</th>
+              <th>Commercial action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Compost / soil amendment / fertilizer story</td>
+              <td>Lowest complexity, fits nutrient recovery, and can monetize avoided disposal plus customer recovery fees.</td>
+              <td>$25k-$75k to stand up with partners: lab panels, covered bins, geotextile dewatering, processor MOU, and test loads. Use a permitted composter, soil blender, hauler, and specialty lab rather than building a compost site.</td>
+              <td>Find a permitted composter or soil blender, run clean-load tests, and avoid product claims until finished compost passes testing.</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Anaerobic digestion</td>
+              <td>Wet biomass is process-compatible, but methane value per wet ton is not enough without a partner and gate economics.</td>
+              <td>$15k-$50k for BMP testing, hauling trials, digestate testing, and partner onboarding. Use an existing wastewater, food-waste, manure, or private AD facility if one will accept test loads.</td>
+              <td>Run biochemical methane potential tests and negotiate a co-digestion trial with wastewater, food waste, or manure feedstock.</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Biochar / hydrochar / activated carbon</td>
+              <td>Potentially higher-value products, but drying and ash/metals concentration can erase margin.</td>
+              <td>$25k-$100k for bench tests and toll processing; $250k+ if buying equipment and drying capacity. Use a toll biochar processor or university/bench partner first.</td>
+              <td>Only test after clean biomass volume and a dry carbon co-feedstock are secured.</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Animal feed / aquaculture feed</td>
+              <td>Literature supports potential nutrient value, but wild Austin lake biomass creates contamination, QA, and regulatory risk.</td>
+              <td>$50k-$150k+ for repeated lab panels, drying, feed-safety review, QA system, and buyer qualification. Services exist for testing and consulting, but this should not use wild lake biomass first.</td>
+              <td>Do not pursue until source control, repeated clean lab panels, and feed regulatory review are complete.</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Extracts, pigments, vitamins, nutraceuticals</td>
+              <td>Highest headline value but worst fit for mixed wild biomass because drying, sorting, extraction, purification, and safety proof are expensive.</td>
+              <td>$100k-$300k+ for bench R&amp;D before product proof, then much more for GMP-like QA and manufacturing. Use only if a separate controlled-cultivation partner supplies consistent biomass.</td>
+              <td>No-go for the removal startup. Consider only as a separate controlled-cultivation business.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="route-rank"><strong>Recommendation:</strong> test compost/soil-amendment recovery first. It is the only route that can plausibly work with low capex, local partners, and customer-paid removal volume.</div>
+      </article>
+      <aside class="feedback-panel" aria-label="Feedback for Valorization Option Ranking">
+        <label for="decision-valorization-options">Decision</label>
+        <div class="feedback-grid">
+          <select id="decision-valorization-options" data-field="decision">
+            <option value="unreviewed">Unreviewed</option>
+            <option value="keep">Keep</option>
+            <option value="revise">Revise</option>
+            <option value="expand">Expand</option>
+            <option value="cut">Cut</option>
+            <option value="question">Question</option>
+          </select>
+          <select aria-label="Priority" data-field="priority">
+            <option value="normal">Normal</option>
+            <option value="high">High</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <label for="feedback-valorization-options">Feedback</label>
+        <textarea id="feedback-valorization-options" data-field="feedback" placeholder="What should change in this section?"></textarea>
+        <div class="feedback-foot"><span class="status-dot"></span><span class="save-state">No feedback yet</span></div>
+      </aside>
+    </section>
+
+    <section class="memo-section" id="fertilizer-route" data-section-id="fertilizer-route" data-section-title="Fertilizer and Soil Amendment Route">
+      <article class="section-body">
+        <p class="section-kicker">Appendix slide 4</p>
+        <h2>Best First Route: Compost, Fertilizer, Soil Amendment</h2>
+        <p>This is the strongest first valorization path because it converts the removal waste stream into a local nutrient-recovery story without requiring food-grade or feed-grade controls. The product value is modest, so the business should make money from removal, recovery fees, and avoided disposal before expecting meaningful compost sales.</p>
+        <div class="option-grid">
+          <div class="option-card best">
+            <h3>How to do it</h3>
+            <ul>
+              <li>Collect clean hydrilla/milfoil-only loads under permit.</li>
+              <li>Dewater and weigh or estimate wet tons.</li>
+              <li>Blend with dry carbon such as wood chips, leaves, or brush where the processor allows.</li>
+              <li>Compost to temperature, cure, and test finished material before sale or distribution.</li>
+            </ul>
+          </div>
+          <div class="option-card best">
+            <h3>What to test</h3>
+            <ul>
+              <li>Moisture, total solids, volatile solids, ash.</li>
+              <li>NPK, C:N ratio, micronutrients.</li>
+              <li>Metals: arsenic, cadmium, lead, mercury, chromium, nickel, copper, zinc.</li>
+              <li>Cyanotoxins if any algae or mixed mats could be present.</li>
+            </ul>
+          </div>
+          <div class="option-card">
+            <h3>Buyer path</h3>
+            <p>First buyer is likely a processor, not an end consumer: composter, soil blender, landscaper, municipal demonstration partner, HOA common-area landscape program, or stormwater/erosion-control buyer.</p>
+          </div>
+          <div class="option-card">
+            <h3>Economic logic</h3>
+            <p>Charge the customer a recovery line item and use composting to avoid or reduce disposal cost. Finished compost revenue is upside, but low bulk compost pricing means it should not be the base case.</p>
+          </div>
+        </div>
+        <p class="note">Local proof point: Austin already has mature compost infrastructure through Dillo Dirt/AllGro at Hornsby Bend, but that does not mean aquatic weeds are automatically accepted. The first launch must secure explicit processor approval.</p>
+      </article>
+      <aside class="feedback-panel" aria-label="Feedback for Fertilizer and Soil Amendment Route">
+        <label for="decision-fertilizer-route">Decision</label>
+        <div class="feedback-grid">
+          <select id="decision-fertilizer-route" data-field="decision">
+            <option value="unreviewed">Unreviewed</option>
+            <option value="keep">Keep</option>
+            <option value="revise">Revise</option>
+            <option value="expand">Expand</option>
+            <option value="cut">Cut</option>
+            <option value="question">Question</option>
+          </select>
+          <select aria-label="Priority" data-field="priority">
+            <option value="normal">Normal</option>
+            <option value="high">High</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <label for="feedback-fertilizer-route">Feedback</label>
+        <textarea id="feedback-fertilizer-route" data-field="feedback" placeholder="What should change in this section?"></textarea>
+        <div class="feedback-foot"><span class="status-dot"></span><span class="save-state">No feedback yet</span></div>
+      </aside>
+    </section>
+
+    <section class="memo-section" id="advanced-routes" data-section-id="advanced-routes" data-section-title="Advanced Valorization Routes">
+      <article class="section-body">
+        <p class="section-kicker">Appendix slide 5</p>
+        <h2>Advanced Routes: What Comes Later</h2>
+        <p>The higher-value routes should be treated as gated experiments. They may become useful once the company controls feedstock quality and volume, but they are poor first promises to customers or partners.</p>
+        <div class="option-grid">
+          <div class="option-card hold">
+            <h3>Anaerobic digestion</h3>
+            <p><strong>Status: hold for partner trial.</strong> Hydrilla and other aquatic weeds can produce biogas, and cyanobacterial biomass has been studied for biomethane pathways. The issue is not technical possibility; it is whether a nearby digester will accept seasonal wet loads at a gate price that works.</p>
+            <p class="note">Gate: BMP test, digestate metals/toxin screen, co-digestion partner, and net economics above disposal baseline.</p>
+          </div>
+          <div class="option-card hold">
+            <h3>Biochar / hydrochar</h3>
+            <p><strong>Status: mid-term test.</strong> Char can sterilize fragments and create a more stable product, but wet biomass needs drying or hydrothermal processing. Co-processing with dry woody waste is likely required.</p>
+            <p class="note">Gate: char yield, drying cost, metals concentration, PAHs, soil response, and buyer validation.</p>
+          </div>
+          <div class="option-card no-go">
+            <h3>Animal feed</h3>
+            <p><strong>Status: no-go from wild lake biomass initially.</strong> Hydrilla may have feed value in controlled contexts, but wild harvested material can accumulate metals and may carry cyanotoxins, pathogens, pesticides, or urban-runoff contaminants.</p>
+            <p class="note">Gate: controlled source, repeated clean panels, drying economics, feed regulatory review, and buyer QA approval.</p>
+          </div>
+          <div class="option-card no-go">
+            <h3>Extracts and nutraceuticals</h3>
+            <p><strong>Status: no-go for this startup.</strong> Extraction needs known species, consistent chemistry, drying, milling, purification, safety proof, and product-market access. That is a controlled-cultivation or bioprocessing company, not a Lake Austin removal company.</p>
+            <p class="note">Gate: separate R&amp;D company with controlled feedstock, not nuisance vegetation as collected.</p>
+          </div>
+        </div>
+        <div class="route-rank warn"><strong>Rule for partners:</strong> sell the first program as documented resource recovery, not as a promise of finished fertilizer, feed, carbon product, or extract revenue. The company earns the right to make product claims only after lab results, processor acceptance, and repeatable economics.</div>
+      </article>
+      <aside class="feedback-panel" aria-label="Feedback for Advanced Valorization Routes">
+        <label for="decision-advanced-routes">Decision</label>
+        <div class="feedback-grid">
+          <select id="decision-advanced-routes" data-field="decision">
+            <option value="unreviewed">Unreviewed</option>
+            <option value="keep">Keep</option>
+            <option value="revise">Revise</option>
+            <option value="expand">Expand</option>
+            <option value="cut">Cut</option>
+            <option value="question">Question</option>
+          </select>
+          <select aria-label="Priority" data-field="priority">
+            <option value="normal">Normal</option>
+            <option value="high">High</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <label for="feedback-advanced-routes">Feedback</label>
+        <textarea id="feedback-advanced-routes" data-field="feedback" placeholder="What should change in this section?"></textarea>
+        <div class="feedback-foot"><span class="status-dot"></span><span class="save-state">No feedback yet</span></div>
+      </aside>
+    </section>
+
+    <section class="memo-section" id="sources" data-section-id="sources" data-section-title="Sources and Verification">
+      <article class="section-body">
+        <p class="section-kicker">Section 9</p>
+        <h2>Sources And Verification</h2>
+        <p>This public draft synthesizes two internal diligence drafts, a local research packet, and a focused research pass completed after review feedback. It keeps the source distinction clear: founder-provided inputs define the idea; researched findings support the market, regulatory, operational, and technical claims; traction, team, funding, and signed field data remain missing.</p>
+        <h3>Included source artifacts</h3>
+        <ul>
+          <li><a href="request.json">Structured research request</a></li>
+          <li><a href="go-no-go-scorecard.json">Go/No-Go scorecard</a></li>
+        </ul>
+        <h3>External source anchors cited in the research</h3>
+        <ul>
+          <li><a href="https://www.austintexas.gov/watershed-protection/projects/lake-austin">City of Austin: Lake Austin</a></li>
+          <li><a href="https://www.austintexas.gov/watershed-protection/news/austin-watershed-protection-stocks-more-grass-carp-lake-austin-help">City of Austin: May 1, 2026 grass carp stocking update</a></li>
+          <li><a href="https://www.austintexas.gov/watershed-protection/news/blue-green-algae-returns-red-bud-isle-walsh-boat-ramp">City of Austin: June 9, 2026 blue-green algae update</a></li>
+          <li><a href="https://www.austintexas.gov/watershed-protection/algae-austins-waterways">City of Austin: Algae in Austin Waterways</a></li>
+          <li><a href="https://tpwd.texas.gov/landwater/water/environconcerns/nuisance_plants/">TPWD: Nuisance Aquatic Vegetation</a></li>
+          <li><a href="https://tpwd.texas.gov/landwater/water/environconcerns/nuisance_plants/treat_proposals.phtml">TPWD: Approved Aquatic Vegetation Treatment Proposals</a></li>
+          <li><a href="https://tpwd.texas.gov/publications/fishboat/forms/exotic-permits.phtml">TPWD: Exotic Species Aquatic Vegetation Removal Permit</a></li>
+          <li><a href="https://tpwd.texas.gov/regulations/outdoor-annual/fishing/general-rules-regulations/possession-and-transport-of-exotic-aquatic-species">TPWD: Possession and Transport of Exotic Aquatic Species</a></li>
+          <li><a href="https://www.lcra.org/water/quality/managing-nuisance-aquatic-plants/">LCRA: Managing Nuisance Aquatic Plants</a></li>
+          <li><a href="https://www.lcra.org/water/quality/managing-nuisance-aquatic-plants/aquatic-vegetation-management-rebate/">LCRA: 2026 Invasive Aquatic Vegetation Management Rebate</a></li>
+          <li><a href="https://corpslakes.erdc.dren.mil/employees/invasive/pdfs/MechanicalHarvesting.pdf">USACE: Mechanical Harvesting Overview</a></li>
+          <li><a href="https://www.epa.gov/habs/learn-about-harmful-algae-cyanobacteria-and-cyanotoxins">EPA: Harmful Algae, Cyanobacteria, and Cyanotoxins</a></li>
+          <li><a href="https://www.texasdisposal.com/gate-rates/">Texas Disposal Systems: Gate Rates</a></li>
+          <li><a href="https://soiltesting.tamu.edu/sample-page/submittal-forms/">Texas A&amp;M AgriLife: Submittal Forms and Payment Information</a></li>
+          <li><a href="https://www.synagro.com/dillo-dirt/">Synagro: Dillo Dirt / AllGro compost context</a></li>
+          <li><a href="https://link.springer.com/article/10.1007/s11356-019-06968-0">Hydrilla heavy-metal accumulation study</a></li>
+          <li><a href="https://www.mdpi.com/2813-0391/1/1/17">Review: aquatic weeds as compost feedstock</a></li>
+          <li><a href="https://koreascience.kr/article/JAKO202407654003907.pdf">Review: cyanobacterial bloom biomass for biomethane</a></li>
+          <li><a href="https://link.springer.com/article/10.1007/s12155-026-10967-8">Water hyacinth biomass conversion to biochar and activated carbon</a></li>
+        </ul>
+        <h3>Open verification items before partner circulation</h3>
+        <ol>
+          <li>Confirm the exact TPWD and local controlling-entity process for for-hire Lake Austin removal in the target sites.</li>
+          <li>Get current insurance quotes and exclusions for boats, divers, in-water work, property damage, and cyanobacteria exposure.</li>
+          <li>Collect real quotes from composters, digesters, disposal sites, labs, and haulers.</li>
+          <li>Interview 20 high-fit customers and record price response to initial clearing, maintenance, and resource-recovery fees.</li>
+          <li>Validate paid demand and field execution before buying heavy equipment.</li>
+        </ol>
+      </article>
+      <aside class="feedback-panel" aria-label="Feedback for Sources and Verification">
+        <label for="decision-sources">Decision</label>
+        <div class="feedback-grid">
+          <select id="decision-sources" data-field="decision">
+            <option value="unreviewed">Unreviewed</option>
+            <option value="keep">Keep</option>
+            <option value="revise">Revise</option>
+            <option value="expand">Expand</option>
+            <option value="cut">Cut</option>
+            <option value="question">Question</option>
+          </select>
+          <select aria-label="Priority" data-field="priority">
+            <option value="normal">Normal</option>
+            <option value="high">High</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <label for="feedback-sources">Feedback</label>
+        <textarea id="feedback-sources" data-field="feedback" placeholder="What should change in this section?"></textarea>
+        <div class="feedback-foot"><span class="status-dot"></span><span class="save-state">No feedback yet</span></div>
+      </aside>
+    </section>
+
+    <footer class="footer">
+      <p><strong>Document status:</strong> review draft v1, prepared June 17, 2026. Feedback exported from this file is intended to drive future versions of the brief.</p>
+      <p><strong>Local media archive:</strong> images and videos are stored in <span class="inline-code">output/research/aquatic-vegetation-austin/media</span>.</p>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    (function () {
+      const storageKey = "austin-removal-valorization-feedback-v1";
+      const fileName = "austin-removal-valorization-feedback-v1.json";
+      const sections = Array.from(document.querySelectorAll(".memo-section"));
+      const toast = document.getElementById("toast");
+      let toastTimer = null;
+
+      function showToast(message) {
+        toast.textContent = message;
+        toast.classList.add("show");
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => toast.classList.remove("show"), 2200);
+      }
+
+      function sectionFields(section) {
+        return {
+          decision: section.querySelector('[data-field="decision"]'),
+          priority: section.querySelector('[data-field="priority"]'),
+          feedback: section.querySelector('[data-field="feedback"]'),
+          dot: section.querySelector(".status-dot"),
+          state: section.querySelector(".save-state")
+        };
+      }
+
+      function updateSectionState(section) {
+        const fields = sectionFields(section);
+        const hasFeedback = Boolean(
+          fields.feedback.value.trim() ||
+          fields.decision.value !== "unreviewed" ||
+          fields.priority.value !== "normal"
+        );
+        fields.dot.classList.toggle("has-feedback", hasFeedback);
+        fields.state.textContent = hasFeedback ? "Feedback saved" : "No feedback yet";
+      }
+
+      function collectFeedback() {
+        const payload = {
+          meta: {
+            title: "Austin Aquatic Vegetation Removal + Valorization",
+            version: "review-draft-v1",
+            generatedAt: new Date().toISOString(),
+            purpose: "Section-level feedback for future revisions",
+            sourcePages: [
+              {
+                title: "Structured research request",
+                url: "request.json"
+              },
+              {
+                title: "Go/No-Go scorecard",
+                url: "go-no-go-scorecard.json"
+              }
+            ]
+          },
+          sections: sections.map((section, index) => {
+            const fields = sectionFields(section);
+            return {
+              order: index + 1,
+              id: section.dataset.sectionId,
+              title: section.dataset.sectionTitle,
+              decision: fields.decision.value,
+              priority: fields.priority.value,
+              feedback: fields.feedback.value.trim()
+            };
+          })
+        };
+        return payload;
+      }
+
+      function saveFeedback() {
+        const payload = collectFeedback();
+        localStorage.setItem(storageKey, JSON.stringify(payload, null, 2));
+        sections.forEach(updateSectionState);
+      }
+
+      function restoreFeedback(payload) {
+        if (!payload || !Array.isArray(payload.sections)) return;
+        payload.sections.forEach((saved) => {
+          const section = sections.find((item) => item.dataset.sectionId === saved.id);
+          if (!section) return;
+          const fields = sectionFields(section);
+          fields.decision.value = saved.decision || "unreviewed";
+          fields.priority.value = saved.priority || "normal";
+          fields.feedback.value = saved.feedback || "";
+          updateSectionState(section);
+        });
+        saveFeedback();
+      }
+
+      function downloadJson(payload) {
+        const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = fileName;
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        URL.revokeObjectURL(url);
+      }
+
+      sections.forEach((section) => {
+        const fields = sectionFields(section);
+        [fields.decision, fields.priority, fields.feedback].forEach((field) => {
+          field.addEventListener("input", saveFeedback);
+          field.addEventListener("change", saveFeedback);
+        });
+        updateSectionState(section);
+      });
+
+      const savedText = localStorage.getItem(storageKey);
+      if (savedText) {
+        try {
+          restoreFeedback(JSON.parse(savedText));
+        } catch (error) {
+          console.warn("Stored feedback could not be restored.", error);
+        }
+      }
+
+      document.getElementById("exportJson").addEventListener("click", () => {
+        saveFeedback();
+        downloadJson(collectFeedback());
+        showToast("Feedback JSON exported");
+      });
+
+      document.getElementById("copyJson").addEventListener("click", async () => {
+        saveFeedback();
+        const json = JSON.stringify(collectFeedback(), null, 2);
+        try {
+          await navigator.clipboard.writeText(json);
+          showToast("Feedback JSON copied");
+        } catch (error) {
+          const scratch = document.createElement("textarea");
+          scratch.value = json;
+          scratch.setAttribute("readonly", "");
+          scratch.style.position = "fixed";
+          scratch.style.left = "-9999px";
+          document.body.appendChild(scratch);
+          scratch.select();
+          document.execCommand("copy");
+          scratch.remove();
+          showToast("Feedback JSON copied");
+        }
+      });
+
+      document.getElementById("importJson").addEventListener("change", (event) => {
+        const file = event.target.files && event.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = () => {
+          try {
+            restoreFeedback(JSON.parse(String(reader.result)));
+            showToast("Feedback imported");
+          } catch (error) {
+            showToast("Import failed: invalid JSON");
+          } finally {
+            event.target.value = "";
+          }
+        };
+        reader.readAsText(file);
+      });
+
+      document.getElementById("clearFeedback").addEventListener("click", () => {
+        const ok = window.confirm("Clear all section feedback stored in this browser?");
+        if (!ok) return;
+        localStorage.removeItem(storageKey);
+        sections.forEach((section) => {
+          const fields = sectionFields(section);
+          fields.decision.value = "unreviewed";
+          fields.priority.value = "normal";
+          fields.feedback.value = "";
+          updateSectionState(section);
+        });
+        showToast("Feedback cleared");
+      });
+    })();
+  </script>
+</body>
+</html>

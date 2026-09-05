@@ -1,0 +1,194 @@
+# Deep Research Activity Summary
+
+- Events logged: `39`
+
+## Timeline
+
+- 2026-07-04T09:32:19-07:00 — `plan` — Created deep plan with 9 planned query passes and 6 deep objectives.
+  - target_passes: 6
+  - target_sources: 20
+  - preferred_domains: []
+- 2026-07-04T09:32:24-07:00 — `search_pass` — Executed entity-official-site and merged 15 ranked sources.
+  - pass_number: 1
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 12
+  - primary_like_source_count: 5
+  - met_depth_standard: False
+- 2026-07-04T09:32:28-07:00 — `search_pass` — Executed entity-product-signals and merged 21 ranked sources.
+  - pass_number: 2
+  - include_domains: ['microsoft.ai']
+  - result_count: 6
+  - meaningful_source_count: 18
+  - primary_like_source_count: 11
+  - met_depth_standard: False
+- 2026-07-04T09:32:32-07:00 — `search_pass` — Executed entity-commercial-signals and merged 27 ranked sources.
+  - pass_number: 3
+  - include_domains: ['microsoft.ai']
+  - result_count: 8
+  - meaningful_source_count: 24
+  - primary_like_source_count: 17
+  - met_depth_standard: False
+- 2026-07-04T09:32:38-07:00 — `search_pass` — Executed discovery-primary and merged 37 ranked sources.
+  - pass_number: 4
+  - include_domains: ['microsoft.ai']
+  - result_count: 10
+  - meaningful_source_count: 31
+  - primary_like_source_count: 24
+  - met_depth_standard: False
+- 2026-07-04T09:32:44-07:00 — `search_pass` — Executed expansion-related and merged 40 ranked sources.
+  - pass_number: 5
+  - include_domains: ['microsoft.ai']
+  - result_count: 10
+  - meaningful_source_count: 34
+  - primary_like_source_count: 24
+  - met_depth_standard: False
+- 2026-07-04T09:32:49-07:00 — `search_pass` — Executed gap-closing and merged 40 ranked sources.
+  - pass_number: 6
+  - include_domains: ['microsoft.ai']
+  - result_count: 10
+  - meaningful_source_count: 35
+  - primary_like_source_count: 25
+  - met_depth_standard: True
+- 2026-07-04T09:32:57-07:00 — `structured_pass` — Added brave-web-1 with 6 structured-provider results.
+  - pass_number: 7
+  - include_domains: []
+  - provider: brave-search
+- 2026-07-04T09:32:57-07:00 — `structured_pass` — Added exa-web-1 with 6 structured-provider results.
+  - pass_number: 8
+  - include_domains: []
+  - provider: exa
+- 2026-07-04T09:32:57-07:00 — `structured_pass` — Added brave-web-2 with 6 structured-provider results.
+  - pass_number: 9
+  - include_domains: ['microsoft.ai']
+  - provider: brave-search
+- 2026-07-04T09:32:57-07:00 — `structured_pass` — Added exa-web-2 with 6 structured-provider results.
+  - pass_number: 10
+  - include_domains: ['microsoft.ai']
+  - provider: exa
+- 2026-07-04T09:32:57-07:00 — `structured_pass` — Added openalex-primary with 0 structured-provider results.
+  - pass_number: 11
+  - include_domains: ['openalex.org']
+  - provider: openalex
+- 2026-07-04T09:32:57-07:00 — `structured_pass` — Added crossref-primary with 5 structured-provider results.
+  - pass_number: 12
+  - include_domains: ['crossref.org']
+  - provider: crossref
+- 2026-07-04T09:32:57-07:00 — `structured_pass` — Added semantic-scholar-primary with 0 structured-provider results.
+  - pass_number: 13
+  - include_domains: ['semanticscholar.org']
+  - provider: semantic-scholar
+- 2026-07-04T09:32:57-07:00 — `structured_pass` — Added patents-primary with 0 structured-provider results.
+  - pass_number: 14
+  - include_domains: ['search.patentsview.org']
+  - provider: patentsview
+- 2026-07-04T09:32:57-07:00 — `capture_started` — Starting bounded capture for up to 20 top-ranked sources.
+  - capture_limit: 20
+- 2026-07-04T09:32:57-07:00 — `capture_item` — Capture 1 finished with status=error engine=capture-worker.
+  - url: https://arxiv.org/html/2607.00015v1
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:57-07:00 — `capture_item` — Capture 2 finished with status=error engine=capture-worker.
+  - url: https://par.nsf.gov/servlets/purl/10347911
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:57-07:00 — `capture_item` — Capture 3 finished with status=error engine=capture-worker.
+  - url: https://www.ijert.org/research/ai-for-regulatory-and-code-compliance-IJERTV15IS010411.pdf
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:57-07:00 — `capture_item` — Capture 4 finished with status=error engine=capture-worker.
+  - url: https://www.nature.com/articles/s41598-023-34342-1
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:58-07:00 — `capture_item` — Capture 5 finished with status=error engine=capture-worker.
+  - url: https://www.ideals.illinois.edu/items/124929
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:58-07:00 — `capture_item` — Capture 6 finished with status=error engine=capture-worker.
+  - url: https://microsoft.ai/job/member-of-technical-staff-multimodal-mai-superintelligence-team
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:58-07:00 — `capture_item` — Capture 7 finished with status=error engine=capture-worker.
+  - url: https://microsoft.ai/story/towards-humanist-superintelligence
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:58-07:00 — `capture_item` — Capture 8 finished with status=error engine=capture-worker.
+  - url: https://www.sciencedirect.com/science/article/pii/S0926580526001007
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:58-07:00 — `capture_item` — Capture 9 finished with status=error engine=capture-worker.
+  - url: https://microsoft.ai/news/today-were-announcing-3-new-world-class-mai-models-available-in-foundry
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:58-07:00 — `capture_item` — Capture 10 finished with status=error engine=capture-worker.
+  - url: https://microsoft.ai/story/introducing-copilot-health
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:58-07:00 — `capture_item` — Capture 11 finished with status=error engine=capture-worker.
+  - url: https://microsoft.ai/pdf/mai-thinking-1.pdf
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:58-07:00 — `capture_item` — Capture 12 finished with status=error engine=capture-worker.
+  - url: https://palle.substack.com/p/the-20-best-ai-websites
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:58-07:00 — `capture_item` — Capture 13 finished with status=error engine=capture-worker.
+  - url: https://www.auri.re.kr/publication/view.es?mid=a20505000000&publication_id=2220&nPage=1&publication_type=eng_brief&sch_year=&sch_report=&sch_type=&sch_text=
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:58-07:00 — `capture_item` — Capture 14 finished with status=error engine=capture-worker.
+  - url: https://microsoft.ai/news/two-new-in-house-models
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:58-07:00 — `capture_item` — Capture 15 finished with status=error engine=capture-worker.
+  - url: https://microsoft.ai/story/introducing-mai-image-1-debuting-in-the-top-10-on-lmarena
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:59-07:00 — `capture_item` — Capture 16 finished with status=error engine=capture-worker.
+  - url: https://microsoft.ai/job/member-of-technical-staff-pre-training-mai-superintelligence-team
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:59-07:00 — `capture_item` — Capture 17 finished with status=error engine=capture-worker.
+  - url: https://aibusiness.com/
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:59-07:00 — `capture_item` — Capture 18 finished with status=error engine=capture-worker.
+  - url: https://microsoft.ai/team/hira-mashkoor-balancing-detail-with-big-picture-thinking
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:59-07:00 — `capture_item` — Capture 19 finished with status=error engine=capture-worker.
+  - url: https://www.theofficial.ai/
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:59-07:00 — `capture_item` — Capture 20 finished with status=error engine=capture-worker.
+  - url: https://microsoft.ai/about
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-07-04T09:32:59-07:00 — `capture` — Captured 0 of 20 top-ranked sources for full-page evidence.
+  - capture_count: 20
+  - capture_ok: 0
+- 2026-07-04T09:32:59-07:00 — `contradiction_matrix` — Built contradiction matrix across 6 themes.
+  - themes: ['security', 'scalability', 'governance', 'commercialization', 'adoption', 'research_frontier']
+- 2026-07-04T09:32:59-07:00 — `synthesis` — Completed deep synthesis with 6 confirmed claims and 3 inferred claims.
+  - open_questions: 4
+  - surfaced_sources: 40

@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "run_count": 8,
+  "runs": [
+    {
+      "slug": "2026-06-14_deep-current-regulatory-research-for-an-austin-texas-aquatic-b456773cb7--06-14",
+      "task_id": "aquatic-vegetation-austin-regulatory-2026-06-14",
+      "question": "Deep current regulatory research for an Austin Texas aquatic vegetation removal startup: permits and approvals for manual removal, mechanical harvesting, for-hire shoreline dock clearing, disposal/transport of hydrilla and exotic aquatic plants, Lake Austin, Lady Bird Lake, Highland Lakes, private ponds, City of Austin, TPWD, LCRA, TCEQ, Army Corps where relevant. Prioritize official sources and exact current requirements.",
+      "coverage": {
+        "target_min_passes": 6,
+        "target_min_sources": 20,
+        "target_max_sources": 40,
+        "executed_passes": 13,
+        "source_count": 40,
+        "quality_profile": {
+          "min_meaningful_sources": 14,
+          "min_high_quality_sources": 8,
+          "min_primary_like_sources": 8
+        },
+        "meaningful_source_count": 13,
+        "high_quality_source_count": 13,
+        "primary_like_source_count": 10,
+        "source_class_counts": {
+          "official": 12,
+          "scholarly": 7,
+          "strong_secondary": 18,
+          "low_signal": 3
+        },
+        "met_source_floor": true,
+        "met_quality_floor": false,
+        "met_depth_standard": false,
+        "shortfall_sources": 0,
+        "shortfall_passes": 0,
+        "shortfall_meaningful_sources": 1,
+        "shortfall_high_quality_sources": 0,
+        "shortfall_primary_like_sources": 0
+      },
+      "path": "2026-06-14_deep-current-regulatory-research-for-an-austin-texas-aquatic-b456773cb7--06-14/README.md"
+    },
+    {
+      "slug": "2026-06-14_deep-diligence-on-a-startup-idea-an-aquatic-vegetation-and-al-03e492426d--06-14",
+      "task_id": "aquatic-vegetation-austin-2026-06-14",
+      "question": "Deep diligence on a startup idea: an aquatic vegetation and algae-related cleanup service in Austin, Texas, starting with Lake Austin, Lady Bird Lake, nearby Highland Lakes, private ponds, HOAs, marinas, restaurants, and lakefront homeowners. Cover every requested diligence step: market size and demand; regulatory and permitting; environmental considerations; technology and equipment; seasonality and frequency; unit economics; competitive landscape; go-to-market; and expansion opportunity. Use CX research plus r-paper style evidence: current primary web sources for Austin/Texas market and regulation, plus papers/reviews/technical reports for hydrilla, invasive aquatic vegetation, cyanobacteria, mechanical harvesting, removal impacts, and water-quality management.",
+      "coverage": null,
+      "path": "2026-06-14_deep-diligence-on-a-startup-idea-an-aquatic-vegetation-and-al-03e492426d--06-14/README.md"
+    },
+    {
+      "slug": "2026-06-14_deep-market-competitor-equipment-pricing-and-unit-economics-r-a5218fa67a--06-14",
+      "task_id": "aquatic-vegetation-austin-market-equipment-2026-06-14",
+      "question": "Deep market, competitor, equipment, pricing, and unit economics research for an Austin Texas aquatic vegetation removal and waterfront maintenance startup. Cover Lake Austin/Lady Bird/Lake Travis/Highland Lakes customer segments, lakefront homes, marinas, restaurants, HOAs, contractors, equipment vendors Aquarius Systems, Weedoo, Truxor, Eco-Harvester, Lake Weeders Digest/WaterGator, SOLitude, local Austin/Texas providers, used equipment prices, lead times, crew/logistics/disposal.",
+      "coverage": {
+        "target_min_passes": 6,
+        "target_min_sources": 20,
+        "target_max_sources": 40,
+        "executed_passes": 15,
+        "source_count": 40,
+        "quality_profile": {
+          "min_meaningful_sources": 14,
+          "min_high_quality_sources": 8,
+          "min_primary_like_sources": 8
+        },
+        "meaningful_source_count": 11,
+        "high_quality_source_count": 11,
+        "primary_like_source_count": 7,
+        "source_class_counts": {
+          "official": 9,
+          "scholarly": 7,
+          "strong_secondary": 20,
+          "low_signal": 3,
+          "weak_secondary": 1
+        },
+        "met_source_floor": true,
+        "met_quality_floor": false,
+        "met_depth_standard": false,
+        "shortfall_sources": 0,
+        "shortfall_passes": 0,
+        "shortfall_meaningful_sources": 3,
+        "shortfall_high_quality_sources": 0,
+        "shortfall_primary_like_sources": 1
+      },
+      "path": "2026-06-14_deep-market-competitor-equipment-pricing-and-unit-economics-r-a5218fa67a--06-14/README.md"
+    },
+    {
+      "slug": "2026-06-14_paper-forward-research-for-an-austin-aquatic-vegetation-remov-51fbd45d20--06-14",
+      "task_id": "aquatic-vegetation-austin-rpaper-science-2026-06-14",
+      "question": "Paper-forward research for an Austin aquatic vegetation removal startup: hydrilla biology and fragmentation, Eurasian watermilfoil, native aquatic vegetation habitat value, mechanical harvesting ecological impacts, diver-assisted suction harvesting, cyanobacteria/benthic mat health risks for dogs in Lady Bird Lake Austin, lanthanum-modified bentonite/clay phosphorus control, seasonality under warm low-flow Texas conditions, best practices for disposal and minimizing spread.",
+      "coverage": {
+        "target_min_passes": 6,
+        "target_min_sources": 20,
+        "target_max_sources": 40,
+        "executed_passes": 19,
+        "source_count": 40,
+        "quality_profile": {
+          "min_meaningful_sources": 14,
+          "min_high_quality_sources": 8,
+          "min_primary_like_sources": 8
+        },
+        "meaningful_source_count": 8,
+        "high_quality_source_count": 8,
+        "primary_like_source_count": 6,
+        "source_class_counts": {
+          "official": 7,
+          "scholarly": 8,
+          "strong_secondary": 23,
+          "low_signal": 2
+        },
+        "met_source_floor": true,
+        "met_quality_floor": false,
+        "met_depth_standard": false,
+        "shortfall_sources": 0,
+        "shortfall_passes": 0,
+        "shortfall_meaningful_sources": 6,
+        "shortfall_high_quality_sources": 0,
+        "shortfall_primary_like_sources": 2
+      },
+      "path": "2026-06-14_paper-forward-research-for-an-austin-aquatic-vegetation-remov-51fbd45d20--06-14/README.md"
+    },
+    {
+      "slug": "2026-06-17_deep-research-current-news-regulatory-blockers-and-validated-6eadc1a672-3273c9",
+      "task_id": "research-fd023273c9",
+      "question": "Deep research current news, regulatory blockers, and validated valorization pathways for an Austin, Texas aquatic vegetation removal plus biomass recovery startup. Focus on Lake Austin hydrilla removal permits, City of Austin/TPWD/LCRA constraints, any 2025-2026 news on hydrilla, grass carp, drawdown, harmful algae, or public contracting, and evidence/examples for compost or fertilizer, anaerobic digestion, biochar or hydrochar, animal feed, and high-value extraction from freshwater aquatic weeds such as hydrilla, Eurasian watermilfoil, water hyacinth, green algae, and cyanobacteria. Prioritize primary sources, official local sources, peer-reviewed papers/reviews, and practical cost/logistics implications for an HTML partner brief.",
+      "coverage": {
+        "target_min_passes": 6,
+        "target_min_sources": 20,
+        "target_max_sources": 40,
+        "executed_passes": 10,
+        "source_count": 40,
+        "quality_profile": {
+          "min_meaningful_sources": 14,
+          "min_high_quality_sources": 8,
+          "min_primary_like_sources": 8
+        },
+        "meaningful_source_count": 40,
+        "high_quality_source_count": 40,
+        "primary_like_source_count": 40,
+        "source_class_counts": {
+          "official": 2,
+          "primary": 38
+        },
+        "met_source_floor": true,
+        "met_quality_floor": true,
+        "met_depth_standard": true,
+        "shortfall_sources": 0,
+        "shortfall_passes": 0,
+        "shortfall_meaningful_sources": 0,
+        "shortfall_high_quality_sources": 0,
+        "shortfall_primary_like_sources": 0
+      },
+      "path": "2026-06-17_deep-research-current-news-regulatory-blockers-and-validated-6eadc1a672-3273c9/README.md"
+    },
+    {
+      "slug": "2026-07-04_deep-current-diligence-on-a-startup-concept-an-ai-native-plat-aac44e67b7--07-04",
+      "task_id": "architect-ai-replacement-cx-2026-07-04",
+      "question": "Deep current diligence on a startup concept: an AI-native platform that could replace or radically compress architects and architecture firms for residential homes, renovations, ADUs, and internal reconfiguration. The platform would collect homeowner criteria, generate designs, floor plans, drawings, construction documents / architect papers, check building codes, zoning, city permissions, local amendments, costs, permitting requirements, and produce permit-ready outputs. Research current startups, incumbents, funding rounds, stages, product capabilities, user/customer targets, legal/regulatory constraints, building-code automation, permit workflow automation, and whether the better wedge is direct-to-consumer homeowners or selling to architects/builders/firms/jurisdictions. Include market size, competitors, adjacent AI tools, risks, moat, and investment recommendation. Current as of July 4, 2026.",
+      "coverage": null,
+      "path": "2026-07-04_deep-current-diligence-on-a-startup-concept-an-ai-native-plat-aac44e67b7--07-04/README.md"
+    },
+    {
+      "slug": "2026-07-04_deep-market-and-competitor-diligence-on-ai-architecture-and-a-df162aec3a--07-04",
+      "task_id": "architect-ai-replacement-cx-focused-2026-07-04",
+      "question": "Deep market and competitor diligence on AI architecture and AI permitting startups for residential architecture, homebuilding design automation, construction document generation, BIM automation, automated building-code compliance checking, and construction permitting workflow. Focus on Higharc, Drafted, Maket, SWAPP, Augmenta, Motif, Pirros, PermitFlow, GreenLite, CodeComply, CivCheck, AutoReview, Archistar, Snaptrude, Arcol, Rayon, qbiq, Finch, Hypar, TestFit, Autodesk Forma, UpCodes, and adjacent incumbents. Determine funding raised, stage, product scope, customers, whether anyone can produce permit-ready/stamped architecture documents, regulatory/licensure constraints, direct-to-consumer vs B2B wedge, market size, moat, risks, and investment recommendation.",
+      "coverage": {
+        "target_min_passes": 6,
+        "target_min_sources": 20,
+        "target_max_sources": 40,
+        "executed_passes": 11,
+        "source_count": 40,
+        "quality_profile": {
+          "min_meaningful_sources": 14,
+          "min_high_quality_sources": 8,
+          "min_primary_like_sources": 8
+        },
+        "meaningful_source_count": 33,
+        "high_quality_source_count": 33,
+        "primary_like_source_count": 9,
+        "source_class_counts": {
+          "official": 2,
+          "scholarly": 7,
+          "strong_secondary": 24,
+          "low_signal": 7
+        },
+        "met_source_floor": true,
+        "met_quality_floor": true,
+        "met_depth_standard": true,
+        "shortfall_sources": 0,
+        "shortfall_passes": 0,
+        "shortfall_meaningful_sources": 0,
+        "shortfall_high_quality_sources": 0,
+        "shortfall_primary_like_sources": 0
+      },
+      "path": "2026-07-04_deep-market-and-competitor-diligence-on-ai-architecture-and-a-df162aec3a--07-04/README.md"
+    },
+    {
+      "slug": "2026-07-04_paper-forward-research-on-ai-systems-for-architectural-design-1c7d27f988--07-04",
+      "task_id": "architect-ai-replacement-r-paper-2026-07-04",
+      "question": "Paper-forward research on AI systems for architectural design automation, residential floor-plan generation, BIM-based automated code compliance checking, natural-language building-code interpretation, LLM-assisted code compliance, automated construction document generation, and AI plan review/permitting. Identify important papers, preprints, standards, technical reports, patents if available, and technical bottlenecks relevant to a startup aiming to produce code-compliant permit-ready residential architecture drawings and replace or compress architect workflows.",
+      "coverage": {
+        "target_min_passes": 6,
+        "target_min_sources": 20,
+        "target_max_sources": 40,
+        "executed_passes": 14,
+        "source_count": 40,
+        "quality_profile": {
+          "min_meaningful_sources": 14,
+          "min_high_quality_sources": 8,
+          "min_primary_like_sources": 8
+        },
+        "meaningful_source_count": 40,
+        "high_quality_source_count": 40,
+        "primary_like_source_count": 24,
+        "source_class_counts": {
+          "scholarly": 9,
+          "primary": 12,
+          "official": 3,
+          "strong_secondary": 16
+        },
+        "met_source_floor": true,
+        "met_quality_floor": true,
+        "met_depth_standard": true,
+        "shortfall_sources": 0,
+        "shortfall_passes": 0,
+        "shortfall_meaningful_sources": 0,
+        "shortfall_high_quality_sources": 0,
+        "shortfall_primary_like_sources": 0
+      },
+      "path": "2026-07-04_paper-forward-research-on-ai-systems-for-architectural-design-1c7d27f988--07-04/README.md"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "case_id": "{{CASE_ID}}",
+  "idea_name": "{{IDEA_NAME}}",
+  "question": "[decision-oriented research question]",
+  "research_cutoff": "{{DATE}}",
+  "freshness": "[what must be current]",
+  "evidence_types": [
+    "current-intelligence",
+    "market-and-competitors",
+    "paper-forward"
+  ],
+  "deliverables": [
+    "diligence-memo",
+    "scorecard",
+    "experiment-plan"
+  ],
+  "must_cover": [
+    "problem",
+    "customer",
+    "competition",
+    "product",
+    "technology",
+    "business-model",
+    "go-to-market",
+    "regulation",
+    "risks"
+  ],
+  "constraints": [],
+  "preferred_source_classes": [
+    "official",
+    "regulator",
+    "filing",
+    "standards-body",
+    "original-research"
+  ],
+  "minimum_quality_gates": {
+    "opened_sources": 12,
+    "primary_or_scholarly_sources": 6,
+    "contradiction_pass": true,
+    "human_review": true
+  }
+}

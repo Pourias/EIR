@@ -1,0 +1,88 @@
+# Deep Research Activity Summary
+
+- Events logged: `17`
+
+## Timeline
+
+- 2026-06-17T11:23:52-07:00 — `plan` — Created deep plan with 9 planned query passes and 6 deep objectives.
+  - target_passes: 6
+  - target_sources: 20
+  - preferred_domains: []
+- 2026-06-17T11:23:54-07:00 — `search_pass` — Executed entity-official-site and merged 10 ranked sources.
+  - pass_number: 1
+  - include_domains: []
+  - result_count: 10
+  - meaningful_source_count: 6
+  - primary_like_source_count: 4
+  - met_depth_standard: False
+- 2026-06-17T11:23:57-07:00 — `search_pass` — Executed entity-product-signals and merged 20 ranked sources.
+  - pass_number: 2
+  - include_domains: ['tpwd.texas.gov']
+  - result_count: 10
+  - meaningful_source_count: 16
+  - primary_like_source_count: 14
+  - met_depth_standard: False
+- 2026-06-17T11:24:00-07:00 — `search_pass` — Executed entity-commercial-signals and merged 25 ranked sources.
+  - pass_number: 3
+  - include_domains: ['tpwd.texas.gov']
+  - result_count: 10
+  - meaningful_source_count: 21
+  - primary_like_source_count: 19
+  - met_depth_standard: False
+- 2026-06-17T11:24:04-07:00 — `search_pass` — Executed discovery-primary and merged 35 ranked sources.
+  - pass_number: 4
+  - include_domains: ['tpwd.texas.gov']
+  - result_count: 10
+  - meaningful_source_count: 29
+  - primary_like_source_count: 27
+  - met_depth_standard: False
+- 2026-06-17T11:24:09-07:00 — `search_pass` — Executed expansion-related and merged 40 ranked sources.
+  - pass_number: 5
+  - include_domains: ['tpwd.texas.gov']
+  - result_count: 10
+  - meaningful_source_count: 34
+  - primary_like_source_count: 32
+  - met_depth_standard: False
+- 2026-06-17T11:24:14-07:00 — `search_pass` — Executed gap-closing and merged 40 ranked sources.
+  - pass_number: 6
+  - include_domains: ['tpwd.texas.gov']
+  - result_count: 10
+  - meaningful_source_count: 39
+  - primary_like_source_count: 36
+  - met_depth_standard: True
+- 2026-06-17T11:24:17-07:00 — `structured_pass` — Added brave-web-1 with 6 structured-provider results.
+  - pass_number: 7
+  - include_domains: []
+  - provider: brave-search
+- 2026-06-17T11:24:17-07:00 — `structured_pass` — Added exa-web-1 with 6 structured-provider results.
+  - pass_number: 8
+  - include_domains: []
+  - provider: exa
+- 2026-06-17T11:24:17-07:00 — `structured_pass` — Added brave-web-2 with 6 structured-provider results.
+  - pass_number: 9
+  - include_domains: ['tpwd.texas.gov']
+  - provider: brave-search
+- 2026-06-17T11:24:17-07:00 — `structured_pass` — Added exa-web-2 with 6 structured-provider results.
+  - pass_number: 10
+  - include_domains: ['tpwd.texas.gov']
+  - provider: exa
+- 2026-06-17T11:24:17-07:00 — `capture_started` — Starting bounded capture for up to 2 top-ranked sources.
+  - capture_limit: 2
+- 2026-06-17T11:24:18-07:00 — `capture_item` — Capture 1 finished with status=error engine=capture-worker.
+  - url: https://services.austintexas.gov/edims/document.cfm?id=455222
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-17T11:24:18-07:00 — `capture_item` — Capture 2 finished with status=error engine=capture-worker.
+  - url: https://www.texasinvasives.org/professionals/abstract_detail.php?abstract_id=56
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-17T11:24:18-07:00 — `capture` — Captured 0 of 2 top-ranked sources for full-page evidence.
+  - capture_count: 2
+  - capture_ok: 0
+- 2026-06-17T11:24:18-07:00 — `contradiction_matrix` — Built contradiction matrix across 6 themes.
+  - themes: ['commercialization', 'governance', 'research_frontier', 'general', 'scalability', 'tooling']
+- 2026-06-17T11:24:18-07:00 — `synthesis` — Completed deep synthesis with 6 confirmed claims and 2 inferred claims.
+  - open_questions: 4
+  - surfaced_sources: 38

@@ -1,0 +1,33 @@
+{
+  "task_id": "research-fd023273c9",
+  "topic_slug": "deep-research-current-news-regulatory-blockers-and-validated-6eadc1a672",
+  "coverage": {
+    "target_min_passes": 6,
+    "target_min_sources": 20,
+    "target_max_sources": 40,
+    "executed_passes": 10,
+    "source_count": 40,
+    "quality_profile": {
+      "min_meaningful_sources": 14,
+      "min_high_quality_sources": 8,
+      "min_primary_like_sources": 8
+    },
+    "meaningful_source_count": 40,
+    "high_quality_source_count": 40,
+    "primary_like_source_count": 40,
+    "source_class_counts": {
+      "official": 2,
+      "primary": 38
+    },
+    "met_source_floor": true,
+    "met_quality_floor": true,
+    "met_depth_standard": true,
+    "shortfall_sources": 0,
+    "shortfall_passes": 0,
+    "shortfall_meaningful_sources": 0,
+    "shortfall_high_quality_sources": 0,
+    "shortfall_primary_like_sources": 0
+  },
+  "cards_promoted": 40,
+  "captures_promoted": 0
+}

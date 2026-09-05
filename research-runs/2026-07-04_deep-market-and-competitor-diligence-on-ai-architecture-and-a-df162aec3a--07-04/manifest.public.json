@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "task_id": "architect-ai-replacement-cx-focused-2026-07-04",
+  "question": "Deep market and competitor diligence on AI architecture and AI permitting startups for residential architecture, homebuilding design automation, construction document generation, BIM automation, automated building-code compliance checking, and construction permitting workflow. Focus on Higharc, Drafted, Maket, SWAPP, Augmenta, Motif, Pirros, PermitFlow, GreenLite, CodeComply, CivCheck, AutoReview, Archistar, Snaptrude, Arcol, Rayon, qbiq, Finch, Hypar, TestFit, Autodesk Forma, UpCodes, and adjacent incumbents. Determine funding raised, stage, product scope, customers, whether anyone can produce permit-ready/stamped architecture documents, regulatory/licensure constraints, direct-to-consumer vs B2B wedge, market size, moat, risks, and investment recommendation.",
+  "category": "general-research",
+  "evidence_type": "technical",
+  "depth": "deep",
+  "deliverable": "deep_report",
+  "requested_output_format": "deep_report",
+  "route": {
+    "skills": [
+      "cx-research-context-loader",
+      "cx-research-request-router",
+      "cx-research-workspace-router",
+      "technical-radar",
+      "source-compression",
+      "cx-research-source-card-pipeline",
+      "company-market-map",
+      "reddit-research",
+      "deep-research-report"
+    ],
+    "tools": [
+      "tavily",
+      "official-docs",
+      "standards-bodies",
+      "browser-manual-verification",
+      "summarize",
+      "official-company-sites",
+      "press-rooms",
+      "regulator-sites",
+      "reddit-data-api"
+    ],
+    "optional_tools": [
+      "brave-search",
+      "exa"
+    ],
+    "tool_controls": {
+      "required": [],
+      "preferred": [],
+      "forbidden": [
+        "github"
+      ]
+    },
+    "depth_profile": {
+      "min_passes": 6,
+      "min_sources": 20,
+      "max_sources": 40,
+      "required_checks": [
+        "discovery",
+        "expansion",
+        "gap_closing",
+        "contradiction_check",
+        "commercial_analysis",
+        "challenge_pass"
+      ],
+      "default_subagents": [
+        "scout",
+        "analyst",
+        "skeptic"
+      ]
+    },
+    "subagents": [
+      "scout",
+      "analyst",
+      "skeptic"
+    ],
+    "social_platforms": [
+      "reddit"
+    ],
+    "social_mode": "augment",
+    "explanation": "depth=deep; evidence_type=technical; deliverable=deep_report; requested_output_format=deep_report; source_shape=webpage,pdf; forbid_tools=github; social=reddit"
+  },
+  "coverage": {
+    "target_min_passes": 6,
+    "target_min_sources": 20,
+    "target_max_sources": 40,
+    "executed_passes": 11,
+    "source_count": 40,
+    "quality_profile": {
+      "min_meaningful_sources": 14,
+      "min_high_quality_sources": 8,
+      "min_primary_like_sources": 8
+    },
+    "meaningful_source_count": 33,
+    "high_quality_source_count": 33,
+    "primary_like_source_count": 9,
+    "source_class_counts": {
+      "official": 2,
+      "scholarly": 7,
+      "strong_secondary": 24,
+      "low_signal": 7
+    },
+    "met_source_floor": true,
+    "met_quality_floor": true,
+    "met_depth_standard": true,
+    "shortfall_sources": 0,
+    "shortfall_passes": 0,
+    "shortfall_meaningful_sources": 0,
+    "shortfall_high_quality_sources": 0,
+    "shortfall_primary_like_sources": 0
+  },
+  "reuse_lookup": {
+    "status": "ok",
+    "collections": [
+      "cx_research__pointers",
+      "cx_research__canon",
+      "cx_research__dossiers",
+      "cx_research__important",
+      "cx_research__latest",
+      "cx_research__library"
+    ],
+    "result_count": 1,
+    "authoritative_hit_count": 0,
+    "served_without_search": false
+  },
+  "promotion": {
+    "status": "promoted",
+    "reason": "met_depth_standard",
+    "cards_promoted": 33,
+    "captures_promoted": 0,
+    "decision": {
+      "status": "promote",
+      "reason": "met_depth_standard",
+      "shared_promotion_allowed": true,
+      "quarantined_in_run_dir": false,
+      "coverage_snapshot": {
+        "executed_passes": 11,
+        "source_count": 40,
+        "meaningful_source_count": 33,
+        "high_quality_source_count": 33,
+        "primary_like_source_count": 9,
+        "met_depth_standard": true
+      }
+    }
+  },
+  "live_run": {
+    "provider": "tavily+brave-search+exa+reddit-data-api",
+    "pass_count": 11,
+    "result_count": 40,
+    "capture_count": 25,
+    "query_variants": [
+      {
+        "pass_number": 1,
+        "label": "entity-official-site",
+        "query": "\"Autodesk Forma\" official company website",
+        "include_domains": [],
+        "result_count": 15
+      },
+      {
+        "pass_number": 2,
+        "label": "entity-product-signals",
+        "query": "\"Autodesk Forma\" official product platform robot system",
+        "include_domains": [],
+        "result_count": 15
+      },
+      {
+        "pass_number": 3,
+        "label": "entity-commercial-signals",
+        "query": "\"Autodesk Forma\" commercialization deployment customer partnership press release",
+        "include_domains": [],
+        "result_count": 15
+      },
+      {
+        "pass_number": 4,
+        "label": "discovery-primary",
+        "query": "Deep market and competitor diligence on AI architecture and AI permitting startups for residential architecture, homebuilding design automation, construction document generation, BIM automation, automated building-code compliance checking, and construction ... sources, AIA/NCARB/Census/BLS/ICC sources. Separate confirmed facts, inference, and open questions (site:reddit.com)",
+        "include_domains": [
+          "reddit.com"
+        ],
+        "result_count": 15
+      },
+      {
+        "pass_number": 5,
+        "label": "expansion-related",
+        "query": "Deep market and competitor diligence on AI architecture and AI permitting startups for residential architecture, homebuilding design automation, construction document generation, BIM automation, automated building-code compliance checking, and construction ... investment recommendation. official docs documentation release notes changelog github standards workflow tooling 2026",
+        "include_domains": [],
+        "result_count": 15
+      },
+      {
+        "pass_number": 6,
+        "label": "gap-closing",
+        "query": "Deep market and competitor diligence on AI architecture and AI permitting startups for residential architecture, homebuilding design automation, construction document generation, BIM automation, automated building-code compliance checking, and construction ... B2B wedge, market size, moat, risks, and investment recommendation. what changed recently latest update open questions",
+        "include_domains": [],
+        "result_count": 15
+      },
+      {
+        "pass_number": 7,
+        "label": "brave-web-1",
+        "query": "\"Autodesk Forma\" official company website",
+        "include_domains": [],
+        "result_count": 6
+      },
+      {
+        "pass_number": 8,
+        "label": "exa-web-1",
+        "query": "\"Autodesk Forma\" official company website",
+        "include_domains": [],
+        "result_count": 6
+      },
+      {
+        "pass_number": 9,
+        "label": "brave-web-2",
+        "query": "\"Autodesk Forma\" official product platform robot system",
+        "include_domains": [],
+        "result_count": 6
+      },
+      {
+        "pass_number": 10,
+        "label": "exa-web-2",
+        "query": "\"Autodesk Forma\" official product platform robot system",
+        "include_domains": [],
+        "result_count": 6
+      },
+      {
+        "pass_number": 11,
+        "label": "reddit-data-api-public",
+        "query": "Deep market and competitor diligence on AI architecture and AI permitting startups for residential architecture, homebuilding design automation, construction document generation, BIM automation, automated building-code compliance checking, and construction permitting workflow. Focus on Higharc, Drafted, Maket, SWAPP, Augmenta, Motif, Pirros, PermitFlow, GreenLite, CodeComply, CivCheck, AutoReview, Archistar, Snaptrude, Arcol, Rayon, qbiq, Finch, Hypar, TestFit, Autodesk Forma, UpCodes, and adjacent incumbents. Determine funding raised, stage, product scope, customers, whether anyone can produce permit-ready/stamped architecture documents, regulatory/licensure constraints, direct-to-consumer vs B2B wedge, market size, moat, risks, and investment recommendation.",
+        "include_domains": [
+          "reddit.com"
+        ],
+        "result_count": 0
+      }
+    ]
+  },
+  "api_health": {
+    "status": "warn",
+    "summary": {
+      "ok": 4,
+      "warn": 1,
+      "fail": 0,
+      "skipped": 0,
+      "service_count": 5
+    },
+    "blocking_failures": []
+  },
+  "deep_research": {
+    "theme_count": 6
+  }
+}

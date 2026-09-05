@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deep Sea Mining Startup Opportunity Map</title>
+  <style>
+    :root {
+      --ink: #172026;
+      --muted: #5c6973;
+      --line: #d9e0e4;
+      --paper: #fbfaf6;
+      --panel: #ffffff;
+      --teal: #0f766e;
+      --coral: #b64b38;
+      --gold: #b88418;
+      --green: #287044;
+      --blue: #2f5f9e;
+      --soft-teal: #e6f4f1;
+      --soft-coral: #f8ebe7;
+      --soft-gold: #fbf3df;
+      --soft-blue: #e9f0fb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.55;
+    }
+    a { color: var(--blue); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--line);
+      padding: 42px 0 28px;
+    }
+    .eyebrow { color: var(--teal); text-transform: uppercase; letter-spacing: 0.08em; font-size: 12px; font-weight: 700; }
+    h1 { font-size: 42px; line-height: 1.08; margin: 12px 0 16px; max-width: 900px; letter-spacing: 0; }
+    h2 { font-size: 26px; margin: 40px 0 14px; letter-spacing: 0; }
+    h3 { font-size: 18px; margin: 22px 0 8px; letter-spacing: 0; }
+    p { margin: 0 0 13px; }
+    .lede { font-size: 18px; color: #34424b; max-width: 960px; }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 26px;
+    }
+    .metric {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px 16px;
+      min-height: 92px;
+    }
+    .metric b { display: block; font-size: 24px; margin-bottom: 4px; }
+    .metric span { color: var(--muted); font-size: 13px; }
+    main { padding: 28px 0 56px; }
+    section { margin-bottom: 34px; }
+    .band {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+      margin: 18px 0;
+    }
+    .callout {
+      border-left: 5px solid var(--teal);
+      background: var(--soft-teal);
+      padding: 16px 18px;
+      border-radius: 8px;
+      margin: 18px 0;
+    }
+    .warning { border-left-color: var(--coral); background: var(--soft-coral); }
+    .watch { border-left-color: var(--gold); background: var(--soft-gold); }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .opp {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 16px 0;
+    }
+    .opp-top { display: flex; gap: 12px; align-items: flex-start; justify-content: space-between; }
+    .rank {
+      flex: 0 0 auto;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--soft-blue);
+      color: var(--blue);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 7px; margin: 8px 0 12px; }
+    .tag {
+      border: 1px solid var(--line);
+      background: #f7f9fa;
+      border-radius: 999px;
+      padding: 3px 8px;
+      font-size: 12px;
+      color: #35434b;
+      white-space: nowrap;
+    }
+    .tag.green { background: #e9f6ed; border-color: #c7e4d0; color: var(--green); }
+    .tag.gold { background: var(--soft-gold); border-color: #ecd8a6; color: #7a560e; }
+    .tag.coral { background: var(--soft-coral); border-color: #e8c4ba; color: var(--coral); }
+    .score { font-weight: 700; color: var(--teal); }
+    table { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { background: #edf3f4; font-size: 13px; color: #31404a; }
+    tr:last-child td { border-bottom: 0; }
+    ul { margin: 8px 0 0 20px; padding: 0; }
+    li { margin: 5px 0; }
+    .small { color: var(--muted); font-size: 13px; }
+    details { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; margin: 12px 0; }
+    summary { cursor: pointer; font-weight: 700; }
+    .columns { columns: 2; column-gap: 28px; }
+    .source-list li { break-inside: avoid; }
+    footer { border-top: 1px solid var(--line); padding: 22px 0; color: var(--muted); font-size: 13px; }
+    @media (max-width: 860px) {
+      h1 { font-size: 31px; }
+      .meta-grid, .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      .columns { columns: 1; }
+      .opp-top { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="eyebrow">EIR opportunity memo | Deep sea minerals | June 2, 2026</div>
+      <h1>Deep Sea Mining Startup Opportunity Map</h1>
+      <p class="lede">A venture-oriented synthesis from DeepSeaMining.ac, its internal articles and data pages, the linked Recent News items, and current regulatory and market research. The core conclusion: direct extraction is still a risky venture target, but the industry's uncertainty creates strong startup wedges in compliance data, environmental monitoring, permitting workflows, processing intelligence, and offshore logistics.</p>
+      <div class="meta-grid">
+        <div class="metric"><b>240</b><span>DeepSeaMining.ac URLs fetched or attempted in the local crawl.</span></div>
+        <div class="metric"><b>235</b><span>Internal pages returned HTTP 200, including articles, data explorers, archive pages, and topic pages.</span></div>
+        <div class="metric"><b>6</b><span>Recent News links from the consulting page reviewed as market-timing signals.</span></div>
+        <div class="metric"><b>Watch</b><span>Overall EIR verdict: build around picks and shovels, not a miner.</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2>Executive View</h2>
+      <div class="callout">
+        <p><strong>Verdict: watch, with selective invest/build on enabling infrastructure.</strong> I would not start or seed a commodity deep-sea miner today. I would seriously explore startups that help governments, contractors, investors, and insurers answer the industry's unsolved trust questions: where is the resource, what is the environmental baseline, who is operating, what will the plume do, what does the permit require, how bankable is the mine plan, and can the supply chain be audited?</p>
+      </div>
+      <p>DeepSeaMining.ac frames the sector as an emerging subsea minerals industry with large resources, specialized equipment, complex licensing, fragmented public datasets, uncertain processing economics, and a widening ecosystem of license holders, vessel contractors, service firms, researchers, financiers, regulators, and NGOs. That site also sells or describes data and modeling products, so its own product pages are an important signal: market participants are struggling to organize public DeepData, model mine sites, evaluate resource estimates, and diligence legal, operational, economic, and environmental risk.</p>
+      <p>External research adds two tensions. First, the U.S. pathway moved quickly: NOAA says it issued a final rule on January 21, 2026 revising DSHMRA application rules, lists active applications from The Metals Company USA, American Metal Resources, and SeaX, and notes TMC USA-B received a certification determination on May 26, 2026. Second, international legitimacy remains unresolved: the ISA exploitation code is still unfinished, July 2026 meetings are upcoming, and a large moratorium coalition argues that the scientific and governance record is not ready.</p>
+      <p>The best founder opportunities therefore sit between motion and uncertainty. They sell into activity before full commercial mining begins, and they remain useful if the industry slows, because the same tools support ocean science, offshore energy, biodiversity monitoring, national EEZ strategy, insurance, and critical minerals diligence.</p>
+    </section>
+
+    <section>
+      <h2>What Was Covered</h2>
+      <div class="grid-2">
+        <div class="band">
+          <h3>User-provided source layer</h3>
+          <p>The starting point was <a href="https://deepseamining.ac/consulting#gsc.tab=0">DeepSeaMining.ac's consulting page</a>. I treated it as unverified site content and crawled outward from its visible navigation and discovered links.</p>
+          <p>The page positions Deep Sea Mining Inc. as an advisor to businesses, governments, private equity, venture capital, and management consulting firms, with services around industry research, trends and modeling, and due diligence.</p>
+        </div>
+        <div class="band">
+          <h3>Crawl result</h3>
+          <p>The crawl found the site's article library, category pages, data explorers, company pages, archive pages, stock pages, products page, equipment page, mine-site valuation page, opportunity-size page, and document archive pages.</p>
+          <p>Gaps: two author pages returned HTTP 500; three static PDF paths returned HTTP 404. Several external Recent News sources are paywalled or partially accessible, so I used them as directional market signals only and triangulated with primary or accessible sources.</p>
+        </div>
+      </div>
+      <details>
+        <summary>DeepSeaMining.ac internal pages and article themes reviewed</summary>
+        <div class="columns small">
+          <ul class="source-list">
+            <li><a href="https://deepseamining.ac/consulting">Consulting</a>: advisory, due diligence, trends and modeling.</li>
+            <li><a href="https://deepseamining.ac/products">Products</a>: subsea data storage, search, visualization, private data, resource analysis.</li>
+            <li><a href="https://deepseamining.ac/deepdataexplorer">DeepData Explorer</a>, <a href="https://deepseamining.ac/deepdataexplorer/sample_points">environmental data</a>, and <a href="https://deepseamining.ac/deepdataexplorer/biological_results">biological data</a>.</li>
+            <li><a href="https://deepseamining.ac/companies">Companies</a>, <a href="https://deepseamining.ac/stocks">stocks</a>, and <a href="https://deepseamining.ac/ecosystem_diagram">ecosystem diagram</a>.</li>
+            <li><a href="https://deepseamining.ac/opportunity_size">Opportunity size</a> and <a href="https://deepseamining.ac/valuation/mine_site">mine-site evaluation</a>.</li>
+            <li><a href="https://deepseamining.ac/deep_sea_mining_equipment">Equipment</a>, including production support vessels, collectors, risers, separation, storage, and offloading.</li>
+            <li>Resource formation: <a href="https://deepseamining.ac/article/1">nodules</a>, <a href="https://deepseamining.ac/article/13">sulphides</a>, <a href="https://deepseamining.ac/article/16">cobalt-rich crusts</a>.</li>
+            <li>Zones: <a href="https://deepseamining.ac/article/5">CCZ</a>, <a href="https://deepseamining.ac/article/27">Penrhyn Basin</a>, <a href="https://deepseamining.ac/article/43">Cook Islands bathymetry</a>, <a href="https://deepseamining.ac/article/49">Minamitorishima</a>, Pacific Island EEZs.</li>
+            <li>Governance: <a href="https://deepseamining.ac/article/3">ISA</a>, <a href="https://deepseamining.ac/article/4">UNCLOS</a>, <a href="https://deepseamining.ac/article/12">EEZs</a>, and <a href="https://deepseamining.ac/article/47">license regime design</a>.</li>
+            <li>Operations: <a href="https://deepseamining.ac/article/25">CCZ logistics</a>, <a href="https://deepseamining.ac/article/44">STARS transshipment</a>, <a href="https://deepseamining.ac/article/15">deepwater operations</a>, <a href="https://deepseamining.ac/article/55">offshore diamond mining learnings</a>.</li>
+            <li>Processing and economics: <a href="https://deepseamining.ac/article/14">RKEF processing</a>, <a href="https://deepseamining.ac/article/26">processing options</a>, <a href="https://deepseamining.ac/article/18">copper crunch</a>, <a href="https://deepseamining.ac/article/46">production projections</a>.</li>
+            <li>Environmental and EIA: <a href="https://deepseamining.ac/article/20">NORI collector test EIS</a>, <a href="https://deepseamining.ac/article/19">Kennecott EIA</a>, <a href="https://deepseamining.ac/article/21">land vs subsea mining</a>, <a href="https://deepseamining.ac/article/58">terrestrial mining impact</a>, <a href="https://deepseamining.ac/article/60">moratorium review</a>.</li>
+            <li>Competitor/equipment articles: TMC, Allseas Hidden Gem, Impossible Metals Eureka, GSR Patania, Blue Minerals, China systems, NOV, ABS, Deep Reach Technology.</li>
+          </ul>
+        </div>
+      </details>
+      <details>
+        <summary>Recent News links from the consulting page</summary>
+        <table>
+          <thead><tr><th>Outlet</th><th>Date on DeepSeaMining.ac</th><th>Link</th><th>How used</th></tr></thead>
+          <tbody>
+            <tr><td>Wall Street Journal</td><td>Jul 29, 2024</td><td><a href="https://www.wsj.com/video/series/wsj-explains/inside-the-race-to-mine-92-billion-worth-of-deep-sea-minerals/316A1734-F5F9-4C12-AD8E-E9E5B6C7585F">Inside the Race to Mine $92 Billion Worth of Deep Sea Minerals</a></td><td>Directional signal: Norway and deep-sea minerals as mainstream business/geopolitical topic.</td></tr>
+            <tr><td>Bloomberg</td><td>Jul 29, 2024</td><td><a href="https://www.bloomberg.com/news/articles/2024-07-29/the-future-of-deep-sea-mining-hinges-on-a-contentious-election">The Future of Deep Sea Mining Hinges on a Contentious Election</a></td><td>Accessible lines confirm ISA leadership and election mattered to industry timing.</td></tr>
+            <tr><td>The Economist</td><td>Jul 28, 2024</td><td><a href="https://www.economist.com/china/2024/07/28/china-is-itching-to-mine-the-ocean-floor">China is itching to mine the ocean floor</a></td><td>Directional signal: critical minerals and China supply-chain control narrative.</td></tr>
+            <tr><td>Wall Street Journal</td><td>May 23, 2024</td><td><a href="https://www.wsj.com/articles/congress-to-fund-u-s-deep-sea-mining-project-8c930869">Congress to Fund U.S. Deep-Sea Mining Project</a></td><td>Triangulated via mining press and CRS references to DOD feasibility interest.</td></tr>
+            <tr><td>Forbes</td><td>Mar 26, 2024</td><td><a href="https://www.forbes.com/sites/christopherhelman/2024/03/26/this-deep-sea-mining-company-will-sweep-the-ocean-floor-for-battery-materials-if-it-doesnt-go-broke-first/">This Deep-Sea Mining Company Will Sweep The Ocean Floor For Battery Materials</a></td><td>Accessible context on TMC, collector technology, funding challenge, and expected timing.</td></tr>
+            <tr><td>Financial Times</td><td>Mar 25, 2024</td><td><a href="https://www.ft.com/content/0e550c72-c6b1-42ac-876b-22aa49c2057b">China and Russia challenge US claim to mineral-rich stretches of seabed</a></td><td>Directional signal: continental shelf and treaty legitimacy are geopolitical fault lines.</td></tr>
+          </tbody>
+        </table>
+      </details>
+    </section>
+
+    <section>
+      <h2>Market Timing Signals</h2>
+      <div class="grid-3">
+        <div class="band">
+          <h3>Regulatory acceleration in the U.S.</h3>
+          <p>NOAA says DSHMRA requires U.S. companies to obtain exploration licenses and commercial recovery permits for polymetallic nodules beyond national jurisdiction, and that it issued a final rule on January 21, 2026 revising parts of the application framework. NOAA's current applications list includes American Metal Resources, SeaX, and The Metals Company USA.</p>
+          <p class="small">Sources: <a href="https://oceanservice.noaa.gov/deep-seabed-mineral-resources/deep-seabed-mining/">NOAA deep seabed mining page</a>; <a href="https://public-inspection.federalregister.gov/2026-01044.pdf">Federal Register final rule PDF</a>.</p>
+        </div>
+        <div class="band">
+          <h3>ISA uncertainty remains</h3>
+          <p>The ISA describes the Mining Code as the rules and procedures for prospecting, exploration, and exploitation. Exploration rules exist for nodules, sulphides, and crusts, but exploitation rules have been under development since 2014. ENB's March 2026 session summary says important operational components and standards still had not been resolved, with the next major ISA meeting set for July 13-31, 2026.</p>
+          <p class="small">Sources: <a href="https://isa.org.jm/the-mining-code/">ISA Mining Code</a>; <a href="https://enb.iisd.org/international-seabed-authority-isa-council-31-1-summary">ENB March 2026 ISA summary</a>.</p>
+        </div>
+        <div class="band">
+          <h3>Opposition is material, not fringe</h3>
+          <p>The Deep Sea Conservation Coalition lists 41 states taking positions against deep-sea mining in international waters through bans, moratoria, or precautionary pauses. AP reported in May 2026 that American Samoa and Guam have bans in local waters while the federal government controls waters beyond three miles, creating a direct local-versus-federal conflict.</p>
+          <p class="small">Sources: <a href="https://deep-sea-conservation.org/solutions/no-deep-sea-mining/momentum-for-a-moratorium/governments-and-parliamentarians/">DSCC moratorium tracker</a>; <a href="https://apnews.com/article/trump-deepsea-mining-executive-orders-oceans-environment-399faab6fc32922b4c533d3bad9c1ca5">AP May 2026 report</a>.</p>
+        </div>
+      </div>
+      <div class="grid-3">
+        <div class="band">
+          <h3>Resource and technology pull</h3>
+          <p>USGS explains that nodules, crusts, sulphides, and phosphorites are enriched in critical metals and that nodules are attractive partly because their distribution and density can be quantified. DeepSeaMining.ac's equipment and valuation pages show the technical chain: collectors, risers, production support vessels, separation, bulk offload, processing, and site economics.</p>
+          <p class="small">Sources: <a href="https://www.usgs.gov/centers/pcmsc/science/global-seabed-mineral-resources">USGS Global Seabed Mineral Resources</a>; <a href="https://deepseamining.ac/deep_sea_mining_equipment">DeepSeaMining.ac equipment</a>.</p>
+        </div>
+        <div class="band">
+          <h3>Data transparency is becoming a public product</h3>
+          <p>Global Fishing Watch launched Deep-Sea Mining Watch in December 2025 to track mining and exploration vessels across ISA license areas using AIS data up to 72 hours old, area filters, contractor filters, and reports. This validates data transparency as a category, but also creates room for commercial-grade compliance and audit layers.</p>
+          <p class="small">Source: <a href="https://globalfishingwatch.org/platform-update/deep-sea-mining-watch-portal/">Global Fishing Watch Deep Sea Mining Watch Portal</a>.</p>
+        </div>
+        <div class="band">
+          <h3>Commercial case is still fragile</h3>
+          <p>AP's 2026 takeaway notes that analysts question whether the business case works when some land-based mineral sources are permitted but idle. WRI also notes land resources may be sufficient, recycling can reduce future primary demand, and battery chemistry shifts can change demand for nickel, cobalt, and manganese.</p>
+          <p class="small">Sources: <a href="https://apnews.com/article/deepsea-mining-takeaways-trump-oceans-environment-faf90846196789baa5b088f302ce5720">AP takeaways</a>; <a href="https://www.wri.org/insights/deep-sea-mining-explained">WRI explainer</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Opportunity Ranking</h2>
+      <table>
+        <thead><tr><th>Rank</th><th>Opportunity</th><th>Primary buyer</th><th>Why it can start before mining revenue</th><th>EIR posture</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Environmental baseline, monitoring, and compliance OS</td><td>Miners, regulators, sponsoring states, insurers, NGOs</td><td>Permits, EIS, EMMP, and public trust require evidence now.</td><td><strong>Invest/build</strong></td></tr>
+          <tr><td>2</td><td>Seabed minerals data and resource intelligence platform</td><td>Governments, investors, operators, consultants</td><td>DeepData, archives, samples, biological data, and public documents are fragmented today.</td><td><strong>Invest/build</strong></td></tr>
+          <tr><td>3</td><td>Permit workflow and stakeholder evidence platform</td><td>Applicants, EEZ governments, law firms, development banks</td><td>NOAA, BOEM, ISA, and EEZ regimes create paperwork, comment, and audit needs now.</td><td><strong>Invest/build</strong></td></tr>
+          <tr><td>4</td><td>Processing and refinery optimization intelligence</td><td>Operators, refiners, DOD/DLA-adjacent buyers, project finance</td><td>Processing bottlenecks block bankability before ore flows.</td><td><strong>Invest if technical wedge exists</strong></td></tr>
+          <tr><td>5</td><td>Vessel activity, dark-fleet, and operating-area analytics</td><td>Regulators, insurers, NGOs, operators, lenders</td><td>Exploration vessels are active now, and transparency matters before commercial recovery.</td><td><strong>Invest selectively</strong></td></tr>
+          <tr><td>6</td><td>Offshore logistics, STARS, and transshipment planning software</td><td>Operators, PSV owners, class societies, insurers</td><td>Mine plans and vessel class decisions must be made before production.</td><td><strong>Watch to build</strong></td></tr>
+          <tr><td>7</td><td>Low-impact collector components and perception stack</td><td>Collector OEMs, robotics companies, research institutions</td><td>Collectors are being prototyped and tested now.</td><td><strong>Watch, high capex</strong></td></tr>
+          <tr><td>8</td><td>Community benefit, royalty, and local-impact transparency</td><td>SIDS governments, territories, NGOs, impact funds</td><td>Local opposition and benefit-sharing are gating risks now.</td><td><strong>Watch, likely services-heavy</strong></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Detailed Opportunities</h2>
+
+      <article class="opp">
+        <div class="opp-top"><div><span class="rank">1</span><h3>Environmental Baseline, Monitoring, and Compliance OS</h3></div><span class="score">Highest conviction</span></div>
+        <div class="tag-row"><span class="tag green">Software plus data</span><span class="tag green">Permitting pull</span><span class="tag gold">Regulatory risk hedge</span></div>
+        <p><strong>Problem.</strong> Commercial deep-sea mining cannot get legitimate without credible environmental baselines, plume monitoring, biodiversity records, water-column data, vessel activity records, and audit-ready reporting. The site devotes meaningful space to EIA documents, NORI collector testing, Kennecott historical EIA work, land-versus-sea comparisons, biodiversity, and DeepData. External sources show why: WRI lists deep uncertainty about species, plumes, fisheries, carbon-cycle effects, and governance; DSCC tracks broad moratorium support; NOAA and ISA both require formal application, monitoring, and public processes.</p>
+        <p><strong>Startup shape.</strong> A compliance data platform that ingests ISA DeepData, NOAA application materials, contractor annual reports, ROV imagery, eDNA samples, sensor streams, AIS/vessel data, acoustic data, plume model outputs, and stakeholder comments. It turns them into audit trails, baseline dashboards, EIS/EMMP evidence packs, serious-harm threshold monitoring, and regulator-ready templates.</p>
+        <p><strong>Customers.</strong> Deep-sea mineral applicants, sponsoring states, EEZ governments, class societies, insurers, project-finance lenders, environmental consultancies, and eventually regulators who need independent verification.</p>
+        <p><strong>Moat.</strong> Cross-jurisdiction template library, proprietary normalization of seabed datasets, integrated sensor/vendor network, model audit logs, and credibility with both industry and cautious regulators. The key moat is trust, not just data volume.</p>
+        <p><strong>Business model.</strong> Annual enterprise contracts for operators and governments, paid technical modules for EIA/EMMP generation, data-room subscriptions for investors, and high-margin verification/audit services during permit windows.</p>
+        <p><strong>Risks.</strong> Regulatory timelines may slip; miners may prefer in-house or incumbent environmental consultants; NGOs may reject industry-paid monitoring unless the product is independently governed.</p>
+        <p><strong>First experiments.</strong> Build a narrow MVP around one public EIS and one NOAA/ISA application, interview 10 environmental consultants and 5 regulators, and produce a regulator-grade monitoring dashboard for one license block using only public data.</p>
+      </article>
+
+      <article class="opp">
+        <div class="opp-top"><div><span class="rank">2</span><h3>Seabed Minerals Data and Resource Intelligence Platform</h3></div><span class="score">Very strong, but competitive</span></div>
+        <div class="tag-row"><span class="tag green">Data platform</span><span class="tag gold">Existing demand validated</span><span class="tag coral">Incumbent signal: DeepSeaMining.ac</span></div>
+        <p><strong>Problem.</strong> The site itself highlights the pain: ISA DeepData is valuable but hard to search, public datasets are scattered, exploration licenses span multiple jurisdictions, and investors need resource estimates, ore quality, production forecasts, and mine-site economics. DeepSeaMining.ac's product page offers public datasets, document search, visualization, private uploads, 3-D visualizers, and resource analysis. That validates demand, but it also means a startup must differentiate.</p>
+        <p><strong>Startup shape.</strong> A Bloomberg Terminal for seabed minerals: license blocks, samples, bathymetry, cruises, CTD, biological observations, contractor reports, patents, historical NOAA/ISA documents, resource estimates, nodule composition, geography, and mine plans in a searchable API-first product. Add AI search over documents, map layers, bankability flags, and scenario models for production, revenue, capex, and regulatory timing.</p>
+        <p><strong>Customers.</strong> Critical minerals investors, strategics, project finance teams, governments building EEZ regimes, mining operators, consultancies, legal teams, and defense/industrial-base analysts.</p>
+        <p><strong>Moat.</strong> Data QA, source provenance, live regulatory status, private data rooms, and repeatable resource-model workflows. A high-quality API plus diligence-grade auditability is more defensible than a nicer map.</p>
+        <p><strong>Business model.</strong> Seat-based subscriptions for investors and consultants, API access for corporates, private data rooms for operators, and paid diligence reports.</p>
+        <p><strong>Risks.</strong> DeepSeaMining.ac already occupies part of this wedge; public agencies may improve their own tools; users may treat the market as too early for paid software.</p>
+        <p><strong>First experiments.</strong> Build a focused data product for 20 CCZ and EEZ license blocks, sell three paid diligence pilots to investors or consultants, and prove that the platform can answer resource, permit, and competitor questions faster than manual research.</p>
+      </article>
+
+      <article class="opp">
+        <div class="opp-top"><div><span class="rank">3</span><h3>Permit Workflow and Stakeholder Evidence Platform</h3></div><span class="score">Strong services-to-software path</span></div>
+        <div class="tag-row"><span class="tag green">RegTech</span><span class="tag green">Government buyer</span><span class="tag gold">Complex workflows</span></div>
+        <p><strong>Problem.</strong> NOAA's 2026 page shows application types, public comment windows, hearings, Federal Register notices, certification milestones, and pre-application consultation. The ISA Mining Code remains unsettled. EEZ regimes, such as Cook Islands, Norway, American Samoa, Japan, and others described by DeepSeaMining.ac, add national variation. Applicants and governments need to manage evidence, consultation, public records, legal references, and technical attachments without losing credibility.</p>
+        <p><strong>Startup shape.</strong> A permit command center for seabed minerals: workflow templates for DSHMRA, ISA exploration/exploitation, BOEM/Outer Continental Shelf paths, and EEZ license regimes; public comment intelligence; objection tracking; stakeholder commitments; evidence rooms; task ownership; and regulator-facing submissions.</p>
+        <p><strong>Customers.</strong> Mining applicants, EEZ ministries, law firms, environmental consultancies, development banks, and island-state advisors.</p>
+        <p><strong>Moat.</strong> Jurisdiction-specific templates, regulator relationships, process data, and a library of objections and accepted evidence. The business can start as a high-trust advisory product and productize repeated workflows.</p>
+        <p><strong>Business model.</strong> Setup fees per application, annual workflow subscriptions, and advisory retainers for governments creating licensing frameworks.</p>
+        <p><strong>Risks.</strong> Government procurement is slow; operators may use law firms; controversial projects can make a vendor reputationally exposed.</p>
+        <p><strong>First experiments.</strong> Run a mock DSHMRA application tracker using public NOAA filings, interview 5 mining lawyers and 5 EEZ officials, and produce a one-click public-comment issue map for one active application.</p>
+      </article>
+
+      <article class="opp">
+        <div class="opp-top"><div><span class="rank">4</span><h3>Nodule Processing and Refinery Optimization Intelligence</h3></div><span class="score">High value if technical</span></div>
+        <div class="tag-row"><span class="tag green">Critical bottleneck</span><span class="tag gold">Deep expertise needed</span><span class="tag coral">Capex adjacent</span></div>
+        <p><strong>Problem.</strong> Mining is not the only bottleneck. Nodules must become saleable metals. DeepSeaMining.ac covers processing options, RKEF processing, composition differences between CCZ and Cook Islands nodules, and mine-site valuation. TMC's 2025 application announcement emphasizes nickel, copper, cobalt, and manganese resources, while recent coverage points to U.S. interest in domestic refining feasibility. Different nodule chemistries can radically change process route, recovery, emissions, waste, and economics.</p>
+        <p><strong>Startup shape.</strong> A processing intelligence layer that combines assays, ore composition, metallurgical test data, process flow models, energy and reagent intensity, capex/opex assumptions, carbon/waste impacts, and product-market pathways. It could begin as software for techno-economic analysis and expand into lab partnerships or pilot-plant coordination.</p>
+        <p><strong>Customers.</strong> Nodule developers, refineries, DOD/DLA-adjacent supply-chain teams, strategic metals buyers, banks, and governments evaluating domestic processing.</p>
+        <p><strong>Moat.</strong> Metallurgical datasets, calibrated process models, refinery relationships, and validated cost curves. This is harder to copy than a document search tool if the team has real metallurgy depth.</p>
+        <p><strong>Business model.</strong> Paid techno-economic studies, subscription scenario tools, lab/test management fees, and licensing of process-digital-twin modules.</p>
+        <p><strong>Risks.</strong> Requires scarce technical talent; customers may be few; processing choices may be held as trade secrets; revenue may depend on the same mining timelines.</p>
+        <p><strong>First experiments.</strong> Build a public nodule-composition-to-process-route model, partner with one university or assay lab, and test whether investors or operators will pay for independent process-risk reports.</p>
+      </article>
+
+      <article class="opp">
+        <div class="opp-top"><div><span class="rank">5</span><h3>Vessel Activity, Dark-Fleet, and Operating-Area Analytics</h3></div><span class="score">Good wedge, existing public competitor</span></div>
+        <div class="tag-row"><span class="tag green">Data product</span><span class="tag gold">Transparency pull</span><span class="tag coral">GFW validates category</span></div>
+        <p><strong>Problem.</strong> Exploration, sampling, collector testing, and support operations happen at sea, often far from public view. Global Fishing Watch's Deep-Sea Mining Watch validates demand for near-real-time vessel tracking, ISA license-area filtering, contractor views, and activity reports. Commercial buyers will need richer workflows: compliance exceptions, insurance-grade voyage records, port calls, transshipment risk, protected-area overlap, and anomaly alerts.</p>
+        <p><strong>Startup shape.</strong> A commercial analytics product that fuses AIS, satellite imagery, license boundaries, vessel identity, weather, port data, contractor relationships, and environmental/protected-area layers. Build reports for operators proving compliance and for regulators/insurers checking it.</p>
+        <p><strong>Customers.</strong> Regulators, insurers, NGOs, journalists, investors, vessel owners, class societies, and operators.</p>
+        <p><strong>Moat.</strong> Proprietary activity classification, alert quality, vessel identity resolution, and integration into permit/compliance workflows.</p>
+        <p><strong>Business model.</strong> Subscriptions, alerting tiers, audit reports, API access, and insurer/regulator contracts.</p>
+        <p><strong>Risks.</strong> Global Fishing Watch provides a strong free public baseline; AIS can be incomplete; some buyers may want open access rather than paid tools.</p>
+        <p><strong>First experiments.</strong> Produce a public report on CCZ exploration-vessel activity over the last 12 months, sell an audit pack to one insurer or investor, and test anomaly detection around known research cruises.</p>
+      </article>
+
+      <article class="opp">
+        <div class="opp-top"><div><span class="rank">6</span><h3>Offshore Logistics, STARS, and Transshipment Planning Software</h3></div><span class="score">Niche but real</span></div>
+        <div class="tag-row"><span class="tag gold">Operational niche</span><span class="tag green">Offshore expertise transferable</span><span class="tag coral">Small buyer universe</span></div>
+        <p><strong>Problem.</strong> DeepSeaMining.ac calls STARS, or ship-to-ship transfer and resupply, a missing link in the supply chain. CCZ operations are remote; production support vessels, bulk ore carriers, weather windows, fuel, crew transfers, riser systems, and classification constraints must all work together. A mine plan that ignores offloading and resupply is not bankable.</p>
+        <p><strong>Startup shape.</strong> A simulation and operations-planning product for deepwater mineral projects: route and weather modeling, fleet sizing, transshipment scheduling, risk windows, class-society constraints, maintenance, emissions, and cost sensitivity. Start as a planning product, then become live operations support once projects move offshore.</p>
+        <p><strong>Customers.</strong> Operators, Allseas-like PSV owners, bulk carriers, marine insurers, ABS/DNV-type class partners, and project finance teams.</p>
+        <p><strong>Moat.</strong> Offshore operations expertise, data from simulated and real voyages, and integration into risk underwriting.</p>
+        <p><strong>Business model.</strong> Project studies, annual planning software, and live operations modules.</p>
+        <p><strong>Risks.</strong> Few immediate customers; many incumbents in offshore simulation; sales may look like consulting until mining scales.</p>
+        <p><strong>First experiments.</strong> Build an open CCZ logistics calculator, interview offshore drilling logistics veterans, and create a mine-plan sensitivity report showing how STARS assumptions alter revenue and risk.</p>
+      </article>
+
+      <article class="opp">
+        <div class="opp-top"><div><span class="rank">7</span><h3>Low-Impact Collector Components and Perception Stack</h3></div><span class="score">Deep tech, hard mode</span></div>
+        <div class="tag-row"><span class="tag gold">Robotics</span><span class="tag coral">High capex</span><span class="tag coral">Long cycle</span></div>
+        <p><strong>Problem.</strong> The collector is the visible symbol of environmental risk. The site covers multiple harvesters, from Patania to TMC's harvester to Impossible Metals' Eureka. Impossible Metals says Eureka uses AI-guided selective harvesting, avoids visible life, and hovers above the seabed to reduce sediment disturbance. Even if that exact architecture wins or loses, operators need perception, manipulation, plume reduction, navigation, launch/recovery, and reliability at 4,000 to 6,000 meters.</p>
+        <p><strong>Startup shape.</strong> Do not build a full mining company. Build a component company: low-light perception and lifeform detection, sediment-plume sensors, manipulator modules, AUV fleet management, autonomy safety cases, or launch/recovery hardware.</p>
+        <p><strong>Customers.</strong> Collector OEMs, Impossible Metals-like operators, research institutions, defense undersea programs, offshore energy inspection companies, and ocean science labs.</p>
+        <p><strong>Moat.</strong> Field-tested hardware, pressure-rated systems, datasets from real abyssal operations, and defensible patents.</p>
+        <p><strong>Business model.</strong> Hardware sales, licensing, R&D contracts, and services for field trials.</p>
+        <p><strong>Risks.</strong> High capex, long testing cycles, environmental controversy, and buyer concentration. This is not a casual seed-stage software wedge.</p>
+        <p><strong>First experiments.</strong> Pick one module only, test in ocean-science or offshore-energy markets first, and secure non-mining revenue before betting on commercial seabed extraction.</p>
+      </article>
+
+      <article class="opp">
+        <div class="opp-top"><div><span class="rank">8</span><h3>Community Benefit, Royalty, and Local-Impact Transparency</h3></div><span class="score">Important, but harder venture case</span></div>
+        <div class="tag-row"><span class="tag gold">Impact infrastructure</span><span class="tag gold">SIDS and territories</span><span class="tag coral">Procurement risk</span></div>
+        <p><strong>Problem.</strong> Deep-sea mineral projects often intersect with small island states and territories. DSCC, WRI, AP, and DeepSeaMining.ac all point toward governance, benefit sharing, environmental justice, and EEZ authority as central issues. AP's reporting on American Samoa, Guam, and Northern Mariana Islands shows that local opposition can create a blocking risk even when federal jurisdiction favors development.</p>
+        <p><strong>Startup shape.</strong> A platform and advisory product for governments and communities to evaluate proposed projects: royalty models, local employment commitments, environmental monitoring access, public dashboards, benefit-sharing terms, complaint tracking, and independent evidence rooms.</p>
+        <p><strong>Customers.</strong> SIDS governments, U.S. territories, development banks, NGOs, foundations, and operators trying to earn legitimacy.</p>
+        <p><strong>Moat.</strong> Trust with communities and governments, model transparency, and a repeatable licensing-benefit template.</p>
+        <p><strong>Business model.</strong> Government SaaS plus advisory, foundation-funded deployments, and operator-funded transparency modules with independent governance.</p>
+        <p><strong>Risks.</strong> Buyer budgets may be thin; stakeholder trust can be destroyed if the product is seen as industry capture; venture-scale growth is less obvious.</p>
+        <p><strong>First experiments.</strong> Build a public American Samoa or Cook Islands benefit-risk dashboard, interview local leaders and fisheries stakeholders, and test foundation/development-bank appetite for a neutral tool.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Ideas I Would Pass On</h2>
+      <div class="warning">
+        <p><strong>Pass on starting a direct deep-sea mining license holder from scratch.</strong> It is capital intensive, politically exposed, vulnerable to moratorium and treaty risk, dependent on processing, exposed to environmental litigation, and too slow for normal venture pacing unless the team already has exceptional permits, capital, engineering partners, and government support.</p>
+      </div>
+      <div class="grid-2">
+        <div class="band">
+          <h3>Commodity miner</h3>
+          <p>The value may be large, but value capture sits behind approvals, vessels, collectors, processing, offtake, environmental legitimacy, and geopolitical legitimacy. This is more project finance or strategic capital than venture.</p>
+        </div>
+        <div class="band">
+          <h3>Generic consulting</h3>
+          <p>DeepSeaMining.ac already has a clear consulting/product position. A new venture should productize a specific repeated pain, not launch another broad advisory shop.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Competitive Landscape</h2>
+      <table>
+        <thead><tr><th>Segment</th><th>Players and signals</th><th>Startup implication</th></tr></thead>
+        <tbody>
+          <tr><td>Operators and license holders</td><td>TMC, Impossible Metals, American Metal Resources, SeaX, Deep Sea Minerals Corp., Deep Sea Rare Minerals/Eco Minerals, Loke, Green Minerals, Moana, CIC, CSR, GSR, COMRA, BGR, UKSR and others appear across DeepSeaMining.ac, NOAA/AP, and company sources.</td><td>There are enough operators to sell picks-and-shovels, but still too few for a narrow single-customer product.</td></tr>
+          <tr><td>Offshore and vessel services</td><td>Allseas, Transocean, NOV, ABS, Deep Reach Technology, offshore survey firms, class societies, and logistics contractors show up across equipment, ecosystem, and interview pages.</td><td>Startups can sell modules, simulation, data, audit, and compliance into existing offshore ecosystems.</td></tr>
+          <tr><td>Data and transparency</td><td>ISA DeepData, DeepSeaMining.ac DeepData Explorer, Global Fishing Watch Deep-Sea Mining Watch, USGS marine mineral data, NOAA application dockets.</td><td>The baseline is public and improving. Commercial differentiation must be workflow, QA, integration, and auditability.</td></tr>
+          <tr><td>Environmental and opposition ecosystem</td><td>DSCC, WRI, Greenpeace, scientists, local governments, fisheries stakeholders, Pacific Island groups.</td><td>Any serious startup must decide whether it is industry-side, regulator-side, community-side, or explicitly neutral.</td></tr>
+          <tr><td>Processing and critical minerals buyers</td><td>TMC, ReElement/Impossible collaboration, PAMCO/RKEF discussions, DOD feasibility interest, battery and defense demand narratives.</td><td>Processing is a bottleneck and a diligence opportunity, but it requires metallurgical credibility.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Porter 5 Forces</h2>
+      <div class="grid-2">
+        <div class="band"><h3>Supplier power: high</h3><p>Specialized vessels, collector hardware, deepwater engineering talent, environmental consultants, and processing facilities are scarce. This favors software and data products that reduce dependency or help buyers negotiate.</p></div>
+        <div class="band"><h3>Buyer power: high early, medium later</h3><p>Today there are few buyers. They are sophisticated and can build internally. If NOAA/ISA/EEZ activity expands, buyer count improves, especially governments, insurers, and investors.</p></div>
+        <div class="band"><h3>Threat of substitutes: high</h3><p>Land-based mining, recycling, tailings recovery, battery chemistry shifts, and sodium-ion/LFP alternatives can weaken nodule demand. Startup wedges should survive even if extraction slows.</p></div>
+        <div class="band"><h3>New entrants: mixed</h3><p>Software/data entrants are easy; trusted environmental and regulatory products are harder. Hardware entrants face capital, field testing, pressure-rating, and safety barriers.</p></div>
+        <div class="band"><h3>Rivalry: rising</h3><p>Operator rivalry is rising in the U.S. permit lane and EEZs. In data/compliance, competition is early but emerging from NGOs, consultants, public agencies, and DeepSeaMining.ac itself.</p></div>
+        <div class="band"><h3>Regulatory force: existential</h3><p>Not a classic Porter category, but here it dominates. NOAA acceleration can create demand, while ISA gridlock or moratoria can freeze extraction. Pick opportunities that monetize preparation, transparency, and science.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Recommendation</h2>
+      <div class="callout watch">
+        <p><strong>Investment verdict: watch, with selective investment in the top three infrastructure wedges.</strong> I would pursue customer discovery and MVP work immediately for environmental compliance OS, seabed data intelligence, and permit workflow software. I would keep processing intelligence on the shortlist if a metallurgical founder is available. I would avoid direct mining and full-stack collector hardware unless backed by unusually strong technical and government partners.</p>
+      </div>
+      <h3>Why now</h3>
+      <p>NOAA's 2026 rule and application queue create a near-term U.S. permitting pull. ISA's unresolved exploitation code creates demand for scenario planning and compliance interpretation. Public scrutiny and moratorium momentum force higher-quality evidence. Data products are newly validated by DeepSeaMining.ac and Global Fishing Watch, but the market is not yet saturated. Investors and governments need diligence before capital is deployed.</p>
+      <h3>Why not now</h3>
+      <p>Commercial extraction is not yet proven. Processing economics are uncertain. Opposition is organized and growing. Public trust is fragile. A startup that depends on mined-tonnage revenue may wait years for revenue and may never get it.</p>
+      <h3>Top risks</h3>
+      <ul>
+        <li>Regulatory delay or moratorium reduces operator spend.</li>
+        <li>Environmental science undermines commercial extraction assumptions.</li>
+        <li>Customers treat data/compliance as consulting rather than software.</li>
+        <li>Existing players like DeepSeaMining.ac, Global Fishing Watch, consultancies, and public agencies occupy the best data workflows.</li>
+        <li>Local and Indigenous/community opposition blocks projects even where national or federal agencies support them.</li>
+        <li>Battery chemistry, recycling, and land-based supply weaken the mineral-demand case.</li>
+      </ul>
+      <h3>Next diligence questions</h3>
+      <ul>
+        <li>Which NOAA/DSHMRA applicants have actual budget today for compliance software, monitoring, or data rooms?</li>
+        <li>Do regulators or insurers want third-party monitoring tools, or will they rely on government/consultant processes?</li>
+        <li>What environmental metrics will define "serious harm" in practice, and who will pay to monitor them?</li>
+        <li>Can a neutral data product be trusted by both industry and anti-mining stakeholders?</li>
+        <li>Which processing route is most likely to reach bankable economics for CCZ and Cook Islands nodules?</li>
+        <li>How many EEZ governments are actively considering licenses but lack technical capacity?</li>
+      </ul>
+      <h3>Next 3 experiments</h3>
+      <ol>
+        <li><strong>Ten-buyer discovery sprint.</strong> Interview two operators, two environmental consultancies, two investors/lenders, two government/regulatory stakeholders, one insurer, and one NGO/scientist. Test willingness to pay for compliance dashboards, data rooms, and permit workflows.</li>
+        <li><strong>Public-data MVP.</strong> Build a dashboard for one active or recent project using public NOAA/ISA/DeepData/GFW-style data: license area, documents, baseline data, vessel activity, EIA requirements, public comments, and open risks.</li>
+        <li><strong>Paid diligence pilot.</strong> Offer a $10,000 to $25,000 investor-grade report or government readiness assessment. If no one pays for the artifact, the software wedge is probably premature.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Source Links</h2>
+      <div class="grid-2">
+        <div class="band">
+          <h3>Primary and official sources</h3>
+          <ul>
+            <li><a href="https://oceanservice.noaa.gov/deep-seabed-mineral-resources/deep-seabed-mining/">NOAA: Deep Seabed Hard Minerals Mining</a></li>
+            <li><a href="https://public-inspection.federalregister.gov/2026-01044.pdf">Federal Register: NOAA January 2026 final rule PDF</a></li>
+            <li><a href="https://isa.org.jm/the-mining-code/">International Seabed Authority: Mining Code</a></li>
+            <li><a href="https://enb.iisd.org/international-seabed-authority-isa-council-31-1-summary">Earth Negotiations Bulletin: ISA Council March 2026 summary</a></li>
+            <li><a href="https://investors.metals.co/news-releases/news-release-details/world-first-tmc-usa-submits-application-commercial-recovery-deep">The Metals Company: April 29, 2025 U.S. application announcement</a></li>
+            <li><a href="https://www.usgs.gov/centers/pcmsc/science/global-seabed-mineral-resources">USGS: Global Seabed Mineral Resources</a></li>
+          </ul>
+        </div>
+        <div class="band">
+          <h3>Market, opposition, and data sources</h3>
+          <ul>
+            <li><a href="https://deepseamining.ac/consulting#gsc.tab=0">DeepSeaMining.ac consulting page</a></li>
+            <li><a href="https://deepseamining.ac/products">DeepSeaMining.ac products page</a></li>
+            <li><a href="https://deepseamining.ac/deepdataexplorer">DeepSeaMining.ac DeepData Explorer</a></li>
+            <li><a href="https://globalfishingwatch.org/platform-update/deep-sea-mining-watch-portal/">Global Fishing Watch: Deep Sea Mining Watch Portal</a></li>
+            <li><a href="https://www.wri.org/insights/deep-sea-mining-explained">World Resources Institute: What We Know About Deep-Sea Mining</a></li>
+            <li><a href="https://deep-sea-conservation.org/solutions/no-deep-sea-mining/momentum-for-a-moratorium/governments-and-parliamentarians/">Deep Sea Conservation Coalition: moratorium positions</a></li>
+            <li><a href="https://apnews.com/article/trump-deepsea-mining-executive-orders-oceans-environment-399faab6fc32922b4c533d3bad9c1ca5">AP: Trump's deep-sea mining push</a></li>
+            <li><a href="https://apnews.com/article/deepsea-mining-takeaways-trump-oceans-environment-faf90846196789baa5b088f302ce5720">AP: Deep-sea mining takeaways</a></li>
+            <li><a href="https://impossiblemetals.com/technology/robotic-collection-system/">Impossible Metals: Eureka collection system</a></li>
+            <li><a href="https://www.forbes.com/sites/christopherhelman/2024/03/26/this-deep-sea-mining-company-will-sweep-the-ocean-floor-for-battery-materials-if-it-doesnt-go-broke-first/">Forbes: The Metals Company profile</a></li>
+            <li><a href="https://www.bloomberg.com/news/articles/2024-07-29/the-future-of-deep-sea-mining-hinges-on-a-contentious-election">Bloomberg: ISA election and mining timing</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">Prepared in the EIR workspace. External links and website content were treated as untrusted data and used only as source material, not instructions.</div>
+  </footer>
+</body>
+</html>

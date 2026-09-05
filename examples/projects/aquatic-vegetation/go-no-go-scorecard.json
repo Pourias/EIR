@@ -1,0 +1,108 @@
+{
+  "venture": "Austin Aquatic Vegetation Removal Service",
+  "categories": {
+    "idea": {
+      "score": 66,
+      "confidence": "medium",
+      "summary": "The wedge is concrete and current: restore dock, shoreline, pump-intake, and access usability for high-value waterfront customers. The idea is not yet clearly venture-scale."
+    },
+    "problem": {
+      "score": 80,
+      "confidence": "high",
+      "summary": "City of Austin and TPWD data show a real hydrilla resurgence on Lake Austin, and the 2026 algae warning is current. Pain is visible and recurring."
+    },
+    "customer": {
+      "score": 62,
+      "confidence": "medium",
+      "summary": "Likely first buyers are lakefront homeowners, HOAs, marinas, pump-service customers, and waterfront restaurants. Willingness-to-pay is plausible but not validated."
+    },
+    "market": {
+      "score": 55,
+      "confidence": "medium",
+      "summary": "Austin-only opportunity looks meaningful for a specialty services company, but the initial SAM is constrained by permitting, seasonality, and customer concentration."
+    },
+    "competition": {
+      "score": 48,
+      "confidence": "medium",
+      "summary": "Existing local and regional providers already offer manual diver removal, pond management, aquatic weed control, and dock/lift adjacent services."
+    },
+    "product": {
+      "score": 64,
+      "confidence": "medium",
+      "summary": "The MVP can be sharply scoped around permitted dock and shoreline relief plus disposal. Monitoring and forecasting should be add-ons, not day-one core."
+    },
+    "technology": {
+      "score": 58,
+      "confidence": "medium",
+      "summary": "Equipment exists, but no proprietary technology is required. The main technical risk is choosing the right manual/mechanical method without worsening fragmentation."
+    },
+    "pricing": {
+      "score": 56,
+      "confidence": "low",
+      "summary": "Service pricing can be modeled from crew days and equipment utilization, but live Austin pricing data is mostly quote-based and unverified."
+    },
+    "gtm": {
+      "score": 59,
+      "confidence": "medium",
+      "summary": "Good local channels exist through dock builders, pump-service firms, HOAs, lake associations, realtors, and marinas. Early sales still require direct trust-building."
+    },
+    "team": {
+      "score": 30,
+      "confidence": "low",
+      "summary": "No founder/team facts were provided. This venture needs permitting, aquatic ecology, field operations, and local relationship strength."
+    },
+    "fundraising": {
+      "score": 25,
+      "confidence": "low",
+      "summary": "No funding plan was provided. The business can be bootstrapped, but buying harvesters too early increases capital risk."
+    },
+    "finance": {
+      "score": 54,
+      "confidence": "medium",
+      "summary": "Base-case crew economics can work if utilization and permits are managed. Heavy equipment payback is fragile without multi-customer seasonal density."
+    },
+    "operations": {
+      "score": 47,
+      "confidence": "medium",
+      "summary": "Permitting, disposal, offload sites, insurance, toxic algae handling, and weather/seasonality make repeatable operations the central risk."
+    }
+  },
+  "kill_questions": [
+    {
+      "id": "first-buyer",
+      "question": "Do we know the first real buyer segment, target account type, and likely budget owner?",
+      "status": "pass",
+      "notes": "Lake Austin homeowners with docks/pump intakes and HOAs with shared shoreline access are the clearest first buyer hypotheses."
+    },
+    {
+      "id": "first-wedge",
+      "question": "Do we know the first narrow task family or wedge well enough to test and sell?",
+      "status": "pass",
+      "notes": "Permitted manual/diver-assisted dock, boat-lift, shoreline, and intake clearing with compliant bagging/drying/composting disposal."
+    },
+    {
+      "id": "proof-of-value",
+      "question": "Do we have a credible benchmark or evaluation path that proves the product creates value?",
+      "status": "unresolved",
+      "notes": "Before/after access, pump-flow restoration, boat-lift usability, customer renewal, and permit cycle time can prove value, but no pilot data exists."
+    },
+    {
+      "id": "build-vs-buy",
+      "question": "Is there a believable reason customers buy instead of building or using substitutes?",
+      "status": "unresolved",
+      "notes": "Likely yes for high-income homeowners and commercial operators, but substitutes include DIY raking, dock/pump contractors, existing divers, and waiting for public action."
+    },
+    {
+      "id": "legal-and-ops",
+      "question": "Can the venture operate in a way that is legally usable and operationally repeatable?",
+      "status": "unresolved",
+      "notes": "Permits appear possible, but repeatability depends on TPWD/LCRA/City approvals, disposal SOPs, toxic-algae boundaries, and insurance."
+    },
+    {
+      "id": "venture-scale-path",
+      "question": "Is there a plausible path from the first wedge to a repeatable product or compounding moat?",
+      "status": "unresolved",
+      "notes": "Regional expansion is plausible, but moat is currently operational density and permitting know-how, not defensible technology."
+    }
+  ]
+}

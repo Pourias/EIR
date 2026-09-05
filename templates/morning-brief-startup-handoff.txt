@@ -1,0 +1,8 @@
+Agent: eir
+Date: [Month Day]
+
+Today I want to walk you through [Company Name] and why it matters. [Company Name] is building [plain-language description of the product], aimed at solving [plain-language problem]. Based on what is visible so far, the problem looks [well validated / partially validated / weakly validated], and the broader market context suggests [market timing summary].
+
+The competitive picture includes [top competitors or substitutes], so the real question is whether the company has a wedge that can hold. Right now that wedge appears to be [wedge], supported by [differentiation]. The biggest risks still seem to be [biggest risks], which means the story is promising but not clean.
+
+On traction, the company currently shows [traction summary], while the team and funding picture suggest [team/funding summary]. My current investment view is [invest / watch / pass], because [plain-language rationale]. The next proof points worth watching are [milestones, customer evidence, or unit-economics thresholds].

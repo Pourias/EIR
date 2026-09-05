@@ -1,0 +1,125 @@
+# EIR source catalog
+
+This metadata-only catalog contains **113** promoted source records. Captured source text is intentionally omitted; follow each link to read and verify the original.
+
+## Deep Market And Competitor Diligence On Ai Architecture And A Df162Aec3A
+
+- [ACC + Forma: The Big Move Toward Unified Design + Construction Workflows | Graitec North America](https://graitec.com/us/blog/acc-forma-move-unified-design-construction-workflows) · `official` · quality `12.0`
+- [Autodesk Forma now and the future | Autodesk News](https://adsknews.autodesk.com/en/views/forma-now-and-the-future) · `scholarly` · quality `12.0`
+- [Autodesk Forma: a deep dive into the data lake - AEC Magazine](https://aecmag.com/features/autodesk-forma-a-deep-dive-into-the-data-lake) · `scholarly` · quality `12.0`
+- [Autodesk Construction Cloud to Join Autodesk Forma | Autodesk News](https://adsknews.autodesk.com/en/news/autodesk-construction-cloud-to-join-forma) · `scholarly` · quality `12.0`
+- [Autodesk Construction Cloud becomes Autodesk Forma | Autodesk News](https://adsknews.autodesk.com/en/news/autodesk-construction-cloud-is-now-autodesk-forma) · `scholarly` · quality `12.0`
+- [Abstract](https://arxiv.org/html/2506.20551v1) · `scholarly` · quality `7.53`
+- [Introducing Forma Building Design - ADSK News - Autodesk](https://adsknews.autodesk.com/en/news/autodesk-design-and-make-intelligence) · `scholarly` · quality `7.5`
+- [Top 12 AI Tools for Architectural Design & Planning in 2025](https://paacademy.com/blog/top-ai-tools-architectural-planning) · `scholarly` · quality `7.95`
+- [Architecture and AI: A 2026 Guide for Firm Leaders | Dan Cumberland Labs](https://dancumberlandlabs.com/blog/architecture) · `official` · quality `7.35`
+- [Best AI Tools for Architects 2026: Design, BIM & Rendering - Coursiv](https://coursiv.io/blog/best-ai-tools-for-architects-2026) · `strong_secondary` · quality `10.38`
+- [Autodesk Introduces Forma for Next-Generation Building Design in the Cloud](https://www.prnewswire.com/news-releases/autodesk-introduces-forma-for-next-generation-building-design-in-the-cloud-301817449.html) · `strong_secondary` · quality `10.7`
+- [The Forma industry cloud takes shape with new connections | Autodesk News](https://adsknews.autodesk.com/en/news/forma-new-connections) · `strong_secondary` · quality `10.4`
+- [Autodesk Forma](https://construction.autodesk.eu/) · `strong_secondary` · quality `10.54`
+- [Autodesk targets BIM with Forma Building Design - AEC Magazine](https://aecmag.com/bim/autodesk-targets-bim-with-forma-building-design) · `strong_secondary` · quality `10.42`
+- [Autodesk Forma: Empowering Digital Design for Seamless Project Delivery](https://www.hagerman.com/software/forma) · `strong_secondary` · quality `10.32`
+- [Esri Launches ArcGIS for Autodesk Forma, Continuing its Partnership to Bring Spatial Data to AECO Industry - Esri](https://www.esri.com/about/newsroom/announcements/esri-launches-arcgis-for-autodesk-forma-continuing-its-partnership-to-bring-spatial-data-to-aeco-industry) · `strong_secondary` · quality `9.89`
+- [Ignite Drives Future-Ready Digital Transformation with ...](https://construction.autodesk.com/resources/source-acc-webinars/ignite-drives-future-ready-digital-transformation-with-tech-consolidation-2) · `strong_secondary` · quality `9.79`
+- [What's new in Autodesk Forma - February 2025 | Autodesk Forma](https://blogs.autodesk.com/forma/2025/01/31/whats-new-in-autodesk-forma-q4-webinar) · `strong_secondary` · quality `9.77`
+- [Autodesk Forma Build Product Overview](https://construction.autodesk.com/resources/acc-product-videos/autodesk-forma-build-product-overview-2) · `strong_secondary` · quality `10.0`
+- [Autodesk Forma | AEC Industry Cloud-Based Platform](https://www.autodesk.com/company/autodesk-platform/aec) · `strong_secondary` · quality `9.9`
+- [Autodesk Construction](https://construction.autodesk.com/) · `strong_secondary` · quality `9.9`
+- [Autodesk | 3D Design, Engineering & Entertainment Software](https://www.autodesk.com/uk) · `strong_secondary` · quality `9.75`
+- [Autodesk Construction Cloud Becomes Forma: What It Means for ...](https://blog.hagerman.com/autodesk-construction-cloud-becomes-forma-what-it-means-for-end-users) · `strong_secondary` · quality `9.75`
+- [Forma Site Design | Forma Site Design Login | Software Price & Buy](https://www.autodesk.com/uk/products/forma/overview) · `strong_secondary` · quality `9.55`
+- [Autodesk Forma Build Product Overview](https://construction.autodesk.com/resources/acc-videos/autodesk-forma-build-product-overview-5) · `strong_secondary` · quality `9.8`
+- [Autodesk Forma: AI-Powered Workflows Changing Architecture](https://archilabs.ai/posts/autodesk-forma) · `strong_secondary` · quality `9.65`
+- [Autodesk Forma | Environmental Impact Analysis for Architects](https://www.autodesk.com/products/forma/environmental-impact-analysis) · `strong_secondary` · quality `9.53`
+- [Autodesk Forma Site Design | Forma Site Design Login](https://www.autodesk.com/products/forma-site-design/overview) · `strong_secondary` · quality `9.55`
+- [Forma Site Design | Forma Site Design Login | Software Price & Buy](https://www.autodesk.com/products/forma/overview) · `strong_secondary` · quality `9.43`
+- [Spacemaker AI](https://autodesk.com/products/forma-site-design/overview) · `strong_secondary` · quality `9.43`
+- [Data Management Help | About Autodesk Forma™](https://help.autodesk.com/view/DOCS/ENU?guid=About_Autodesk_Construction_Cloud) · `strong_secondary` · quality `9.4`
+- [Autodesk Forma | Autodesk Platform Services](https://aps.autodesk.com/autodesk-forma) · `strong_secondary` · quality `9.6`
+- [Autodesk Forma Build | Autodesk Platform Services](https://aps.autodesk.com/autodesk-products/autodesk-forma-build) · `strong_secondary` · quality `9.6`
+
+## Deep Research Current News Regulatory Blockers And Validated 6Eadc1A672
+
+- [\[PDF\] Hydrilla in Lake Austin - AustinTexas.gov](https://services.austintexas.gov/edims/document.cfm?id=455222) · `official` · quality `12.0`
+- [Texas Invasives](https://www.texasinvasives.org/professionals/abstract_detail.php?abstract_id=56) · `official` · quality `12.0`
+- [News Release: Aug. 8, 2005: Partner Efforts Decrease Exotic Water Weed Hydrilla - TPWD](https://tpwd.texas.gov/newsmedia/releases?req=20050808c) · `primary` · quality `12.0`
+- [\[PDF\] Aquatic Vegetation Management in Texas: A Guidance Document](https://tpwd.texas.gov/publications/pwdpubs/media/pwd_pl_t3200_1066_new.pdf) · `primary` · quality `12.0`
+- [Nuisance Vegetation Index](https://tpwd.texas.gov/landwater/water/environconcerns/nuisance_plants) · `primary` · quality `12.0`
+- [Nuisance Aquatic Plant Control Methods](https://tpwd.texas.gov/landwater/water/environconcerns/nuisance_plants/manage/plant_control.phtml) · `primary` · quality `12.0`
+- [Aquatic Vegetation, Approved Treatment Proposals](https://tpwd.texas.gov/landwater/water/environconcerns/nuisance_plants/treat_proposals.phtml) · `primary` · quality `12.0`
+- [TPWD: Statutory Authority](https://tpwd.texas.gov/landwater/water/conservation/water_resources/legal) · `primary` · quality `12.0`
+- [Environmental Concerns](https://tpwd.texas.gov/landwater/water/environconcerns/permitting_consultation/index.phtml) · `primary` · quality `12.0`
+- [\[PDF\] Inland Fisheries Annual Report 2021 - Texas Parks and Wildlife](https://tpwd.texas.gov/publications/pwdpubs/media/pwd_rp_t3200_0909_2021.pdf) · `primary` · quality `12.0`
+- [This Report Summarizes The Findings Of The Tpwd Funded Project Near R Dbf6C6586F](https://tpwd.texas.gov/landwater/water/aquatic-invasives/media/CA-0002652_Baylor_Hamerly_ZebraMusselAutomatedDetectionFinalReport_Jan2024.pdf) · `primary` · quality `12.0`
+- [TPWD: March 23-24, 2022, Commission Meeting Transcript](https://tpwd.texas.gov/business/feedback/meetings/2022/0526/agenda/prev_worksession_transcript.phtml) · `primary` · quality `12.0`
+- [\[PDF\] Management of Hydrilla in Texas Reservoirs](https://tpwd.texas.gov/landwater/water/environconcerns/nuisance_plants/media/Hydrilla%20Position%20Paper_03%20Jan%202023.pdf) · `primary` · quality `12.0`
+- [\[PDF\] Natural Agenda: A Strategic Plan for Texas Parks and Wildlife ...](https://tpwd.texas.gov/publications/pwdpubs/media/pwd_bk_a0900_0622_08_24.pdf) · `primary` · quality `12.0`
+- [\[PDF\] Aquatic Vegetation Management in Texas - Appendix B](https://tpwd.texas.gov/publications/pwdpubs/media/pwd_pl_t3200_1066_AppendixB.pdf) · `primary` · quality `12.0`
+- [\[PDF\] Texas Monarch and Native Pollinator Conservation Plan](https://tpwd.texas.gov/publications/pwdpubs/media/pwd_rp_w7000_2070.pdf) · `primary` · quality `12.0`
+- [Communications — Texas Parks & Wildlife Department](https://tpwd.texas.gov/about/administration-divisions/communications) · `primary` · quality `12.0`
+- [\[PDF\] Natural Agenda - Texas Parks and Wildlife](https://tpwd.texas.gov/publications/pwdpubs/media/pwd_bk_a0900_0622_06_12.pdf) · `primary` · quality `12.0`
+- [Management of Hydrilla in Texas Reservoirs Index](https://tpwd.texas.gov/landwater/water/environconcerns/nuisance_plants/hydrilla_management.phtml) · `primary` · quality `12.0`
+- [Previously Funded Research - Fighting Aquatic Invaders - TPWD](https://tpwd.texas.gov/landwater/water/aquatic-invasives/research2.phtml) · `primary` · quality `12.0`
+- [\[PDF\] Target Talk - Texas Parks and Wildlife](https://tpwd.texas.gov/publications/pwdpubs/media/pwd_br_k0700_0135_12_09.pdf) · `primary` · quality `12.0`
+- [News Release: June 27, 2024: TPWD to Deploy Materials for New Artificial Reef Site in Sabine - TPWD](https://tpwd.texas.gov/newsmedia/releases?req=20240627b) · `primary` · quality `12.0`
+- [\[PDF\] Evaluating the suppression of Hydrilla verticillata by manual removal ...](https://tpwd.texas.gov/landwater/water/aquatic-invasives/media/Hutchinson-Hydrilla-Control-Methods-FinalReport-Jan%202022.pdf) · `primary` · quality `12.0`
+- [News Releases - TPWD](https://tpwd.texas.gov/newsmedia/releases?nrspan=All&nrtype=all&page=259) · `primary` · quality `12.0`
+- [News Releases - TPWD](https://tpwd.texas.gov/newsmedia/releases) · `primary` · quality `12.0`
+- [\[PDF\] Natural Agenda: A Strategic Plan for Texas Parks and Wildlife ...](https://tpwd.texas.gov/publications/pwdpubs/media/pwd_bk_a0900_0622_07_18.pdf) · `primary` · quality `12.0`
+- [\[PDF\] Request for Legislative Appropriations - Texas Parks and Wildlife](https://tpwd.texas.gov/publications/pwdpubs/media/FY26-27-TPWD-LAR.pdf) · `primary` · quality `12.0`
+- [\[PDF\] Natural Agenda: A Strategic Plan for the Texas Parks and Wildlife ...](https://tpwd.texas.gov/publications/pwdpubs/media/pwd_bk_a0900_0622_06_20.pdf) · `primary` · quality `12.0`
+- [\[PDF\] Natural Agenda: A Strategic Plan for Texas Parks and Wildlife ...](https://tpwd.texas.gov/publications/pwdpubs/media/pwd_bk_a0900_0622_06_22.pdf) · `primary` · quality `12.0`
+- [Texas Cultivated Oyster Mariculture- Main](https://tpwd.texas.gov/fishboat/fish/commercial/com_cf/faqs.phtml) · `primary` · quality `12.0`
+- [\[PDF\] Fiscal Year 2023 Annual Financial Report - Texas Parks and Wildlife](https://tpwd.texas.gov/publications/pwdpubs/media/pwd_rp_a0900_0683_2023.pdf) · `primary` · quality `12.0`
+- [News Release: Sept. 11, 2013: Department of Homeland Security Robotic Fish Put to Test with Battleship TEXAS - TPWD](https://tpwd.texas.gov/newsmedia/releases?req=20130911a) · `primary` · quality `12.0`
+- [Official Online Fishing & Hunting License Sales](https://tpwd.texas.gov/business/licenses/online_sales) · `primary` · quality `12.0`
+- [TPWD: News Images](https://tpwd.texas.gov/newsmedia/news_images?g=dhs_robotic_fish) · `primary` · quality `12.0`
+- [News and Media - TPWD - Texas.gov](https://tpwd.texas.gov/newsmedia) · `primary` · quality `12.0`
+- [TPWD: News Images](https://tpwd.texas.gov/newsmedia/news_images/index.phtml?g=dhs_robotic_fish) · `primary` · quality `12.0`
+- [CP-018: Use of Technological Solutions — Texas Parks & Wildlife Department](https://tpwd.texas.gov/about/commission/commission-policies/cp-018) · `primary` · quality `12.0`
+- [TPWD Wildlife Apps and Landowner Permits - Texas.gov](https://tpwd.texas.gov/huntwild/apps) · `primary` · quality `12.0`
+- [Bids and Vendor Opportunities - TPWD](https://tpwd.texas.gov/business/bidops) · `primary` · quality `12.0`
+- [TPWD: November 6-7, 2024 TPW Commission Meeting Transcript](https://tpwd.texas.gov/business/feedback/meetings/2025/0123/agenda/prev_commission_transcript.phtml) · `primary` · quality `12.0`
+
+## Paper Forward Research On Ai Systems For Architectural Design 1C7D27F988
+
+- [Towards an automated AI-based framework for floor plan compliance checks for residential buildings](https://arxiv.org/html/2607.00015v1) · `scholarly` · quality `12.0`
+- [\[PDF\] BIM, NLP, and AI for Automated Compliance Checking](https://par.nsf.gov/servlets/purl/10347911) · `scholarly` · quality `12.0`
+- [\[PDF\] AI for Regulatory and Code Compliance](https://www.ijert.org/research/ai-for-regulatory-and-code-compliance-IJERTV15IS010411.pdf) · `scholarly` · quality `12.0`
+- [Automated code compliance checking research based on BIM and knowledge graph | Scientific Reports](https://www.nature.com/articles/s41598-023-34342-1) · `scholarly` · quality `12.0`
+- [Intelligent code for automated code compliance checking in construction | IDEALS](https://www.ideals.illinois.edu/items/124929) · `scholarly` · quality `12.0`
+- [Multimodal | Microsoft AI](https://microsoft.ai/job/member-of-technical-staff-multimodal-mai-superintelligence-team) · `primary` · quality `12.0`
+- [Towards Humanist Superintelligence | Microsoft AI](https://microsoft.ai/story/towards-humanist-superintelligence) · `primary` · quality `12.0`
+- [Automated compliance checking across the building lifecycle](https://www.sciencedirect.com/science/article/pii/S0926580526001007) · `scholarly` · quality `11.6`
+- [Announcing 3 new world class MAI models, available in Foundry](https://microsoft.ai/news/today-were-announcing-3-new-world-class-mai-models-available-in-foundry) · `primary` · quality `12.0`
+- [Introducing Copilot Health | Microsoft AI](https://microsoft.ai/story/introducing-copilot-health) · `primary` · quality `12.0`
+- [\[PDF\] MAI-Thinking-1: Building a Hill-Climbing Machine - Microsoft AI](https://microsoft.ai/pdf/mai-thinking-1.pdf) · `primary` · quality `12.0`
+- [The 20 best AI websites - by Palle Broe - Rule of thumb](https://palle.substack.com/p/the-20-best-ai-websites) · `official` · quality `12.0`
+- [Achievements of the AI Building Code System and Future Policy ...](https://www.auri.re.kr/publication/view.es?mid=a20505000000&publication_id=2220&nPage=1&publication_type=eng_brief&sch_year=&sch_report=&sch_type=&sch_text=) · `scholarly` · quality `12.0`
+- [Two in-house models in support of our mission | Microsoft AI](https://microsoft.ai/news/two-new-in-house-models) · `primary` · quality `12.0`
+- [Introducing MAI-Image-1, debuting in the top 10 on LMArena | Microsoft AI](https://microsoft.ai/story/introducing-mai-image-1-debuting-in-the-top-10-on-lmarena) · `primary` · quality `12.0`
+- [Pre-Training | Microsoft AI](https://microsoft.ai/job/member-of-technical-staff-pre-training-mai-superintelligence-team) · `primary` · quality `12.0`
+- [AI Business informs, educates & connects the global AI community](https://aibusiness.com/) · `official` · quality `12.0`
+- [Hira Mashkoor | Microsoft AI](https://microsoft.ai/team/hira-mashkoor-balancing-detail-with-big-picture-thinking) · `primary` · quality `12.0`
+- [Official AI](https://www.theofficial.ai/) · `scholarly` · quality `11.45`
+- [About | Microsoft AI](https://microsoft.ai/about) · `primary` · quality `12.0`
+- [The Path to Medical Superintelligence | Microsoft AI](https://microsoft.ai/story/the-path-to-medical-superintelligence) · `primary` · quality `12.0`
+- [Careers | Microsoft AI](https://microsoft.ai/careers) · `primary` · quality `12.0`
+- [ARTIFICIAL INTELLIGENCE-DRIVEN AUTOMATED BUILDING ...](https://hammer.purdue.edu/articles/thesis/ARTIFICIAL_INTELLIGENCE-DRIVEN_AUTOMATED_BUILDING_CODE_COMPLIANCE_CHECKING/30828740) · `official` · quality `11.65`
+- [Microsoft launches new AI model for real-world robotic learning](https://interestingengineering.com/ai-robotics/microsoft-rho-alpha-robotics-ai-model) · `scholarly` · quality `11.2`
+- [How AI is Transforming Building Code Compliance | Nomic Blog](https://www.nomic.ai/blog/ai-transforming-building-code-compliance) · `strong_secondary` · quality `9.83`
+- [Building Information Modeling: Automated Code Checking and Compliance Processes (Book Excerpt)](https://www.aecbytes.com/viewpoint/2018/issue_86.html) · `strong_secondary` · quality `9.63`
+- [The 7 best AI company website examples in 2026](https://www.blendb2b.com/blog/best-ai-website-examples) · `strong_secondary` · quality `9.55`
+- [Top AI Companies in 2026](https://www.designrush.com/agency/ai-companies) · `strong_secondary` · quality `9.55`
+- [Top AI Companies - Dec 2025 | DesignRush](https://www.designrush.com/agency/ai-companies/us) · `strong_secondary` · quality `9.55`
+- [\[PDF\] Automated Code Compliance via LLM-assisted Building Design ...](https://papers.ssrn.com/sol3/Delivery.cfm/e6a7511a-fd46-4d95-b8be-33d42ad28ccb-MECA.pdf?abstractid=6073688&mirid=1) · `strong_secondary` · quality `9.0`
+- [Introducing Rho-alpha, the new robotics model from Microsoft](https://www.microsoft.com/en-us/research/story/advancing-ai-for-the-physical-world) · `strong_secondary` · quality `8.7`
+- [Power Automate: Business Process Workflow Automation | Microsoft Power Platform](https://www.microsoft.com/en-us/power-platform/products/power-automate) · `strong_secondary` · quality `8.78`
+- [AutoveX Robotics](https://autovex.ai/) · `strong_secondary` · quality `9.0`
+- [Holon Robotics](https://holonrobotics.com/) · `strong_secondary` · quality `8.85`
+- [Mirai Robotics](https://miraitech.ai/) · `strong_secondary` · quality `8.85`
+- [Stability AI](https://stability.ai/) · `strong_secondary` · quality `8.85`
+- [29 AI Website Examples for SaaS, E-commerce, + More | Figma](https://www.figma.com/resource-library/ai-website-examples) · `strong_secondary` · quality `8.85`
+- [Forbes 2026 AI 50 List | Top Artificial Intelligence Companies](https://www.forbes.com/lists/ai50) · `strong_secondary` · quality `8.85`
+- [Scale AI](https://scale.com/) · `strong_secondary` · quality `8.7`
+- [List of artificial intelligence companies](https://en.wikipedia.org/wiki/List_of_artificial_intelligence_companies) · `strong_secondary` · quality `8.9`

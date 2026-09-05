@@ -1,0 +1,173 @@
+# Deep Research Activity Summary
+
+- Events logged: `34`
+
+## Timeline
+
+- 2026-06-14T10:41:18-07:00 — `plan` — Created deep plan with 9 planned query passes and 6 deep objectives.
+  - target_passes: 6
+  - target_sources: 20
+  - preferred_domains: []
+- 2026-06-14T10:41:22-07:00 — `search_pass` — Executed entity-official-site and merged 15 ranked sources.
+  - pass_number: 1
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 2
+  - primary_like_source_count: 2
+  - met_depth_standard: False
+- 2026-06-14T10:41:27-07:00 — `search_pass` — Executed entity-product-signals and merged 28 ranked sources.
+  - pass_number: 2
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 3
+  - primary_like_source_count: 3
+  - met_depth_standard: False
+- 2026-06-14T10:41:32-07:00 — `search_pass` — Executed entity-commercial-signals and merged 40 ranked sources.
+  - pass_number: 3
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 3
+  - primary_like_source_count: 3
+  - met_depth_standard: False
+- 2026-06-14T10:41:37-07:00 — `search_pass` — Executed discovery-primary and merged 40 ranked sources.
+  - pass_number: 4
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 6
+  - primary_like_source_count: 6
+  - met_depth_standard: False
+- 2026-06-14T10:41:42-07:00 — `search_pass` — Executed expansion-related and merged 40 ranked sources.
+  - pass_number: 5
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 7
+  - primary_like_source_count: 7
+  - met_depth_standard: False
+- 2026-06-14T10:41:46-07:00 — `search_pass` — Executed gap-closing and merged 40 ranked sources.
+  - pass_number: 6
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 8
+  - primary_like_source_count: 8
+  - met_depth_standard: False
+- 2026-06-14T10:41:51-07:00 — `search_pass` — Executed contradiction-check and merged 40 ranked sources.
+  - pass_number: 7
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 7
+  - primary_like_source_count: 7
+  - met_depth_standard: False
+- 2026-06-14T10:41:55-07:00 — `search_pass` — Executed commercial-analysis and merged 40 ranked sources.
+  - pass_number: 8
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 7
+  - primary_like_source_count: 7
+  - met_depth_standard: False
+- 2026-06-14T10:41:57-07:00 — `search_pass` — Executed challenge-pass and merged 40 ranked sources.
+  - pass_number: 9
+  - include_domains: []
+  - result_count: 15
+  - meaningful_source_count: 8
+  - primary_like_source_count: 8
+  - met_depth_standard: False
+- 2026-06-14T10:42:05-07:00 — `structured_pass` — Added brave-web-1 with 1 structured-provider results.
+  - pass_number: 10
+  - include_domains: []
+  - provider: brave-search
+- 2026-06-14T10:42:05-07:00 — `structured_pass` — Added exa-web-1 with 6 structured-provider results.
+  - pass_number: 11
+  - include_domains: []
+  - provider: exa
+- 2026-06-14T10:42:05-07:00 — `structured_pass` — Added brave-web-2 with 0 structured-provider results.
+  - pass_number: 12
+  - include_domains: []
+  - provider: brave-search
+- 2026-06-14T10:42:05-07:00 — `structured_pass` — Added exa-web-2 with 6 structured-provider results.
+  - pass_number: 13
+  - include_domains: []
+  - provider: exa
+- 2026-06-14T10:42:05-07:00 — `structured_pass` — Added openalex-primary with 0 structured-provider results.
+  - pass_number: 14
+  - include_domains: ['openalex.org']
+  - provider: openalex
+- 2026-06-14T10:42:05-07:00 — `structured_pass` — Added crossref-primary with 5 structured-provider results.
+  - pass_number: 15
+  - include_domains: ['crossref.org']
+  - provider: crossref
+- 2026-06-14T10:42:05-07:00 — `structured_pass` — Added semantic-scholar-primary with 0 structured-provider results.
+  - pass_number: 16
+  - include_domains: ['semanticscholar.org']
+  - provider: semantic-scholar
+- 2026-06-14T10:42:05-07:00 — `structured_pass` — Added pubmed-primary with 0 structured-provider results.
+  - pass_number: 17
+  - include_domains: ['pubmed.ncbi.nlm.nih.gov']
+  - provider: ncbi-eutils
+- 2026-06-14T10:42:05-07:00 — `structured_pass` — Added sec-filings with 5 structured-provider results.
+  - pass_number: 18
+  - include_domains: ['sec.gov', 'data.sec.gov']
+  - provider: sec-edgar
+- 2026-06-14T10:42:05-07:00 — `structured_pass` — Added patents-primary with 0 structured-provider results.
+  - pass_number: 19
+  - include_domains: ['search.patentsview.org']
+  - provider: patentsview
+- 2026-06-14T10:42:05-07:00 — `capture_started` — Starting bounded capture for up to 10 top-ranked sources.
+  - capture_limit: 10
+- 2026-06-14T10:42:06-07:00 — `capture_item` — Capture 1 finished with status=error engine=capture-worker.
+  - url: https://tpwd.texas.gov/fishboat/fish/recreational/lakes/lady_bird
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-14T10:42:06-07:00 — `capture_item` — Capture 2 finished with status=error engine=capture-worker.
+  - url: https://mymlsa.org/wp-content/uploads/2015/05/AquaticPlantManagementBMPsAERF2005.pdf
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-14T10:42:06-07:00 — `capture_item` — Capture 3 finished with status=error engine=capture-worker.
+  - url: https://apps.ecology.wa.gov/publications/documents/0103047.pdf
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-14T10:42:06-07:00 — `capture_item` — Capture 4 finished with status=error engine=capture-worker.
+  - url: https://apps.dtic.mil/sti/tr/pdf/ADA353197.pdf
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-14T10:42:06-07:00 — `capture_item` — Capture 5 finished with status=error engine=capture-worker.
+  - url: https://www.mtu.edu/mtri/research/project-areas/environmental/water/eurasian-watermilfoil/information
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-14T10:42:06-07:00 — `capture_item` — Capture 6 finished with status=error engine=capture-worker.
+  - url: https://www.dlwid.org/files/0ce47313b/Vegetation-Management-Reports+____PICTURES_2013-10-22.pdf
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-14T10:42:06-07:00 — `capture_item` — Capture 7 finished with status=error engine=capture-worker.
+  - url: https://www.texasrowingcenter.com/
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-14T10:42:06-07:00 — `capture_item` — Capture 8 finished with status=error engine=capture-worker.
+  - url: https://kasa.com/properties/kasa-lady-bird-lake-austin
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-14T10:42:06-07:00 — `capture_item` — Capture 9 finished with status=error engine=capture-worker.
+  - url: https://lakegeorgeassociation.org/science-protection/citizen-science/eurasian-watermilfoil
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-14T10:42:06-07:00 — `capture_item` — Capture 10 finished with status=error engine=capture-worker.
+  - url: https://ccetompkins.org/environment/aquatic-invasives/hydrilla/management-options/mechanical-controls
+  - path:
+  - status: error
+  - engine: capture-worker
+- 2026-06-14T10:42:06-07:00 — `capture` — Captured 0 of 10 top-ranked sources for full-page evidence.
+  - capture_count: 10
+  - capture_ok: 0
+- 2026-06-14T10:42:07-07:00 — `contradiction_matrix` — Built contradiction matrix across 3 themes.
+  - themes: ['security', 'governance', 'general']
+- 2026-06-14T10:42:07-07:00 — `synthesis` — Completed deep synthesis with 6 confirmed claims and 3 inferred claims.
+  - open_questions: 4
+  - surfaced_sources: 40

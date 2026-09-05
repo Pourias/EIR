@@ -1,0 +1,32 @@
+Task mode: create
+Primary deck-profile: product-platform
+Secondary profile gates: appendix-heavy, strategy-leadership
+
+Required proof objects:
+- Clear YC-style seed-deck spine: title, problem, solution, proof/traction plan, market, business model, growth/GTM, team, ask.
+- Product system map showing hull, autonomy, sensors, operator workflow, and mission outputs.
+- Competitor map against Saronic, Saildrone, HavocAI, MARTAC, Textron, Hydronalix, and Sea Machines.
+- Appendix slides for defense/Navy/MCM, Coast Guard/SAR/public safety, and investor/strategic targets.
+
+Source/asset requirements:
+- Use existing EIR diligence memo and investor/advisor Notion synthesis.
+- Use official YC seed-deck guidance as the structure reference.
+- Use official/government/company source links in source slide.
+- No invented traction or team facts. Unknowns are presented as assumptions or placeholders.
+
+Brand authenticity constraints:
+- Working company name is HarborScout AI, used only as an editable placeholder.
+- No official logos, no military seals, and no implied endorsement by government agencies.
+- Visual system should feel maritime, defense-grade, and investor-clean without using classified or government branding.
+
+Profile-specific QA gates:
+- Every slide must have one clear claim.
+- Product slides must show a system or workflow, not generic feature cards.
+- Appendix slides must be readable and scannable without overloading the main story.
+- Unknown traction/team/funding details must be marked as assumptions.
+
+Known missing inputs:
+- Final company name.
+- Founder bios and team credentials.
+- Fundraising target.
+- Actual prototype status, customer interviews, pilots, or performance metrics.

@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "task_id": "architect-ai-replacement-cx-2026-07-04",
+  "question": "Deep current diligence on a startup concept: an AI-native platform that could replace or radically compress architects and architecture firms for residential homes, renovations, ADUs, and internal reconfiguration. The platform would collect homeowner criteria, generate designs, floor plans, drawings, construction documents / architect papers, check building codes, zoning, city permissions, local amendments, costs, permitting requirements, and produce permit-ready outputs. Research current startups, incumbents, funding rounds, stages, product capabilities, user/customer targets, legal/regulatory constraints, building-code automation, permit workflow automation, and whether the better wedge is direct-to-consumer homeowners or selling to architects/builders/firms/jurisdictions. Include market size, competitors, adjacent AI tools, risks, moat, and investment recommendation. Current as of July 4, 2026.",
+  "category": "general-research",
+  "evidence_type": "technical",
+  "depth": "deep",
+  "deliverable": "deep_report",
+  "requested_output_format": "deep_report",
+  "route": {
+    "skills": [
+      "cx-research-context-loader",
+      "cx-research-request-router",
+      "cx-research-workspace-router",
+      "technical-radar",
+      "source-compression",
+      "cx-research-source-card-pipeline",
+      "company-market-map",
+      "research-chain-factory",
+      "reddit-research",
+      "deep-research-report"
+    ],
+    "tools": [
+      "tavily",
+      "official-docs",
+      "github",
+      "standards-bodies",
+      "summarize",
+      "official-company-sites",
+      "press-rooms",
+      "regulator-sites",
+      "reddit-data-api"
+    ],
+    "optional_tools": [
+      "brave-search",
+      "exa"
+    ],
+    "tool_controls": {
+      "required": [],
+      "preferred": [],
+      "forbidden": []
+    },
+    "depth_profile": {
+      "min_passes": 6,
+      "min_sources": 20,
+      "max_sources": 40,
+      "required_checks": [
+        "discovery",
+        "expansion",
+        "gap_closing",
+        "contradiction_check",
+        "commercial_analysis",
+        "challenge_pass"
+      ],
+      "default_subagents": [
+        "scout",
+        "analyst",
+        "skeptic"
+      ]
+    },
+    "subagents": [
+      "scout",
+      "analyst",
+      "skeptic"
+    ],
+    "social_platforms": [
+      "reddit"
+    ],
+    "social_mode": "augment",
+    "explanation": "depth=deep; evidence_type=technical; deliverable=deep_report; requested_output_format=deep_report; source_shape=pdf; social=reddit; chain=max_steps=3,control_mode=agent_auto,pause_policy=auto_run"
+  },
+  "coverage": null,
+  "reuse_lookup": {},
+  "promotion": {
+    "status": null,
+    "reason": null,
+    "cards_promoted": null,
+    "captures_promoted": null,
+    "decision": {}
+  },
+  "live_run": {},
+  "api_health": {
+    "status": "warn",
+    "summary": {
+      "ok": 4,
+      "warn": 2,
+      "fail": 0,
+      "skipped": 0,
+      "service_count": 6
+    },
+    "blocking_failures": []
+  },
+  "deep_research": null
+}

@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "task_id": "aquatic-vegetation-austin-2026-06-14",
+  "question": "Deep diligence on a startup idea: an aquatic vegetation and algae-related cleanup service in Austin, Texas, starting with Lake Austin, Lady Bird Lake, nearby Highland Lakes, private ponds, HOAs, marinas, restaurants, and lakefront homeowners. Cover every requested diligence step: market size and demand; regulatory and permitting; environmental considerations; technology and equipment; seasonality and frequency; unit economics; competitive landscape; go-to-market; and expansion opportunity. Use CX research plus r-paper style evidence: current primary web sources for Austin/Texas market and regulation, plus papers/reviews/technical reports for hydrilla, invasive aquatic vegetation, cyanobacteria, mechanical harvesting, removal impacts, and water-quality management.",
+  "category": "general-research",
+  "evidence_type": "market",
+  "depth": "deep",
+  "deliverable": "deep_report",
+  "requested_output_format": "deep_report",
+  "route": {
+    "skills": [
+      "cx-research-context-loader",
+      "cx-research-request-router",
+      "cx-research-workspace-router",
+      "company-market-map",
+      "source-compression",
+      "cx-research-source-card-pipeline",
+      "page-video-transcript",
+      "research-chain-factory",
+      "reddit-research",
+      "deep-research-report"
+    ],
+    "tools": [
+      "tavily",
+      "official-company-sites",
+      "regulator-sites",
+      "press-rooms",
+      "browser-manual-verification",
+      "yt-dlp",
+      "extract_page_video_transcript.py",
+      "summarize",
+      "official-docs",
+      "github",
+      "reddit-data-api",
+      "openalex",
+      "crossref"
+    ],
+    "optional_tools": [
+      "brave-search",
+      "exa",
+      "sec-edgar",
+      "patentsview",
+      "cloudflare-browser-rendering",
+      "firecrawl",
+      "semantic-scholar",
+      "ncbi-eutils"
+    ],
+    "tool_controls": {
+      "required": [
+        "tavily",
+        "openalex",
+        "crossref"
+      ],
+      "preferred": [
+        "brave-search",
+        "exa",
+        "cloudflare-browser-rendering",
+        "firecrawl",
+        "semantic-scholar",
+        "ncbi-eutils"
+      ],
+      "forbidden": []
+    },
+    "depth_profile": {
+      "min_passes": 6,
+      "min_sources": 20,
+      "max_sources": 40,
+      "required_checks": [
+        "discovery",
+        "expansion",
+        "gap_closing",
+        "contradiction_check",
+        "commercial_analysis",
+        "challenge_pass"
+      ],
+      "default_subagents": [
+        "scout",
+        "analyst",
+        "skeptic"
+      ]
+    },
+    "subagents": [
+      "scout",
+      "analyst",
+      "skeptic"
+    ],
+    "social_platforms": [
+      "reddit"
+    ],
+    "social_mode": "augment",
+    "explanation": "depth=deep; evidence_type=market; deliverable=deep_report; requested_output_format=deep_report; source_shape=webpage,video,pdf; required_tools=tavily,openalex,crossref; preferred_tools=brave-search,exa,cloudflare-browser-rendering,firecrawl,semantic-scholar,ncbi-eutils; social=reddit; chain=max_steps=9,control_mode=agent_auto,pause_policy=auto_run"
+  },
+  "coverage": null,
+  "reuse_lookup": {},
+  "promotion": {
+    "status": null,
+    "reason": null,
+    "cards_promoted": null,
+    "captures_promoted": null,
+    "decision": {}
+  },
+  "live_run": {},
+  "api_health": {
+    "status": "warn",
+    "summary": {
+      "ok": 8,
+      "warn": 4,
+      "fail": 0,
+      "skipped": 0,
+      "service_count": 12
+    },
+    "blocking_failures": []
+  },
+  "deep_research": null
+}

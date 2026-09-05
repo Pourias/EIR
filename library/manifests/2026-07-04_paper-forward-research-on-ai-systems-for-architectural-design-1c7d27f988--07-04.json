@@ -1,0 +1,35 @@
+{
+  "task_id": "architect-ai-replacement-r-paper-2026-07-04",
+  "topic_slug": "paper-forward-research-on-ai-systems-for-architectural-design-1c7d27f988",
+  "coverage": {
+    "target_min_passes": 6,
+    "target_min_sources": 20,
+    "target_max_sources": 40,
+    "executed_passes": 14,
+    "source_count": 40,
+    "quality_profile": {
+      "min_meaningful_sources": 14,
+      "min_high_quality_sources": 8,
+      "min_primary_like_sources": 8
+    },
+    "meaningful_source_count": 40,
+    "high_quality_source_count": 40,
+    "primary_like_source_count": 24,
+    "source_class_counts": {
+      "scholarly": 9,
+      "primary": 12,
+      "official": 3,
+      "strong_secondary": 16
+    },
+    "met_source_floor": true,
+    "met_quality_floor": true,
+    "met_depth_standard": true,
+    "shortfall_sources": 0,
+    "shortfall_passes": 0,
+    "shortfall_meaningful_sources": 0,
+    "shortfall_high_quality_sources": 0,
+    "shortfall_primary_like_sources": 0
+  },
+  "cards_promoted": 40,
+  "captures_promoted": 0
+}
