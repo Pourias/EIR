@@ -245,7 +245,7 @@ The right milestones are productized deployment, sharper wedge selection, and on
 ## 4. Investment Verdict
 
 - Verdict: `Watch`
-- Confidence: `Medium-Low`
+- Confidence: `Low`
 
 Why this could be a strong investment:
 

@@ -22,9 +22,10 @@ The command creates a dated directory under `work/` with:
 - a diligence memo
 - a scorecard
 - an experiment plan
+- a morning brief
 - a case manifest
 
-`work/` is ignored so unfinished or confidential work is not published accidentally.
+`work/` is ignored by Git, which helps prevent accidental commits. This is not an access-control boundary; use a storage location appropriate for the case's sensitivity.
 
 ## Route C: use an AI runner
 
